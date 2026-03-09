@@ -12,14 +12,18 @@ export function useSetManager() {
       try {
         const parsed = JSON.parse(stored);
         if (Array.isArray(parsed)) {
+          console.log(`✅ Loaded ${parsed.length} set(s) from localStorage`);
           setSavedSets(parsed);
           if (parsed.length > 0) {
             setActiveSetId(parsed[0].id);
           }
         }
       } catch (e) {
-        console.error("Failed to load sets from local storage", e);
+        console.error("❌ Failed to load sets from localStorage. Clearing corrupted data...", e);
+        localStorage.removeItem('pokemonPackSimulatorSets');
       }
+    } else {
+      console.log('📦 No saved sets found - starting fresh');
     }
   }, []);
 

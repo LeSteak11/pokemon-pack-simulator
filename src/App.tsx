@@ -10,7 +10,7 @@ import PackOpener from './components/PackOpener';
 import PackResults from './components/PackResults';
 import CollectionTable from './components/CollectionTable';
 import SetSearchModal from './components/SetSearchModal';
-import { Database } from 'lucide-react';
+import { Database, Trash } from 'lucide-react';
 
 export default function App() {
   const setManager = useSetManager();
@@ -19,6 +19,23 @@ export default function App() {
   const [currentPack, setCurrentPack] = useState<Card[]>([]);
   const [saveToInventory, setSaveToInventory] = useState(true);
   const [showSearchModal, setShowSearchModal] = useState(false);
+
+  // Debug logging
+  React.useEffect(() => {
+    console.log('🎮 Pokémon Pack Simulator loaded!');
+    console.log('📊 Stats:', {
+      savedSets: setManager.savedSets.length,
+      activeSet: setManager.activeSet?.name || 'none',
+      currentPack: currentPack.length
+    });
+  }, [setManager.savedSets.length, setManager.activeSet, currentPack.length]);
+
+  const handleClearAllData = () => {
+    if (confirm('⚠️ This will delete all saved sets and collections. Are you sure?')) {
+      localStorage.removeItem('pokemonPackSimulatorSets');
+      window.location.reload();
+    }
+  };
 
   const handleOpenPack = () => {
     if (!setManager.activeSet || setManager.activeSet.cards.length === 0) return;
@@ -66,6 +83,14 @@ export default function App() {
         <header className="text-center space-y-2">
           <h1 className="text-4xl font-bold tracking-tight text-indigo-900">Pokémon Pack Simulator</h1>
           <p className="text-slate-500">Upload a set checklist PDF or search for an official set from the Pokémon TCG API.</p>
+          {/* Debug Info */}
+          <div className="text-xs text-slate-400 mt-2">
+            {setManager.savedSets.length > 0 ? (
+              <span>{setManager.savedSets.length} set(s) loaded</span>
+            ) : (
+              <span>No sets loaded - upload a PDF or search the API</span>
+            )}
+          </div>
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -103,6 +128,22 @@ export default function App() {
               saveToInventory={saveToInventory}
               onToggleSaveInventory={setSaveToInventory}
             />
+
+            {/* Clear Data Button */}
+            {setManager.savedSets.length > 0 && (
+              <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+                <button
+                  onClick={handleClearAllData}
+                  className="w-full px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 flex items-center justify-center gap-2 text-sm"
+                >
+                  <Trash size={16} />
+                  Clear All Data
+                </button>
+                <p className="text-xs text-red-600 mt-2 text-center">
+                  Use if experiencing issues
+                </p>
+              </div>
+            )}
           </div>
 
           {/* Main Content Area */}

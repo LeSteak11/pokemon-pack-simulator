@@ -19,12 +19,16 @@ export function usePDFUpload() {
       return false;
     }
 
+    console.log(`📄 Starting PDF upload: ${file.name}`);
     setIsLoading(true);
     setError(null);
     
     try {
       const lines = await extractTextFromPDF(file);
+      console.log(`📝 Extracted ${lines.length} lines from PDF`);
+      
       const parsedCards = parseCards(lines, baseSize);
+      console.log(`🎴 Parsed ${parsedCards.length} cards`);
       
       if (parsedCards.length === 0) {
         setError("Could not find any cards in the PDF. Please ensure it's a valid checklist.");
@@ -36,6 +40,7 @@ export function usePDFUpload() {
       let foundSetId: string | null = null;
       
       try {
+        console.log(`🔍 Searching API for set: "${setName}"`);
         // Search for the set by name
         const sets = await searchSets(setName);
         
@@ -43,12 +48,15 @@ export function usePDFUpload() {
           // Use the first match (most recent if multiple)
           const apiSet = sets[0];
           foundSetId = apiSet.id;
+          console.log(`✅ Found API set: ${apiSet.name} (${apiSet.id})`);
           
           // Fetch API cards for this set
           const apiCards = await enrichCardsWithAPI(
             apiSet.id,
             parsedCards.map(card => ({ number: card.number, name: card.name }))
           );
+          
+          console.log(`🔗 Matched ${apiCards.length}/${parsedCards.length} cards to API data`);
           
           // Merge API data into parsed cards
           enrichedCards = parsedCards.map((card, index) => {
@@ -78,13 +86,11 @@ export function usePDFUpload() {
             
             return card; // Keep original if no API match
           });
-          
-          console.log(`✅ Enriched ${apiCards.length}/${parsedCards.length} cards with API data`);
         } else {
           console.log('⚠️ No API match found, using heuristic rarity detection');
         }
       } catch (apiError) {
-        console.warn('API enrichment failed, falling back to heuristics:', apiError);
+        console.warn('⚠️ API enrichment failed, falling back to heuristics:', apiError);
       }
       
       // Show preview modal
@@ -96,7 +102,7 @@ export function usePDFUpload() {
       return true;
       
     } catch (err) {
-      console.error(err);
+      console.error('❌ PDF upload failed:', err);
       setError("Failed to parse PDF. Please try again.");
       return false;
     } finally {

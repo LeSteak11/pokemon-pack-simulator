@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Search, X, Download } from 'lucide-react';
 import { searchSets, fetchCardsForSet, mapAPIRarityToInternal, determineAllowedFinishes, type APISet } from '../utils/pokemonAPI';
 import type { Card } from '../types';
