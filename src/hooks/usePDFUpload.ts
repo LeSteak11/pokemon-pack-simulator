@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Card } from '../types';
 import { extractTextFromPDF, parseCards } from '../utils/pdfParser';
+import { searchSets, enrichCardsWithAPI, mapAPIRarityToInternal, determineAllowedFinishes } from '../utils/pokemonAPI';
 
 export function usePDFUpload() {
   const [isLoading, setIsLoading] = useState(false);
@@ -10,6 +11,7 @@ export function usePDFUpload() {
   const [previewCards, setPreviewCards] = useState<Card[]>([]);
   const [previewSetName, setPreviewSetName] = useState('');
   const [previewBaseSize, setPreviewBaseSize] = useState(203);
+  const [apiSetId, setApiSetId] = useState<string | null>(null);
 
   const uploadPDF = async (file: File, setName: string, baseSize: number) => {
     if (!setName.trim()) {
@@ -29,10 +31,67 @@ export function usePDFUpload() {
         return false;
       }
       
+      // Try to enrich with API data
+      let enrichedCards = parsedCards;
+      let foundSetId: string | null = null;
+      
+      try {
+        // Search for the set by name
+        const sets = await searchSets(setName);
+        
+        if (sets.length > 0) {
+          // Use the first match (most recent if multiple)
+          const apiSet = sets[0];
+          foundSetId = apiSet.id;
+          
+          // Fetch API cards for this set
+          const apiCards = await enrichCardsWithAPI(
+            apiSet.id,
+            parsedCards.map(card => ({ number: card.number, name: card.name }))
+          );
+          
+          // Merge API data into parsed cards
+          enrichedCards = parsedCards.map((card, index) => {
+            const apiCard = apiCards.find(ac => ac.number === card.number);
+            
+            if (apiCard) {
+              return {
+                ...card,
+                rarity: mapAPIRarityToInternal(apiCard.rarity),
+                apiData: {
+                  cardId: apiCard.id,
+                  supertype: apiCard.supertype,
+                  types: apiCard.types,
+                  hp: apiCard.hp,
+                  apiRarity: apiCard.rarity,
+                  allowedFinishes: determineAllowedFinishes(apiCard.rarity),
+                  imageUrl: apiCard.images?.small,
+                  setInfo: {
+                    id: apiSet.id,
+                    name: apiSet.name,
+                    series: apiSet.series,
+                    releaseDate: apiSet.releaseDate,
+                  },
+                },
+              };
+            }
+            
+            return card; // Keep original if no API match
+          });
+          
+          console.log(`✅ Enriched ${apiCards.length}/${parsedCards.length} cards with API data`);
+        } else {
+          console.log('⚠️ No API match found, using heuristic rarity detection');
+        }
+      } catch (apiError) {
+        console.warn('API enrichment failed, falling back to heuristics:', apiError);
+      }
+      
       // Show preview modal
-      setPreviewCards(parsedCards);
+      setPreviewCards(enrichedCards);
       setPreviewSetName(setName.trim());
       setPreviewBaseSize(baseSize);
+      setApiSetId(foundSetId);
       setShowPreview(true);
       return true;
       
@@ -50,6 +109,7 @@ export function usePDFUpload() {
     setPreviewCards([]);
     setPreviewSetName('');
     setPreviewBaseSize(203);
+    setApiSetId(null);
   };
 
   const cancelPreview = () => {
@@ -57,6 +117,7 @@ export function usePDFUpload() {
     setPreviewCards([]);
     setPreviewSetName('');
     setPreviewBaseSize(203);
+    setApiSetId(null);
   };
 
   const updatePreviewCard = (index: number, updates: Partial<Card>) => {
@@ -79,6 +140,7 @@ export function usePDFUpload() {
       cards: previewCards,
       setName: previewSetName,
       baseSize: previewBaseSize,
+      apiSetId: apiSetId,
     },
     confirmPreview,
     cancelPreview,

@@ -1,5 +1,44 @@
 import { Card, FinishType } from '../types';
 
+/**
+ * Determine the appropriate finish for a card based on API data and slot context
+ */
+function determineFinish(card: Card, slotType: 'standard' | 'reverse' | 'rare'): FinishType {
+  // If we have API data, use allowed finishes
+  if (card.apiData?.allowedFinishes) {
+    const allowed = card.apiData.allowedFinishes;
+    
+    if (slotType === 'reverse') {
+      // Reverse holo slot - prefer Reverse Holo if allowed
+      if (allowed.includes('Reverse Holo')) return 'Reverse Holo';
+      // Ultra rares can't be reverse holo
+      if (allowed.includes('Ultra Rare')) return 'Ultra Rare';
+      if (allowed.includes('Holo')) return 'Holo';
+      if (allowed.includes('Standard')) return 'Standard';
+    } else if (slotType === 'rare') {
+      // Rare slot - follow card's natural finish
+      if (allowed.includes('Secret Rare')) return 'Secret Rare';
+      if (allowed.includes('Ultra Rare')) return 'Ultra Rare';
+      if (allowed.includes('Holo')) return 'Holo';
+      if (allowed.includes('Standard')) return 'Standard';
+    } else {
+      // Standard slot - use standard finish
+      if (allowed.includes('Standard')) return 'Standard';
+      // Fallback to first allowed
+      return allowed[0] as FinishType;
+    }
+  }
+  
+  // Fallback to old logic if no API data
+  if (slotType === 'reverse') return 'Reverse Holo';
+  if (slotType === 'rare') {
+    if (card.rarity === 'Secret Rare') return 'Secret Rare';
+    if (card.rarity === 'VMAX' || card.rarity === 'V') return 'Ultra Rare';
+    if (card.rarity === 'Rare') return 'Holo';
+  }
+  return 'Standard';
+}
+
 export function simulatePack(cards: Card[]): Card[] {
   const pack: Card[] = [];
   
@@ -16,13 +55,19 @@ export function simulatePack(cards: Card[]): Card[] {
   // 5 Commons
   for (let i = 0; i < 5; i++) {
     const c = getRandom(commons) || getRandom(cards);
-    if (c) pack.push({ ...c, finish: 'Standard' });
+    if (c) {
+      const finish = determineFinish(c, 'standard');
+      pack.push({ ...c, finish });
+    }
   }
   
   // 3 Uncommons
   for (let i = 0; i < 3; i++) {
     const c = getRandom(uncommons) || getRandom(cards);
-    if (c) pack.push({ ...c, finish: 'Standard' });
+    if (c) {
+      const finish = determineFinish(c, 'standard');
+      pack.push({ ...c, finish });
+    }
   }
   
   // 1 Reverse Holo Slot (60% Common, 30% Uncommon, 10% Rare)
@@ -36,38 +81,47 @@ export function simulatePack(cards: Card[]): Card[] {
     revCard = getRandom(rares);
   }
   if (!revCard) revCard = getRandom(cards);
-  if (revCard) pack.push({ ...revCard, finish: 'Reverse Holo' });
+  if (revCard) {
+    const finish = determineFinish(revCard, 'reverse');
+    pack.push({ ...revCard, finish });
+  }
   
   // 1 Rare Slot
   const rand = Math.random();
   let rareCard: Card | null = null;
-  let finish: FinishType = 'Standard';
   
   if (rand < 0.01) {
-    if (secretRares.length > 0) { rareCard = getRandom(secretRares); finish = 'Secret Rare'; }
-    else if (vmaxs.length > 0) { rareCard = getRandom(vmaxs); finish = 'Ultra Rare'; }
-    else if (vs.length > 0) { rareCard = getRandom(vs); finish = 'Ultra Rare'; }
-    else if (rares.length > 0) { rareCard = getRandom(rares); finish = 'Holo'; }
+    // 1% Secret Rare
+    if (secretRares.length > 0) { rareCard = getRandom(secretRares); }
+    else if (vmaxs.length > 0) { rareCard = getRandom(vmaxs); }
+    else if (vs.length > 0) { rareCard = getRandom(vs); }
+    else if (rares.length > 0) { rareCard = getRandom(rares); }
   } else if (rand < 0.11) {
-    if (vmaxs.length > 0) { rareCard = getRandom(vmaxs); finish = 'Ultra Rare'; }
-    else if (vs.length > 0) { rareCard = getRandom(vs); finish = 'Ultra Rare'; }
-    else if (rares.length > 0) { rareCard = getRandom(rares); finish = 'Holo'; }
+    // 10% VMAX/Ultra Rare
+    if (vmaxs.length > 0) { rareCard = getRandom(vmaxs); }
+    else if (vs.length > 0) { rareCard = getRandom(vs); }
+    else if (rares.length > 0) { rareCard = getRandom(rares); }
   } else if (rand < 0.29) {
-    if (vs.length > 0) { rareCard = getRandom(vs); finish = 'Ultra Rare'; }
-    else if (rares.length > 0) { rareCard = getRandom(rares); finish = 'Holo'; }
+    // 18% V
+    if (vs.length > 0) { rareCard = getRandom(vs); }
+    else if (rares.length > 0) { rareCard = getRandom(rares); }
   } else if (rand < 0.50) {
-    if (rares.length > 0) { rareCard = getRandom(rares); finish = 'Holo'; }
+    // 21% Holo Rare
+    if (rares.length > 0) { rareCard = getRandom(rares); }
   } else {
-    if (rares.length > 0) { rareCard = getRandom(rares); finish = 'Standard'; }
+    // 50% Standard Rare
+    if (rares.length > 0) { rareCard = getRandom(rares); }
   }
   
   // Fallbacks
   if (!rareCard) {
     rareCard = getRandom(rares) || getRandom(cards);
-    finish = 'Standard';
   }
   
-  if (rareCard) pack.push({ ...rareCard, finish });
+  if (rareCard) {
+    const finish = determineFinish(rareCard, 'rare');
+    pack.push({ ...rareCard, finish });
+  }
   
   return pack;
 }
