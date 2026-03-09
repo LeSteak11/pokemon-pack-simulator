@@ -1,0 +1,5 @@
+{
+  "name": "Pokémon Pack Simulator",
+  "description": "Simulate opening Pokémon booster packs from uploaded checklist PDFs.",
+  "requestFramePermissions": []
+}
