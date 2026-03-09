@@ -1,6 +1,8 @@
 // Pokémon TCG API Integration Layer
 // API Documentation: https://docs.pokemontcg.io/
 
+import type { Rarity } from '../types';
+
 const BASE_URL = 'https://api.pokemontcg.io/v2';
 
 export interface APICard {
@@ -156,8 +158,8 @@ export async function enrichCardsWithAPI(
 /**
  * Map API rarity to our internal rarity system
  */
-export function mapAPIRarityToInternal(apiRarity: string): string {
-  const rarityMap: Record<string, string> = {
+export function mapAPIRarityToInternal(apiRarity: string): Rarity {
+  const rarityMap: Record<string, Rarity> = {
     'Common': 'Common',
     'Uncommon': 'Uncommon',
     'Rare': 'Rare',

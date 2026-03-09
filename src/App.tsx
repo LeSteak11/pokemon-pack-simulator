@@ -9,6 +9,8 @@ import SetUploader from './components/SetUploader';
 import PackOpener from './components/PackOpener';
 import PackResults from './components/PackResults';
 import CollectionTable from './components/CollectionTable';
+import SetSearchModal from './components/SetSearchModal';
+import { Database } from 'lucide-react';
 
 export default function App() {
   const setManager = useSetManager();
@@ -16,6 +18,7 @@ export default function App() {
   
   const [currentPack, setCurrentPack] = useState<Card[]>([]);
   const [saveToInventory, setSaveToInventory] = useState(true);
+  const [showSearchModal, setShowSearchModal] = useState(false);
 
   const handleOpenPack = () => {
     if (!setManager.activeSet || setManager.activeSet.cards.length === 0) return;
@@ -32,10 +35,17 @@ export default function App() {
     setManager.addSet(
       pdfUpload.previewState.setName,
       pdfUpload.previewState.baseSize,
-      pdfUpload.previewState.cards
+      pdfUpload.previewState.cards,
+      pdfUpload.previewState.apiSetId || undefined
     );
     setCurrentPack([]);
     pdfUpload.confirmPreview();
+  };
+
+  const handleSelectSetFromSearch = (setName: string, apiSetId: string, cards: Card[]) => {
+    setManager.addSet(setName, cards.length, cards, apiSetId);
+    setCurrentPack([]);
+    setShowSearchModal(false);
   };
 
   const handleSetChange = (setId: string) => {
@@ -55,7 +65,7 @@ export default function App() {
         
         <header className="text-center space-y-2">
           <h1 className="text-4xl font-bold tracking-tight text-indigo-900">Pokémon Pack Simulator</h1>
-          <p className="text-slate-500">Upload a set checklist PDF to start opening packs and building your collection.</p>
+          <p className="text-slate-500">Upload a set checklist PDF or search for an official set from the Pokémon TCG API.</p>
         </header>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -74,6 +84,18 @@ export default function App() {
               error={pdfUpload.error}
               onClearError={() => pdfUpload.setError(null)}
             />
+
+            {/* API Set Search Button */}
+            <div className="bg-white p-4 rounded-lg shadow border border-slate-200">
+              <h2 className="text-lg font-semibold mb-3">Or Search API</h2>
+              <button
+                onClick={() => setShowSearchModal(true)}
+                className="w-full px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 flex items-center justify-center gap-2"
+              >
+                <Database size={20} />
+                Search Sets
+              </button>
+            </div>
 
             <PackOpener
               activeSet={setManager.activeSet}
@@ -109,8 +131,13 @@ export default function App() {
           onUpdateCard={pdfUpload.updatePreviewCard}
           onDeleteCard={pdfUpload.deletePreviewCard}
         />
+
+        <SetSearchModal
+          isOpen={showSearchModal}
+          onClose={() => setShowSearchModal(false)}
+          onSelectSet={handleSelectSetFromSearch}
+        />
       </div>
     </div>
   );
 }
-

@@ -30,14 +30,15 @@ export function useSetManager() {
 
   const activeSet = savedSets.find(s => s.id === activeSetId) || null;
 
-  const addSet = (setName: string, baseSetSize: number, cards: Card[]) => {
+  const addSet = (setName: string, baseSetSize: number, cards: Card[], apiSetId?: string) => {
     const newSet: SavedSet = {
       id: Date.now().toString(),
       name: setName,
       baseSetSize: baseSetSize,
       cards: cards,
       collection: [],
-      packsOpened: 0
+      packsOpened: 0,
+      apiSetId: apiSetId
     };
     
     setSavedSets(prev => [...prev, newSet]);
