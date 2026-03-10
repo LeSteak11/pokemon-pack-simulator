@@ -70,7 +70,17 @@ export default function App() {
     setCurrentPack([]);
   };
 
-  const currentScore = currentPack.length > 0 ? calculatePackScore(currentPack) : 0;
+  const currentScore = currentPack.length > 0 ? calculatePackScore(currentPack) : {
+    baseCards: 0,
+    marketValue: 0,
+    hpBonus: 0,
+    typeSynergy: 0,
+    specialCards: 0,
+    varietyBonus: 0,
+    comboBonus: 0,
+    total: 0,
+    packValue: 0
+  };
   const collectionStats = setManager.activeSet ? {
     unique: setManager.activeSet.collection.length,
     total: setManager.activeSet.collection.reduce((acc, c) => acc + c.count, 0)

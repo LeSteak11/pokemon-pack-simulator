@@ -35,14 +35,23 @@ export function usePDFUpload() {
         return false;
       }
       
-      // Try to enrich with API data
+      // Show preview immediately, enrich with API in background
+      setPreviewCards(parsedCards);
+      setPreviewSetName(setName.trim());
+      setPreviewBaseSize(baseSize);
+      setShowPreview(true);
+      
+      // Try to enrich with API data in background
       let enrichedCards = parsedCards;
       let foundSetId: string | null = null;
       
-      try {
-        console.log(`🔍 Searching API for set: "${setName}"`);
-        // Search for the set by name
-        const sets = await searchSets(setName);
+      console.log(`🔍 Starting background API enrichment for: "${setName}"`);
+      
+      // Do API enrichment asynchronously without blocking
+      (async () => {
+        try {
+          console.log(`🔍 Searching API for set: "${setName}"`);
+          const sets = await searchSets(setName);
         
         if (sets.length > 0) {
           // Use the first match (most recent if multiple)
@@ -69,11 +78,13 @@ export function usePDFUpload() {
                 apiData: {
                   cardId: apiCard.id,
                   supertype: apiCard.supertype,
+                  subtypes: apiCard.subtypes,
                   types: apiCard.types,
                   hp: apiCard.hp,
                   apiRarity: apiCard.rarity,
                   allowedFinishes: determineAllowedFinishes(apiCard.rarity),
                   imageUrl: apiCard.images?.small,
+                  tcgplayer: apiCard.tcgplayer,
                   setInfo: {
                     id: apiSet.id,
                     name: apiSet.name,
@@ -86,19 +97,19 @@ export function usePDFUpload() {
             
             return card; // Keep original if no API match
           });
+          
+          // Update preview with enriched data
+          console.log(`✅ API enrichment complete, updating preview...`);
+          setPreviewCards(enrichedCards);
+          setApiSetId(foundSetId);
         } else {
           console.log('⚠️ No API match found, using heuristic rarity detection');
         }
       } catch (apiError) {
         console.warn('⚠️ API enrichment failed, falling back to heuristics:', apiError);
       }
+      })();
       
-      // Show preview modal
-      setPreviewCards(enrichedCards);
-      setPreviewSetName(setName.trim());
-      setPreviewBaseSize(baseSize);
-      setApiSetId(foundSetId);
-      setShowPreview(true);
       return true;
       
     } catch (err) {

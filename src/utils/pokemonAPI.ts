@@ -56,10 +56,19 @@ const cache = {
  */
 export async function searchSets(query: string): Promise<APISet[]> {
   try {
+    // Pokemon TCG API uses simple wildcard, not quoted
     const response = await fetch(
-      `${BASE_URL}/sets?q=name:"*${query}*"&orderBy=-releaseDate`
+      `${BASE_URL}/sets?q=name:*${query}*&orderBy=-releaseDate`,
+      { headers: { 'Accept': 'application/json' } }
     );
+    
+    if (!response.ok) {
+      console.error(`API error: ${response.status} ${response.statusText}`);
+      return [];
+    }
+    
     const data = await response.json();
+    console.log(`🔍 API Search for "${query}" returned ${data.data?.length || 0} results`);
     return data.data || [];
   } catch (error) {
     console.error('Error searching sets:', error);

@@ -14,18 +14,29 @@ export default function SetSearchModal({ isOpen, onClose, onSelectSet }: SetSear
   const [results, setResults] = useState<APISet[]>([]);
   const [loading, setLoading] = useState(false);
   const [importing, setImporting] = useState<string | null>(null);
+  const [hasSearched, setHasSearched] = useState(false);
 
   if (!isOpen) return null;
 
   const handleSearch = async () => {
     if (!query.trim()) return;
     
+    console.log(`🔍 Searching for sets with query: "${query}"`);
     setLoading(true);
+    setResults([]); // Clear previous results
+    setHasSearched(true);
+    
     try {
       const sets = await searchSets(query);
+      console.log(`✅ Search complete, found ${sets.length} sets`);
       setResults(sets);
+      
+      if (sets.length === 0) {
+        console.log('⚠️ No sets found. Try a different search term.');
+      }
     } catch (error) {
-      console.error('Search error:', error);
+      console.error('❌ Search error:', error);
+      alert(`Search failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
     } finally {
       setLoading(false);
     }
@@ -46,11 +57,13 @@ export default function SetSearchModal({ isOpen, onClose, onSelectSet }: SetSear
         apiData: {
           cardId: apiCard.id,
           supertype: apiCard.supertype,
+          subtypes: apiCard.subtypes,
           types: apiCard.types,
           hp: apiCard.hp,
           apiRarity: apiCard.rarity,
           allowedFinishes: determineAllowedFinishes(apiCard.rarity),
           imageUrl: apiCard.images?.small,
+          tcgplayer: apiCard.tcgplayer,
           setInfo: {
             id: set.id,
             name: set.name,
@@ -106,11 +119,42 @@ export default function SetSearchModal({ isOpen, onClose, onSelectSet }: SetSear
 
         {/* Results */}
         <div className="flex-1 overflow-y-auto p-6">
-          {results.length === 0 && !loading && (
+          {!hasSearched && results.length === 0 && !loading && (
             <div className="text-center text-gray-500 py-12">
               <Search size={48} className="mx-auto mb-4 opacity-50" />
-              <p>Search for a Pokémon TCG set to import</p>
-              <p className="text-sm mt-2">Try searching for "Base Set", "Evolving Skies", or "Crown Zenith"</p>
+              <p className="font-medium mb-2">Search for a Pokémon TCG set to import</p>
+              <p className="text-sm mb-4">Try these popular sets:</p>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {['Base Set', 'Crown Zenith', 'Scarlet Violet', 'Paldea Evolved', 'Obsidian Flames'].map(suggestion => (
+                  <button
+                    key={suggestion}
+                    onClick={async () => {
+                      setQuery(suggestion);
+                      setHasSearched(true);
+                      setLoading(true);
+                      try {
+                        const sets = await searchSets(suggestion);
+                        setResults(sets);
+                      } catch (error) {
+                        console.error('Search error:', error);
+                      } finally {
+                        setLoading(false);
+                      }
+                    }}
+                    className="px-3 py-1.5 bg-blue-100 text-blue-700 rounded-lg text-sm hover:bg-blue-200"
+                  >
+                    {suggestion}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+          
+          {hasSearched && results.length === 0 && !loading && (
+            <div className="text-center text-gray-500 py-12">
+              <Search size={48} className="mx-auto mb-4 opacity-50" />
+              <p className="font-medium mb-2">No sets found for "{query}"</p>
+              <p className="text-sm">Try a different search term or check your spelling</p>
             </div>
           )}
 
