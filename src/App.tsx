@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card } from './types';
-import { simulatePack, calculatePackScore } from './utils/packSimulator';
+import { simulatePack, calculatePackScore, DEFAULT_PACK_CONFIG } from './utils/packSimulator';
 import { useSetManager } from './hooks/useSetManager';
 import { usePDFUpload } from './hooks/usePDFUpload';
 import PreviewModal from './components/PreviewModal';
@@ -38,7 +38,8 @@ export default function App() {
   const handleOpenPack = () => {
     if (!setManager.activeSet || !setManager.activeSet.rarityPools || setManager.activeSet.cards.length === 0) return;
     
-    const pack = simulatePack(setManager.activeSet.rarityPools);
+    const config = setManager.activeSet.packConfig || DEFAULT_PACK_CONFIG;
+    const pack = simulatePack(setManager.activeSet.rarityPools, config);
     setCurrentPack(pack);
     
     if (saveToInventory && setManager.activeSetId) {

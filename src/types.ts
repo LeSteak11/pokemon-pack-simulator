@@ -21,12 +21,35 @@ export interface RarityPools {
   secretRares: Card[];
 }
 
+export interface PackConfig {
+  slots: {
+    commons: number;
+    uncommons: number;
+    reverse: boolean;
+    rare: boolean;
+    energy: boolean;
+  };
+  reverseSlotOdds: {
+    common: number;      // 0.60 = 60%
+    uncommon: number;    // 0.30 = 30%
+    rare: number;        // 0.10 = 10%
+  };
+  rareSlotOdds: {
+    secretRare: number;  // 0.01 = 1%
+    vmax: number;        // 0.10 = 10%
+    v: number;           // 0.18 = 18%
+    holo: number;        // 0.21 = 21%
+    standard: number;    // 0.50 = 50%
+  };
+}
+
 export interface SavedSet {
   id: string;
   name: string;
   baseSetSize: number;
   cards: Card[];
   rarityPools?: RarityPools; // Built on load/import, not persisted
+  packConfig?: PackConfig;   // Pack structure configuration, uses default if not specified
   collection: CollectionItem[];
   packsOpened: number;
 }

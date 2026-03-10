@@ -1,4 +1,30 @@
-import { Card, FinishType, RarityPools } from '../types';
+import { Card, FinishType, RarityPools, PackConfig } from '../types';
+
+/**
+ * Default pack configuration matching standard Pokémon TCG pack structure
+ * (e.g., Sword & Shield era sets like Evolving Skies)
+ */
+export const DEFAULT_PACK_CONFIG: PackConfig = {
+  slots: {
+    commons: 5,
+    uncommons: 3,
+    reverse: true,
+    rare: true,
+    energy: false
+  },
+  reverseSlotOdds: {
+    common: 0.60,
+    uncommon: 0.30,
+    rare: 0.10
+  },
+  rareSlotOdds: {
+    secretRare: 0.01,
+    vmax: 0.10,
+    v: 0.18,
+    holo: 0.21,
+    standard: 0.50
+  }
+};
 
 /**
  * Build rarity-based card pools from a card list
@@ -30,7 +56,7 @@ function determineFinish(card: Card, slotType: 'standard' | 'reverse' | 'rare'):
   return 'Standard';
 }
 
-export function simulatePack(pools: RarityPools): Card[] {
+export function simulatePack(pools: RarityPools, config: PackConfig = DEFAULT_PACK_CONFIG): Card[] {
   const pack: Card[] = [];
   const usedCardNumbers = new Set<number>();
   
@@ -43,8 +69,8 @@ export function simulatePack(pools: RarityPools): Card[] {
   // Fallback to any available cards if pools are empty
   const allCards = [...pools.commons, ...pools.uncommons, ...pools.rares, ...pools.vs, ...pools.vmaxs, ...pools.secretRares];
   
-  // 5 Commons
-  for (let i = 0; i < 5; i++) {
+  // Commons (configurable count)
+  for (let i = 0; i < config.slots.commons; i++) {
     const c = getRandomExcluding(pools.commons) || getRandomExcluding(allCards);
     if (c) {
       const finish = determineFinish(c, 'standard');
@@ -53,8 +79,8 @@ export function simulatePack(pools: RarityPools): Card[] {
     }
   }
   
-  // 3 Uncommons
-  for (let i = 0; i < 3; i++) {
+  // Uncommons (configurable count)
+  for (let i = 0; i < config.slots.uncommons; i++) {
     const c = getRandomExcluding(pools.uncommons) || getRandomExcluding(allCards);
     if (c) {
       const finish = determineFinish(c, 'standard');
@@ -63,59 +89,63 @@ export function simulatePack(pools: RarityPools): Card[] {
     }
   }
   
-  // 1 Reverse Holo Slot (60% Common, 30% Uncommon, 10% Rare)
-  const revRand = Math.random();
-  let revCard: Card | null = null;
-  if (revRand < 0.60 && pools.commons.length > 0) {
-    revCard = getRandomExcluding(pools.commons);
-  } else if (revRand < 0.90 && pools.uncommons.length > 0) {
-    revCard = getRandomExcluding(pools.uncommons);
-  } else if (pools.rares.length > 0) {
-    revCard = getRandomExcluding(pools.rares);
-  }
-  if (!revCard) revCard = getRandomExcluding(allCards);
-  if (revCard) {
-    const finish = determineFinish(revCard, 'reverse');
-    pack.push({ ...revCard, finish });
-    usedCardNumbers.add(revCard.number);
-  }
-  
-  // 1 Rare Slot
-  const rand = Math.random();
-  let rareCard: Card | null = null;
-  
-  if (rand < 0.01) {
-    // 1% Secret Rare
-    if (pools.secretRares.length > 0) { rareCard = getRandomExcluding(pools.secretRares); }
-    else if (pools.vmaxs.length > 0) { rareCard = getRandomExcluding(pools.vmaxs); }
-    else if (pools.vs.length > 0) { rareCard = getRandomExcluding(pools.vs); }
-    else if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
-  } else if (rand < 0.11) {
-    // 10% VMAX/Ultra Rare
-    if (pools.vmaxs.length > 0) { rareCard = getRandomExcluding(pools.vmaxs); }
-    else if (pools.vs.length > 0) { rareCard = getRandomExcluding(pools.vs); }
-    else if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
-  } else if (rand < 0.29) {
-    // 18% V
-    if (pools.vs.length > 0) { rareCard = getRandomExcluding(pools.vs); }
-    else if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
-  } else if (rand < 0.50) {
-    // 21% Holo Rare
-    if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
-  } else {
-    // 50% Standard Rare
-    if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
+  // Reverse Holo Slot (if enabled, uses configured odds)
+  if (config.slots.reverse) {
+    const revRand = Math.random();
+    let revCard: Card | null = null;
+    if (revRand < config.reverseSlotOdds.common && pools.commons.length > 0) {
+      revCard = getRandomExcluding(pools.commons);
+    } else if (revRand < config.reverseSlotOdds.common + config.reverseSlotOdds.uncommon && pools.uncommons.length > 0) {
+      revCard = getRandomExcluding(pools.uncommons);
+    } else if (pools.rares.length > 0) {
+      revCard = getRandomExcluding(pools.rares);
+    }
+    if (!revCard) revCard = getRandomExcluding(allCards);
+    if (revCard) {
+      const finish = determineFinish(revCard, 'reverse');
+      pack.push({ ...revCard, finish });
+      usedCardNumbers.add(revCard.number);
+    }
   }
   
-  // Fallbacks
-  if (!rareCard) {
-    rareCard = getRandomExcluding(pools.rares) || getRandomExcluding(allCards);
-  }
-  
-  if (rareCard) {
-    const finish = determineFinish(rareCard, 'rare');
-    pack.push({ ...rareCard, finish });
-    usedCardNumbers.add(rareCard.number);
+  // Rare Slot (if enabled, uses configured odds)
+  if (config.slots.rare) {
+    const rand = Math.random();
+    let rareCard: Card | null = null;
+    
+    if (rand < config.rareSlotOdds.secretRare) {
+      // Secret Rare
+      if (pools.secretRares.length > 0) { rareCard = getRandomExcluding(pools.secretRares); }
+      else if (pools.vmaxs.length > 0) { rareCard = getRandomExcluding(pools.vmaxs); }
+      else if (pools.vs.length > 0) { rareCard = getRandomExcluding(pools.vs); }
+      else if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
+    } else if (rand < config.rareSlotOdds.secretRare + config.rareSlotOdds.vmax) {
+      // VMAX/Ultra Rare
+      if (pools.vmaxs.length > 0) { rareCard = getRandomExcluding(pools.vmaxs); }
+      else if (pools.vs.length > 0) { rareCard = getRandomExcluding(pools.vs); }
+      else if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
+    } else if (rand < config.rareSlotOdds.secretRare + config.rareSlotOdds.vmax + config.rareSlotOdds.v) {
+      // V
+      if (pools.vs.length > 0) { rareCard = getRandomExcluding(pools.vs); }
+      else if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
+    } else if (rand < config.rareSlotOdds.secretRare + config.rareSlotOdds.vmax + config.rareSlotOdds.v + config.rareSlotOdds.holo) {
+      // Holo Rare
+      if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
+    } else {
+      // Standard Rare
+      if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
+    }
+    
+    // Fallbacks
+    if (!rareCard) {
+      rareCard = getRandomExcluding(pools.rares) || getRandomExcluding(allCards);
+    }
+    
+    if (rareCard) {
+      const finish = determineFinish(rareCard, 'rare');
+      pack.push({ ...rareCard, finish });
+      usedCardNumbers.add(rareCard.number);
+    }
   }
   
   return pack;
