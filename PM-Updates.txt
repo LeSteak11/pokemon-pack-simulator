@@ -1,0 +1,56 @@
+PM UPDATE — CARD POOL SYSTEM & DUPLICATE PREVENTION
+Date: March 10, 2026
+================================================================================
+
+✅ COMPLETED: Card Pool System + Duplicate Card Prevention
+
+--------------------------------------------------------------------------------
+1. CARD POOL SYSTEM (Performance Optimization)
+--------------------------------------------------------------------------------
+
+CHANGE: Pre-organize cards by rarity on import instead of filtering per pack.
+
+IMPLEMENTATION:
+• RarityPools interface with 6 pools (Commons, Uncommons, Rares, V, VMAX, Secret)
+• buildRarityPools() runs once at import/load
+• simulatePack() draws from pre-computed pools
+
+IMPACT: Faster pack generation, cleaner code, same behavior
+
+VALIDATION: 100-pack test confirms correct distributions (51% common, 29.6% uncommon, etc.)
+
+FILES: types.ts, utils/packSimulator.ts, hooks/useSetManager.ts, App.tsx
+
+--------------------------------------------------------------------------------
+2. DUPLICATE CARD PREVENTION
+--------------------------------------------------------------------------------
+
+PROBLEM: Same card number could appear twice in one pack (e.g., card #209 as both reverse and rare slot)
+
+FIX: Track used card numbers during pack generation with Set, filter already-selected cards
+
+IMPACT: No duplicate card numbers within a pack (duplicates across packs still normal)
+
+VALIDATION: 100-pack test confirms all packs have unique card numbers
+
+FILES: utils/packSimulator.ts, simulate-packs.mjs
+
+--------------------------------------------------------------------------------
+COMMIT READY: YES
+--------------------------------------------------------------------------------
+
+Suggested commits:
+
+1) feat: Implement card pool system for pack simulation
+2) fix: Prevent duplicate card numbers within a single pack
+
+OR combine as: feat: Implement card pool system and duplicate card prevention
+
+--------------------------------------------------------------------------------
+FUTURE WORK (Not Blocking)
+--------------------------------------------------------------------------------
+
+• Finish validation (cards can get invalid finish types - separate enhancement)
+• Set Library UI (UX improvement, low priority)
+
+================================================================================

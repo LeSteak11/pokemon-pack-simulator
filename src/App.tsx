@@ -36,9 +36,9 @@ export default function App() {
   };
 
   const handleOpenPack = () => {
-    if (!setManager.activeSet || setManager.activeSet.cards.length === 0) return;
+    if (!setManager.activeSet || !setManager.activeSet.rarityPools || setManager.activeSet.cards.length === 0) return;
     
-    const pack = simulatePack(setManager.activeSet.cards);
+    const pack = simulatePack(setManager.activeSet.rarityPools);
     setCurrentPack(pack);
     
     if (saveToInventory && setManager.activeSetId) {

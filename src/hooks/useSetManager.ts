@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { SavedSet, Card, CollectionItem } from '../types';
+import { buildRarityPools } from '../utils/packSimulator';
 
 const STORAGE_KEY = 'pokemonPackSimulatorSets';
 
@@ -17,7 +18,11 @@ const loadFromStorage = (): SavedSet[] => {
       const parsed = JSON.parse(stored);
       if (Array.isArray(parsed)) {
         console.log(`✅ Loaded ${parsed.length} set(s) from localStorage`);
-        return parsed;
+        // Build rarity pools for each loaded set
+        return parsed.map(set => ({
+          ...set,
+          rarityPools: buildRarityPools(set.cards)
+        }));
       }
     }
   } catch (e) {
@@ -43,6 +48,7 @@ export function useSetManager() {
       name: setName,
       baseSetSize: baseSetSize,
       cards: cards,
+      rarityPools: buildRarityPools(cards),
       collection: [],
       packsOpened: 0
     };
