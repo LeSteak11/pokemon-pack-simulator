@@ -63,3 +63,19 @@ export interface SavedSet {
   collection?: CollectionItem[];
   packsOpened?: number;
 }
+
+// JSON Set Data Types
+export interface JSONCard {
+  number: string;
+  name: string;
+  rarity: string;  // JSON rarities: "Common", "Uncommon", "Rare", "Holo Rare", "Rainbow Rare", "Special Full Art", "Secret Rare"
+  category: string; // "Pokemon", "Trainer", "Energy"
+  variant: string | null; // "V", "VMAX", or null
+}
+
+export interface JSONSetData {
+  setName: string;
+  setCode: string;
+  baseSetSize: number;
+  cards: JSONCard[];
+}

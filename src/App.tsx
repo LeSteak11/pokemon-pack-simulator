@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import { Card } from './types';
+import React, { useState, useEffect } from 'react';
+import { Card, JSONSetData } from './types';
 import { simulatePack, calculatePackScore, DEFAULT_PACK_CONFIG } from './utils/packSimulator';
 import { useSetManager } from './hooks/useSetManager';
-import { usePDFUpload } from './hooks/usePDFUpload';
-import PreviewModal from './components/PreviewModal';
+import { fetchBuiltInSet } from './utils/jsonSetLoader';
 import SetSelector from './components/SetSelector';
-import SetUploader from './components/SetUploader';
+import SetLoader from './components/SetLoader';
 import PackOpener from './components/PackOpener';
 import PackResults from './components/PackResults';
 import CollectionTable from './components/CollectionTable';
@@ -14,13 +13,36 @@ import { Trash } from 'lucide-react';
 
 export default function App() {
   const setManager = useSetManager();
-  const pdfUpload = usePDFUpload();
   
   const [currentPack, setCurrentPack] = useState<Card[]>([]);
   const [saveToInventory, setSaveToInventory] = useState(true);
+  const [isLoadingSet, setIsLoadingSet] = useState(false);
+  const [setLoadError, setSetLoadError] = useState<string | null>(null);
+
+  // Auto-load Evolving Skies on first visit if no sets exist
+  useEffect(() => {
+    const autoLoadEvolvingSkies = async () => {
+      if (setManager.savedSets.length === 0) {
+        console.log('📦 No sets found - auto-loading Evolving Skies...');
+        setIsLoadingSet(true);
+        try {
+          const jsonData = await fetchBuiltInSet('evolving-skies.json');
+          setManager.addSetFromJSON(jsonData);
+          console.log('✅ Evolving Skies loaded successfully!');
+        } catch (error) {
+          console.error('❌ Failed to auto-load Evolving Skies:', error);
+          setSetLoadError('Failed to load default set. Please load a set manually.');
+        } finally {
+          setIsLoadingSet(false);
+        }
+      }
+    };
+    
+    autoLoadEvolvingSkies();
+  }, []); // Only run once on mount
 
   // Debug logging
-  React.useEffect(() => {
+  useEffect(() => {
     console.log('🎮 Pokémon Pack Simulator loaded!');
     console.log('📊 Stats:', {
       savedSets: setManager.savedSets.length,
@@ -61,14 +83,21 @@ export default function App() {
     }
   };
 
-  const handleConfirmPreview = () => {
-    setManager.addSet(
-      pdfUpload.previewState.setName,
-      pdfUpload.previewState.baseSize,
-      pdfUpload.previewState.cards
-    );
-    setCurrentPack([]);
-    pdfUpload.confirmPreview();
+  const handleLoadSet = async (jsonData: JSONSetData) => {
+    setIsLoadingSet(true);
+    setSetLoadError(null);
+    
+    try {
+      setManager.addSetFromJSON(jsonData);
+      setCurrentPack([]);
+      console.log('✅ Set loaded successfully!');
+    } catch (error) {
+      const errorMsg = error instanceof Error ? error.message : 'Failed to load set';
+      setSetLoadError(errorMsg);
+      console.error('❌ Failed to load set:', error);
+    } finally {
+      setIsLoadingSet(false);
+    }
   };
 
   const handleSetChange = (setId: string) => {
@@ -118,13 +147,13 @@ export default function App() {
         
         <header className="text-center space-y-2">
           <h1 className="text-4xl font-bold tracking-tight text-indigo-900">Pokémon Pack Simulator</h1>
-          <p className="text-slate-500">Upload a set checklist PDF to start opening packs and building your collection.</p>
+          <p className="text-slate-500">Load a set to start opening packs and building your collection.</p>
           {/* Debug Info */}
           <div className="text-xs text-slate-400 mt-2">
             {setManager.savedSets.length > 0 ? (
               <span>{setManager.savedSets.length} set(s) loaded</span>
             ) : (
-              <span>No sets loaded - upload a PDF checklist</span>
+              <span>Loading Evolving Skies...</span>
             )}
           </div>
         </header>
@@ -139,11 +168,11 @@ export default function App() {
               onDeleteSet={setManager.deleteSet}
             />
 
-            <SetUploader
-              onUpload={pdfUpload.uploadPDF}
-              isLoading={pdfUpload.isLoading}
-              error={pdfUpload.error}
-              onClearError={() => pdfUpload.setError(null)}
+            <SetLoader
+              onLoadSet={handleLoadSet}
+              isLoading={isLoadingSet}
+              error={setLoadError}
+              onClearError={() => setSetLoadError(null)}
             />
 
             <PackOpener
@@ -196,16 +225,6 @@ export default function App() {
           </div>
         </div>
 
-        <PreviewModal
-          isOpen={pdfUpload.previewState.isOpen}
-          cards={pdfUpload.previewState.cards}
-          setName={pdfUpload.previewState.setName}
-          baseSize={pdfUpload.previewState.baseSize}
-          onConfirm={handleConfirmPreview}
-          onCancel={pdfUpload.cancelPreview}
-          onUpdateCard={pdfUpload.updatePreviewCard}
-          onDeleteCard={pdfUpload.deletePreviewCard}
-        />
       </div>
     </div>
   );

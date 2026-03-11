@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { SavedSet, Card, CollectionItem, InventoryProfile } from '../types';
+import { SavedSet, Card, CollectionItem, InventoryProfile, JSONSetData } from '../types';
 import { buildRarityPools } from '../utils/packSimulator';
+import { loadSetFromJSON } from '../utils/jsonSetLoader';
 
 const STORAGE_KEY = 'pokemonPackSimulatorSets';
 
@@ -90,6 +91,27 @@ export function useSetManager() {
     setSavedSets(updatedSets);
     setActiveSetId(newSet.id);
     saveToStorage(updatedSets);
+  };
+
+  const addSetFromJSON = (jsonData: JSONSetData) => {
+    const { name, code, baseSetSize, cards } = loadSetFromJSON(jsonData);
+    
+    const newSet: SavedSet = {
+      id: Date.now().toString(),
+      name: `${name} (${code})`,
+      baseSetSize: baseSetSize,
+      cards: cards,
+      rarityPools: buildRarityPools(cards),
+      profiles: [],
+      activeProfileId: null
+    };
+    
+    const updatedSets = [...savedSets, newSet];
+    setSavedSets(updatedSets);
+    setActiveSetId(newSet.id);
+    saveToStorage(updatedSets);
+    
+    console.log(`✅ Added set: ${newSet.name}`);
   };
 
   const deleteSet = (id: string) => {
@@ -222,6 +244,7 @@ export function useSetManager() {
     activeProfile,
     setActiveSetId,
     addSet,
+    addSetFromJSON,
     deleteSet,
     createProfile,
     setActiveProfile,
