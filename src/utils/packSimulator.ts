@@ -42,18 +42,76 @@ export function buildRarityPools(cards: Card[]): RarityPools {
 }
 
 /**
- * Determine the appropriate finish for a card based on rarity and slot context
+ * Returns all valid finish types for a card based on its rarity.
+ * This enforces real TCG print variant rules.
  */
-function determineFinish(card: Card, slotType: 'standard' | 'reverse' | 'rare'): FinishType {
-  if (slotType === 'reverse') return 'Reverse Holo';
+function getValidFinishes(card: Card): FinishType[] {
+  switch (card.rarity) {
+    case 'Common':
+    case 'Uncommon':
+      // Commons and Uncommons can only be Standard or Reverse Holo
+      return ['Standard', 'Reverse Holo'];
+    
+    case 'Rare':
+      // Rare cards can be Standard, Reverse Holo, or Holo
+      return ['Standard', 'Reverse Holo', 'Holo'];
+    
+    case 'V':
+    case 'VMAX':
+      // V and VMAX cards only exist as Ultra Rare
+      return ['Ultra Rare'];
+    
+    case 'Secret Rare':
+      // Secret Rares only exist with Secret Rare finish
+      return ['Secret Rare'];
+    
+    default:
+      // Fallback to Standard for unknown rarities
+      return ['Standard'];
+  }
+}
+
+/**
+ * Selects a valid finish for a card, using the preferred finish if legal,
+ * otherwise falling back to a valid alternative.
+ */
+function selectValidFinish(card: Card, preferredFinish: FinishType): FinishType {
+  const validFinishes = getValidFinishes(card);
   
-  if (slotType === 'rare') {
-    if (card.rarity === 'Secret Rare') return 'Secret Rare';
-    if (card.rarity === 'VMAX' || card.rarity === 'V') return 'Ultra Rare';
-    if (card.rarity === 'Rare') return 'Holo';
+  // If preferred finish is valid, use it
+  if (validFinishes.includes(preferredFinish)) {
+    return preferredFinish;
   }
   
-  return 'Standard';
+  // Fallback priority: Standard (if valid) > first available valid finish
+  if (validFinishes.includes('Standard')) {
+    return 'Standard';
+  }
+  
+  // Return first valid finish (guaranteed to exist)
+  return validFinishes[0];
+}
+
+/**
+ * Determine the appropriate finish for a card based on rarity and slot context.
+ * Now includes validation to ensure only real card + finish combinations are produced.
+ */
+function determineFinish(card: Card, slotType: 'standard' | 'reverse' | 'rare'): FinishType {
+  let preferredFinish: FinishType;
+  
+  if (slotType === 'reverse') {
+    preferredFinish = 'Reverse Holo';
+  } else if (slotType === 'rare') {
+    if (card.rarity === 'Secret Rare') preferredFinish = 'Secret Rare';
+    else if (card.rarity === 'VMAX' || card.rarity === 'V') preferredFinish = 'Ultra Rare';
+    else if (card.rarity === 'Rare') preferredFinish = 'Holo';
+    else preferredFinish = 'Standard';
+  } else {
+    preferredFinish = 'Standard';
+  }
+  
+  // Validate and return legal finish
+  return selectValidFinish(card, preferredFinish);
 }
 
 export function simulatePack(pools: RarityPools, config: PackConfig = DEFAULT_PACK_CONFIG): Card[] {

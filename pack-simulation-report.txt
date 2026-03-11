@@ -6,1404 +6,1404 @@ Set Size: 233 cards
 Pools: 140 Commons, 59 Uncommons, 23 Rares, 7 V, 3 VMAX, 1 Secret
 
 ================================================================================
-PACK #1 - Score: 25 pts
+PACK #1 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 79            | Common       | Standard
-  2. Common 18            | Common       | Standard
-  3. Common 130           | Common       | Standard
-  4. Common 29            | Common       | Standard
-  5. Common 48            | Common       | Standard
-  6. Uncommon 192         | Uncommon     | Standard
-  7. Uncommon 148         | Uncommon     | Standard
-  8. Uncommon 147         | Uncommon     | Standard
-  9. Common 17            | Common       | Reverse Holo
-  10. Rare 219             | Rare         | Holo
+  1. Common 39            | Common       | Standard
+  2. Common 85            | Common       | Standard
+  3. Common 99            | Common       | Standard
+  4. Common 139           | Common       | Standard
+  5. Common 21            | Common       | Standard
+  6. Uncommon 150         | Uncommon     | Standard
+  7. Uncommon 144         | Uncommon     | Standard
+  8. Uncommon 193         | Uncommon     | Standard
+  9. Uncommon 161         | Uncommon     | Reverse Holo
+  10. Rare 203             | Rare         | Holo
 
 ================================================================================
 PACK #2 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 109           | Common       | Standard
-  2. Common 46            | Common       | Standard
-  3. Common 102           | Common       | Standard
-  4. Common 29            | Common       | Standard
-  5. Common 111           | Common       | Standard
-  6. Uncommon 147         | Uncommon     | Standard
-  7. Uncommon 167         | Uncommon     | Standard
-  8. Uncommon 176         | Uncommon     | Standard
-  9. Common 125           | Common       | Reverse Holo
-  10. Rare 217             | Rare         | Holo
+  1. Common 3             | Common       | Standard
+  2. Common 71            | Common       | Standard
+  3. Common 75            | Common       | Standard
+  4. Common 130           | Common       | Standard
+  5. Common 127           | Common       | Standard
+  6. Uncommon 146         | Uncommon     | Standard
+  7. Uncommon 162         | Uncommon     | Standard
+  8. Uncommon 199         | Uncommon     | Standard
+  9. Common 76            | Common       | Reverse Holo
+  10. Rare 204             | Rare         | Holo
 
 ================================================================================
-PACK #3 - Score: 25 pts
+PACK #3 - Score: 47 pts
 --------------------------------------------------------------------------------
-  1. Common 88            | Common       | Standard
-  2. Common 42            | Common       | Standard
-  3. Common 96            | Common       | Standard
-  4. Common 31            | Common       | Standard
-  5. Common 2             | Common       | Standard
-  6. Uncommon 171         | Uncommon     | Standard
+  1. Common 105           | Common       | Standard
+  2. Common 32            | Common       | Standard
+  3. Common 124           | Common       | Standard
+  4. Common 110           | Common       | Standard
+  5. Common 109           | Common       | Standard
+  6. Uncommon 160         | Uncommon     | Standard
   7. Uncommon 141         | Uncommon     | Standard
-  8. Uncommon 157         | Uncommon     | Standard
-  9. Common 61            | Common       | Reverse Holo
-  10. Rare 201             | Rare         | Holo
+  8. Uncommon 151         | Uncommon     | Standard
+  9. Uncommon 170         | Uncommon     | Reverse Holo
+  10. V 228                | V            | Ultra Rare
 
 ================================================================================
-PACK #4 - Score: 27 pts
+PACK #4 - Score: 47 pts
 --------------------------------------------------------------------------------
-  1. Common 130           | Common       | Standard
-  2. Common 31            | Common       | Standard
-  3. Common 44            | Common       | Standard
-  4. Common 21            | Common       | Standard
-  5. Common 18            | Common       | Standard
-  6. Uncommon 189         | Uncommon     | Standard
+  1. Common 120           | Common       | Standard
+  2. Common 65            | Common       | Standard
+  3. Common 131           | Common       | Standard
+  4. Common 94            | Common       | Standard
+  5. Common 40            | Common       | Standard
+  6. Uncommon 160         | Uncommon     | Standard
+  7. Uncommon 193         | Uncommon     | Standard
+  8. Uncommon 142         | Uncommon     | Standard
+  9. Uncommon 151         | Uncommon     | Reverse Holo
+  10. V 227                | V            | Ultra Rare
+
+================================================================================
+PACK #5 - Score: 28 pts
+--------------------------------------------------------------------------------
+  1. Common 124           | Common       | Standard
+  2. Common 136           | Common       | Standard
+  3. Common 86            | Common       | Standard
+  4. Common 107           | Common       | Standard
+  5. Common 116           | Common       | Standard
+  6. Uncommon 172         | Uncommon     | Standard
+  7. Uncommon 150         | Uncommon     | Standard
+  8. Uncommon 148         | Uncommon     | Standard
+  9. Rare 217             | Rare         | Reverse Holo
+  10. Rare 202             | Rare         | Holo
+
+================================================================================
+PACK #6 - Score: 65 pts
+--------------------------------------------------------------------------------
+  1. Common 101           | Common       | Standard
+  2. Common 126           | Common       | Standard
+  3. Common 28            | Common       | Standard
+  4. Common 1             | Common       | Standard
+  5. Common 41            | Common       | Standard
+  6. Uncommon 142         | Uncommon     | Standard
   7. Uncommon 163         | Uncommon     | Standard
-  8. Uncommon 177         | Uncommon     | Standard
-  9. Uncommon 168         | Uncommon     | Reverse Holo
+  8. Uncommon 152         | Uncommon     | Standard
+  9. Common 25            | Common       | Reverse Holo
+  10. VMAX 231             | VMAX         | Ultra Rare
+
+================================================================================
+PACK #7 - Score: 25 pts
+--------------------------------------------------------------------------------
+  1. Common 67            | Common       | Standard
+  2. Common 128           | Common       | Standard
+  3. Common 110           | Common       | Standard
+  4. Common 97            | Common       | Standard
+  5. Common 42            | Common       | Standard
+  6. Uncommon 157         | Uncommon     | Standard
+  7. Uncommon 187         | Uncommon     | Standard
+  8. Uncommon 190         | Uncommon     | Standard
+  9. Common 64            | Common       | Reverse Holo
+  10. Rare 207             | Rare         | Holo
+
+================================================================================
+PACK #8 - Score: 100 pts
+--------------------------------------------------------------------------------
+  1. Common 51            | Common       | Standard
+  2. Common 127           | Common       | Standard
+  3. Common 44            | Common       | Standard
+  4. Common 82            | Common       | Standard
+  5. Common 55            | Common       | Standard
+  6. Uncommon 163         | Uncommon     | Standard
+  7. Uncommon 182         | Uncommon     | Standard
+  8. Uncommon 198         | Uncommon     | Standard
+  9. Common 101           | Common       | Reverse Holo
+  10. Secret Rare 233      | Secret Rare  | Secret Rare
+
+================================================================================
+PACK #9 - Score: 27 pts
+--------------------------------------------------------------------------------
+  1. Common 43            | Common       | Standard
+  2. Common 47            | Common       | Standard
+  3. Common 115           | Common       | Standard
+  4. Common 56            | Common       | Standard
+  5. Common 132           | Common       | Standard
+  6. Uncommon 182         | Uncommon     | Standard
+  7. Uncommon 196         | Uncommon     | Standard
+  8. Uncommon 157         | Uncommon     | Standard
+  9. Uncommon 176         | Uncommon     | Reverse Holo
+  10. Rare 221             | Rare         | Holo
+
+================================================================================
+PACK #10 - Score: 27 pts
+--------------------------------------------------------------------------------
+  1. Common 94            | Common       | Standard
+  2. Common 104           | Common       | Standard
+  3. Common 112           | Common       | Standard
+  4. Common 57            | Common       | Standard
+  5. Common 110           | Common       | Standard
+  6. Uncommon 177         | Uncommon     | Standard
+  7. Uncommon 143         | Uncommon     | Standard
+  8. Uncommon 185         | Uncommon     | Standard
+  9. Uncommon 171         | Uncommon     | Reverse Holo
+  10. Rare 215             | Rare         | Holo
+
+================================================================================
+PACK #11 - Score: 27 pts
+--------------------------------------------------------------------------------
+  1. Common 121           | Common       | Standard
+  2. Common 135           | Common       | Standard
+  3. Common 115           | Common       | Standard
+  4. Common 89            | Common       | Standard
+  5. Common 133           | Common       | Standard
+  6. Uncommon 159         | Uncommon     | Standard
+  7. Uncommon 143         | Uncommon     | Standard
+  8. Uncommon 160         | Uncommon     | Standard
+  9. Uncommon 145         | Uncommon     | Reverse Holo
   10. Rare 218             | Rare         | Holo
 
 ================================================================================
-PACK #5 - Score: 25 pts
+PACK #12 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 117           | Common       | Standard
-  2. Common 30            | Common       | Standard
-  3. Common 7             | Common       | Standard
-  4. Common 37            | Common       | Standard
-  5. Common 17            | Common       | Standard
-  6. Uncommon 143         | Uncommon     | Standard
-  7. Uncommon 196         | Uncommon     | Standard
-  8. Uncommon 175         | Uncommon     | Standard
-  9. Common 93            | Common       | Reverse Holo
-  10. Rare 200             | Rare         | Holo
+  1. Common 11            | Common       | Standard
+  2. Common 19            | Common       | Standard
+  3. Common 26            | Common       | Standard
+  4. Common 130           | Common       | Standard
+  5. Common 43            | Common       | Standard
+  6. Uncommon 142         | Uncommon     | Standard
+  7. Uncommon 148         | Uncommon     | Standard
+  8. Uncommon 176         | Uncommon     | Standard
+  9. Common 72            | Common       | Reverse Holo
+  10. Rare 221             | Rare         | Holo
 
 ================================================================================
-PACK #6 - Score: 27 pts
+PACK #13 - Score: 67 pts
 --------------------------------------------------------------------------------
-  1. Common 64            | Common       | Standard
-  2. Common 58            | Common       | Standard
-  3. Common 15            | Common       | Standard
-  4. Common 44            | Common       | Standard
-  5. Common 71            | Common       | Standard
+  1. Common 49            | Common       | Standard
+  2. Common 127           | Common       | Standard
+  3. Common 6             | Common       | Standard
+  4. Common 80            | Common       | Standard
+  5. Common 89            | Common       | Standard
   6. Uncommon 191         | Uncommon     | Standard
-  7. Uncommon 142         | Uncommon     | Standard
-  8. Uncommon 151         | Uncommon     | Standard
-  9. Uncommon 152         | Uncommon     | Reverse Holo
-  10. Rare 215             | Rare         | Holo
-
-================================================================================
-PACK #7 - Score: 65 pts
---------------------------------------------------------------------------------
-  1. Common 48            | Common       | Standard
-  2. Common 46            | Common       | Standard
-  3. Common 104           | Common       | Standard
-  4. Common 115           | Common       | Standard
-  5. Common 79            | Common       | Standard
-  6. Uncommon 150         | Uncommon     | Standard
-  7. Uncommon 181         | Uncommon     | Standard
-  8. Uncommon 151         | Uncommon     | Standard
-  9. Common 101           | Common       | Reverse Holo
-  10. VMAX 232             | VMAX         | Ultra Rare
-
-================================================================================
-PACK #8 - Score: 25 pts
---------------------------------------------------------------------------------
-  1. Common 91            | Common       | Standard
-  2. Common 107           | Common       | Standard
-  3. Common 123           | Common       | Standard
-  4. Common 124           | Common       | Standard
-  5. Common 71            | Common       | Standard
-  6. Uncommon 181         | Uncommon     | Standard
-  7. Uncommon 159         | Uncommon     | Standard
-  8. Uncommon 142         | Uncommon     | Standard
-  9. Common 47            | Common       | Reverse Holo
-  10. Rare 217             | Rare         | Holo
-
-================================================================================
-PACK #9 - Score: 45 pts
---------------------------------------------------------------------------------
-  1. Common 4             | Common       | Standard
-  2. Common 119           | Common       | Standard
-  3. Common 38            | Common       | Standard
-  4. Common 114           | Common       | Standard
-  5. Common 106           | Common       | Standard
-  6. Uncommon 159         | Uncommon     | Standard
-  7. Uncommon 187         | Uncommon     | Standard
-  8. Uncommon 181         | Uncommon     | Standard
-  9. Common 74            | Common       | Reverse Holo
-  10. V 224                | V            | Ultra Rare
-
-================================================================================
-PACK #10 - Score: 25 pts
---------------------------------------------------------------------------------
-  1. Common 10            | Common       | Standard
-  2. Common 133           | Common       | Standard
-  3. Common 53            | Common       | Standard
-  4. Common 105           | Common       | Standard
-  5. Common 59            | Common       | Standard
-  6. Uncommon 184         | Uncommon     | Standard
-  7. Uncommon 181         | Uncommon     | Standard
-  8. Uncommon 166         | Uncommon     | Standard
-  9. Common 25            | Common       | Reverse Holo
-  10. Rare 209             | Rare         | Holo
-
-================================================================================
-PACK #11 - Score: 25 pts
---------------------------------------------------------------------------------
-  1. Common 15            | Common       | Standard
-  2. Common 10            | Common       | Standard
-  3. Common 134           | Common       | Standard
-  4. Common 93            | Common       | Standard
-  5. Common 78            | Common       | Standard
-  6. Uncommon 173         | Uncommon     | Standard
-  7. Uncommon 161         | Uncommon     | Standard
-  8. Uncommon 144         | Uncommon     | Standard
-  9. Common 62            | Common       | Reverse Holo
-  10. Rare 205             | Rare         | Holo
-
-================================================================================
-PACK #12 - Score: 28 pts
---------------------------------------------------------------------------------
-  1. Common 72            | Common       | Standard
-  2. Common 87            | Common       | Standard
-  3. Common 52            | Common       | Standard
-  4. Common 53            | Common       | Standard
-  5. Common 86            | Common       | Standard
-  6. Uncommon 185         | Uncommon     | Standard
-  7. Uncommon 156         | Uncommon     | Standard
-  8. Uncommon 163         | Uncommon     | Standard
-  9. Rare 215             | Rare         | Reverse Holo
-  10. Rare 222             | Rare         | Holo
-
-================================================================================
-PACK #13 - Score: 25 pts
---------------------------------------------------------------------------------
-  1. Common 16            | Common       | Standard
-  2. Common 93            | Common       | Standard
-  3. Common 115           | Common       | Standard
-  4. Common 104           | Common       | Standard
-  5. Common 138           | Common       | Standard
-  6. Uncommon 184         | Uncommon     | Standard
-  7. Uncommon 143         | Uncommon     | Standard
-  8. Uncommon 153         | Uncommon     | Standard
-  9. Common 59            | Common       | Reverse Holo
-  10. Rare 215             | Rare         | Holo
+  7. Uncommon 183         | Uncommon     | Standard
+  8. Uncommon 194         | Uncommon     | Standard
+  9. Uncommon 149         | Uncommon     | Reverse Holo
+  10. VMAX 230             | VMAX         | Ultra Rare
 
 ================================================================================
 PACK #14 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 32            | Common       | Standard
-  2. Common 59            | Common       | Standard
-  3. Common 50            | Common       | Standard
-  4. Common 103           | Common       | Standard
-  5. Common 11            | Common       | Standard
-  6. Uncommon 162         | Uncommon     | Standard
-  7. Uncommon 170         | Uncommon     | Standard
+  1. Common 60            | Common       | Standard
+  2. Common 25            | Common       | Standard
+  3. Common 51            | Common       | Standard
+  4. Common 108           | Common       | Standard
+  5. Common 129           | Common       | Standard
+  6. Uncommon 152         | Uncommon     | Standard
+  7. Uncommon 180         | Uncommon     | Standard
   8. Uncommon 174         | Uncommon     | Standard
-  9. Common 116           | Common       | Reverse Holo
-  10. Rare 203             | Rare         | Holo
+  9. Common 106           | Common       | Reverse Holo
+  10. Rare 213             | Rare         | Holo
 
 ================================================================================
-PACK #15 - Score: 25 pts
+PACK #15 - Score: 48 pts
 --------------------------------------------------------------------------------
-  1. Common 110           | Common       | Standard
-  2. Common 136           | Common       | Standard
-  3. Common 119           | Common       | Standard
-  4. Common 9             | Common       | Standard
-  5. Common 100           | Common       | Standard
-  6. Uncommon 164         | Uncommon     | Standard
-  7. Uncommon 152         | Uncommon     | Standard
-  8. Uncommon 170         | Uncommon     | Standard
-  9. Common 96            | Common       | Reverse Holo
-  10. Rare 216             | Rare         | Holo
-
-================================================================================
-PACK #16 - Score: 28 pts
---------------------------------------------------------------------------------
-  1. Common 31            | Common       | Standard
-  2. Common 14            | Common       | Standard
-  3. Common 134           | Common       | Standard
-  4. Common 50            | Common       | Standard
-  5. Common 18            | Common       | Standard
-  6. Uncommon 174         | Uncommon     | Standard
-  7. Uncommon 193         | Uncommon     | Standard
+  1. Common 6             | Common       | Standard
+  2. Common 140           | Common       | Standard
+  3. Common 120           | Common       | Standard
+  4. Common 136           | Common       | Standard
+  5. Common 77            | Common       | Standard
+  6. Uncommon 147         | Uncommon     | Standard
+  7. Uncommon 157         | Uncommon     | Standard
   8. Uncommon 156         | Uncommon     | Standard
-  9. Rare 208             | Rare         | Reverse Holo
-  10. Rare 206             | Rare         | Holo
+  9. Rare 220             | Rare         | Reverse Holo
+  10. V 223                | V            | Ultra Rare
+
+================================================================================
+PACK #16 - Score: 25 pts
+--------------------------------------------------------------------------------
+  1. Common 72            | Common       | Standard
+  2. Common 74            | Common       | Standard
+  3. Common 30            | Common       | Standard
+  4. Common 100           | Common       | Standard
+  5. Common 17            | Common       | Standard
+  6. Uncommon 165         | Uncommon     | Standard
+  7. Uncommon 160         | Uncommon     | Standard
+  8. Uncommon 144         | Uncommon     | Standard
+  9. Common 3             | Common       | Reverse Holo
+  10. Rare 215             | Rare         | Holo
 
 ================================================================================
 PACK #17 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 19            | Common       | Standard
-  2. Common 14            | Common       | Standard
-  3. Common 25            | Common       | Standard
-  4. Common 58            | Common       | Standard
-  5. Common 116           | Common       | Standard
-  6. Uncommon 167         | Uncommon     | Standard
-  7. Uncommon 166         | Uncommon     | Standard
-  8. Uncommon 173         | Uncommon     | Standard
-  9. Common 123           | Common       | Reverse Holo
-  10. Rare 201             | Rare         | Holo
+  1. Common 23            | Common       | Standard
+  2. Common 117           | Common       | Standard
+  3. Common 14            | Common       | Standard
+  4. Common 126           | Common       | Standard
+  5. Common 15            | Common       | Standard
+  6. Uncommon 162         | Uncommon     | Standard
+  7. Uncommon 163         | Uncommon     | Standard
+  8. Uncommon 153         | Uncommon     | Standard
+  9. Common 104           | Common       | Reverse Holo
+  10. Rare 216             | Rare         | Holo
 
 ================================================================================
-PACK #18 - Score: 28 pts
+PACK #18 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 38            | Common       | Standard
-  2. Common 9             | Common       | Standard
-  3. Common 60            | Common       | Standard
-  4. Common 110           | Common       | Standard
-  5. Common 63            | Common       | Standard
-  6. Uncommon 171         | Uncommon     | Standard
-  7. Uncommon 193         | Uncommon     | Standard
-  8. Uncommon 165         | Uncommon     | Standard
-  9. Rare 203             | Rare         | Reverse Holo
-  10. Rare 221             | Rare         | Holo
-
-================================================================================
-PACK #19 - Score: 25 pts
---------------------------------------------------------------------------------
-  1. Common 98            | Common       | Standard
-  2. Common 61            | Common       | Standard
-  3. Common 96            | Common       | Standard
-  4. Common 60            | Common       | Standard
-  5. Common 12            | Common       | Standard
-  6. Uncommon 169         | Uncommon     | Standard
+  1. Common 87            | Common       | Standard
+  2. Common 134           | Common       | Standard
+  3. Common 130           | Common       | Standard
+  4. Common 133           | Common       | Standard
+  5. Common 91            | Common       | Standard
+  6. Uncommon 148         | Uncommon     | Standard
   7. Uncommon 194         | Uncommon     | Standard
-  8. Uncommon 185         | Uncommon     | Standard
-  9. Common 32            | Common       | Reverse Holo
-  10. Rare 209             | Rare         | Holo
+  8. Uncommon 182         | Uncommon     | Standard
+  9. Uncommon 160         | Uncommon     | Reverse Holo
+  10. Rare 200             | Rare         | Holo
+
+================================================================================
+PACK #19 - Score: 27 pts
+--------------------------------------------------------------------------------
+  1. Common 93            | Common       | Standard
+  2. Common 11            | Common       | Standard
+  3. Common 37            | Common       | Standard
+  4. Common 46            | Common       | Standard
+  5. Common 139           | Common       | Standard
+  6. Uncommon 175         | Uncommon     | Standard
+  7. Uncommon 177         | Uncommon     | Standard
+  8. Uncommon 152         | Uncommon     | Standard
+  9. Uncommon 154         | Uncommon     | Reverse Holo
+  10. Rare 204             | Rare         | Holo
 
 ================================================================================
 PACK #20 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 109           | Common       | Standard
-  2. Common 77            | Common       | Standard
-  3. Common 29            | Common       | Standard
-  4. Common 14            | Common       | Standard
-  5. Common 139           | Common       | Standard
-  6. Uncommon 142         | Uncommon     | Standard
-  7. Uncommon 168         | Uncommon     | Standard
-  8. Uncommon 181         | Uncommon     | Standard
-  9. Common 47            | Common       | Reverse Holo
-  10. Rare 217             | Rare         | Holo
+  1. Common 27            | Common       | Standard
+  2. Common 81            | Common       | Standard
+  3. Common 58            | Common       | Standard
+  4. Common 61            | Common       | Standard
+  5. Common 135           | Common       | Standard
+  6. Uncommon 174         | Uncommon     | Standard
+  7. Uncommon 195         | Uncommon     | Standard
+  8. Uncommon 184         | Uncommon     | Standard
+  9. Common 107           | Common       | Reverse Holo
+  10. Rare 216             | Rare         | Holo
 
 ================================================================================
-PACK #21 - Score: 25 pts
+PACK #21 - Score: 65 pts
 --------------------------------------------------------------------------------
-  1. Common 132           | Common       | Standard
-  2. Common 32            | Common       | Standard
-  3. Common 89            | Common       | Standard
-  4. Common 102           | Common       | Standard
-  5. Common 27            | Common       | Standard
-  6. Uncommon 177         | Uncommon     | Standard
-  7. Uncommon 179         | Uncommon     | Standard
-  8. Uncommon 188         | Uncommon     | Standard
-  9. Common 83            | Common       | Reverse Holo
-  10. Rare 216             | Rare         | Holo
+  1. Common 40            | Common       | Standard
+  2. Common 111           | Common       | Standard
+  3. Common 138           | Common       | Standard
+  4. Common 97            | Common       | Standard
+  5. Common 116           | Common       | Standard
+  6. Uncommon 194         | Uncommon     | Standard
+  7. Uncommon 168         | Uncommon     | Standard
+  8. Uncommon 173         | Uncommon     | Standard
+  9. Common 113           | Common       | Reverse Holo
+  10. VMAX 231             | VMAX         | Ultra Rare
 
 ================================================================================
 PACK #22 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 36            | Common       | Standard
-  2. Common 22            | Common       | Standard
-  3. Common 84            | Common       | Standard
-  4. Common 133           | Common       | Standard
-  5. Common 124           | Common       | Standard
-  6. Uncommon 158         | Uncommon     | Standard
-  7. Uncommon 182         | Uncommon     | Standard
-  8. Uncommon 161         | Uncommon     | Standard
-  9. Common 76            | Common       | Reverse Holo
+  1. Common 71            | Common       | Standard
+  2. Common 89            | Common       | Standard
+  3. Common 17            | Common       | Standard
+  4. Common 136           | Common       | Standard
+  5. Common 79            | Common       | Standard
+  6. Uncommon 160         | Uncommon     | Standard
+  7. Uncommon 196         | Uncommon     | Standard
+  8. Uncommon 165         | Uncommon     | Standard
+  9. Common 85            | Common       | Reverse Holo
+  10. Rare 218             | Rare         | Holo
+
+================================================================================
+PACK #23 - Score: 28 pts
+--------------------------------------------------------------------------------
+  1. Common 95            | Common       | Standard
+  2. Common 65            | Common       | Standard
+  3. Common 90            | Common       | Standard
+  4. Common 119           | Common       | Standard
+  5. Common 36            | Common       | Standard
+  6. Uncommon 185         | Uncommon     | Standard
+  7. Uncommon 150         | Uncommon     | Standard
+  8. Uncommon 197         | Uncommon     | Standard
+  9. Rare 207             | Rare         | Reverse Holo
+  10. Rare 218             | Rare         | Holo
+
+================================================================================
+PACK #24 - Score: 100 pts
+--------------------------------------------------------------------------------
+  1. Common 102           | Common       | Standard
+  2. Common 133           | Common       | Standard
+  3. Common 96            | Common       | Standard
+  4. Common 29            | Common       | Standard
+  5. Common 36            | Common       | Standard
+  6. Uncommon 183         | Uncommon     | Standard
+  7. Uncommon 172         | Uncommon     | Standard
+  8. Uncommon 194         | Uncommon     | Standard
+  9. Common 70            | Common       | Reverse Holo
+  10. Secret Rare 233      | Secret Rare  | Secret Rare
+
+================================================================================
+PACK #25 - Score: 25 pts
+--------------------------------------------------------------------------------
+  1. Common 8             | Common       | Standard
+  2. Common 35            | Common       | Standard
+  3. Common 125           | Common       | Standard
+  4. Common 12            | Common       | Standard
+  5. Common 38            | Common       | Standard
+  6. Uncommon 156         | Uncommon     | Standard
+  7. Uncommon 169         | Uncommon     | Standard
+  8. Uncommon 157         | Uncommon     | Standard
+  9. Common 10            | Common       | Reverse Holo
   10. Rare 211             | Rare         | Holo
 
 ================================================================================
-PACK #23 - Score: 25 pts
+PACK #26 - Score: 100 pts
 --------------------------------------------------------------------------------
-  1. Common 80            | Common       | Standard
-  2. Common 117           | Common       | Standard
-  3. Common 44            | Common       | Standard
-  4. Common 24            | Common       | Standard
-  5. Common 67            | Common       | Standard
-  6. Uncommon 148         | Uncommon     | Standard
-  7. Uncommon 162         | Uncommon     | Standard
-  8. Uncommon 167         | Uncommon     | Standard
-  9. Common 129           | Common       | Reverse Holo
-  10. Rare 220             | Rare         | Holo
+  1. Common 130           | Common       | Standard
+  2. Common 49            | Common       | Standard
+  3. Common 58            | Common       | Standard
+  4. Common 85            | Common       | Standard
+  5. Common 71            | Common       | Standard
+  6. Uncommon 141         | Uncommon     | Standard
+  7. Uncommon 149         | Uncommon     | Standard
+  8. Uncommon 155         | Uncommon     | Standard
+  9. Rare 211             | Rare         | Reverse Holo
+  10. Secret Rare 233      | Secret Rare  | Secret Rare
 
 ================================================================================
-PACK #24 - Score: 25 pts
---------------------------------------------------------------------------------
-  1. Common 33            | Common       | Standard
-  2. Common 39            | Common       | Standard
-  3. Common 85            | Common       | Standard
-  4. Common 3             | Common       | Standard
-  5. Common 76            | Common       | Standard
-  6. Uncommon 145         | Uncommon     | Standard
-  7. Uncommon 182         | Uncommon     | Standard
-  8. Uncommon 196         | Uncommon     | Standard
-  9. Common 70            | Common       | Reverse Holo
-  10. Rare 201             | Rare         | Holo
-
-================================================================================
-PACK #25 - Score: 28 pts
---------------------------------------------------------------------------------
-  1. Common 93            | Common       | Standard
-  2. Common 131           | Common       | Standard
-  3. Common 120           | Common       | Standard
-  4. Common 114           | Common       | Standard
-  5. Common 4             | Common       | Standard
-  6. Uncommon 195         | Uncommon     | Standard
-  7. Uncommon 169         | Uncommon     | Standard
-  8. Uncommon 184         | Uncommon     | Standard
-  9. Rare 218             | Rare         | Reverse Holo
-  10. Rare 213             | Rare         | Holo
-
-================================================================================
-PACK #26 - Score: 48 pts
---------------------------------------------------------------------------------
-  1. Common 62            | Common       | Standard
-  2. Common 105           | Common       | Standard
-  3. Common 50            | Common       | Standard
-  4. Common 139           | Common       | Standard
-  5. Common 73            | Common       | Standard
-  6. Uncommon 158         | Uncommon     | Standard
-  7. Uncommon 181         | Uncommon     | Standard
-  8. Uncommon 175         | Uncommon     | Standard
-  9. Rare 215             | Rare         | Reverse Holo
-  10. V 228                | V            | Ultra Rare
-
-================================================================================
-PACK #27 - Score: 65 pts
+PACK #27 - Score: 27 pts
 --------------------------------------------------------------------------------
   1. Common 102           | Common       | Standard
-  2. Common 66            | Common       | Standard
-  3. Common 69            | Common       | Standard
-  4. Common 130           | Common       | Standard
-  5. Common 113           | Common       | Standard
-  6. Uncommon 151         | Uncommon     | Standard
-  7. Uncommon 174         | Uncommon     | Standard
-  8. Uncommon 195         | Uncommon     | Standard
-  9. Common 96            | Common       | Reverse Holo
-  10. VMAX 230             | VMAX         | Ultra Rare
+  2. Common 78            | Common       | Standard
+  3. Common 100           | Common       | Standard
+  4. Common 136           | Common       | Standard
+  5. Common 55            | Common       | Standard
+  6. Uncommon 167         | Uncommon     | Standard
+  7. Uncommon 190         | Uncommon     | Standard
+  8. Uncommon 163         | Uncommon     | Standard
+  9. Uncommon 159         | Uncommon     | Reverse Holo
+  10. Rare 218             | Rare         | Holo
 
 ================================================================================
-PACK #28 - Score: 28 pts
+PACK #28 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 123           | Common       | Standard
-  2. Common 69            | Common       | Standard
-  3. Common 10            | Common       | Standard
-  4. Common 106           | Common       | Standard
-  5. Common 127           | Common       | Standard
-  6. Uncommon 159         | Uncommon     | Standard
-  7. Uncommon 163         | Uncommon     | Standard
-  8. Uncommon 194         | Uncommon     | Standard
-  9. Rare 222             | Rare         | Reverse Holo
-  10. Rare 218             | Rare         | Holo
+  1. Common 138           | Common       | Standard
+  2. Common 52            | Common       | Standard
+  3. Common 28            | Common       | Standard
+  4. Common 114           | Common       | Standard
+  5. Common 120           | Common       | Standard
+  6. Uncommon 181         | Uncommon     | Standard
+  7. Uncommon 197         | Uncommon     | Standard
+  8. Uncommon 167         | Uncommon     | Standard
+  9. Common 100           | Common       | Reverse Holo
+  10. Rare 219             | Rare         | Holo
 
 ================================================================================
 PACK #29 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 28            | Common       | Standard
-  2. Common 140           | Common       | Standard
-  3. Common 12            | Common       | Standard
-  4. Common 25            | Common       | Standard
-  5. Common 8             | Common       | Standard
-  6. Uncommon 172         | Uncommon     | Standard
-  7. Uncommon 179         | Uncommon     | Standard
-  8. Uncommon 152         | Uncommon     | Standard
-  9. Common 30            | Common       | Reverse Holo
-  10. Rare 200             | Rare         | Holo
+  1. Common 63            | Common       | Standard
+  2. Common 106           | Common       | Standard
+  3. Common 8             | Common       | Standard
+  4. Common 40            | Common       | Standard
+  5. Common 24            | Common       | Standard
+  6. Uncommon 175         | Uncommon     | Standard
+  7. Uncommon 196         | Uncommon     | Standard
+  8. Uncommon 165         | Uncommon     | Standard
+  9. Common 16            | Common       | Reverse Holo
+  10. Rare 210             | Rare         | Holo
 
 ================================================================================
 PACK #30 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 117           | Common       | Standard
-  2. Common 129           | Common       | Standard
-  3. Common 32            | Common       | Standard
-  4. Common 118           | Common       | Standard
-  5. Common 134           | Common       | Standard
-  6. Uncommon 159         | Uncommon     | Standard
-  7. Uncommon 154         | Uncommon     | Standard
-  8. Uncommon 193         | Uncommon     | Standard
-  9. Common 14            | Common       | Reverse Holo
-  10. Rare 203             | Rare         | Holo
+  1. Common 133           | Common       | Standard
+  2. Common 114           | Common       | Standard
+  3. Common 71            | Common       | Standard
+  4. Common 106           | Common       | Standard
+  5. Common 120           | Common       | Standard
+  6. Uncommon 146         | Uncommon     | Standard
+  7. Uncommon 175         | Uncommon     | Standard
+  8. Uncommon 176         | Uncommon     | Standard
+  9. Common 101           | Common       | Reverse Holo
+  10. Rare 217             | Rare         | Holo
 
 ================================================================================
-PACK #31 - Score: 25 pts
+PACK #31 - Score: 28 pts
 --------------------------------------------------------------------------------
-  1. Common 33            | Common       | Standard
-  2. Common 67            | Common       | Standard
-  3. Common 39            | Common       | Standard
-  4. Common 7             | Common       | Standard
-  5. Common 93            | Common       | Standard
-  6. Uncommon 154         | Uncommon     | Standard
-  7. Uncommon 153         | Uncommon     | Standard
-  8. Uncommon 144         | Uncommon     | Standard
-  9. Common 64            | Common       | Reverse Holo
-  10. Rare 201             | Rare         | Holo
-
-================================================================================
-PACK #32 - Score: 25 pts
---------------------------------------------------------------------------------
-  1. Common 77            | Common       | Standard
-  2. Common 41            | Common       | Standard
-  3. Common 69            | Common       | Standard
-  4. Common 58            | Common       | Standard
-  5. Common 93            | Common       | Standard
-  6. Uncommon 181         | Uncommon     | Standard
-  7. Uncommon 145         | Uncommon     | Standard
+  1. Common 105           | Common       | Standard
+  2. Common 47            | Common       | Standard
+  3. Common 63            | Common       | Standard
+  4. Common 21            | Common       | Standard
+  5. Common 20            | Common       | Standard
+  6. Uncommon 192         | Uncommon     | Standard
+  7. Uncommon 143         | Uncommon     | Standard
   8. Uncommon 151         | Uncommon     | Standard
-  9. Common 7             | Common       | Reverse Holo
-  10. Rare 218             | Rare         | Holo
+  9. Rare 215             | Rare         | Reverse Holo
+  10. Rare 219             | Rare         | Holo
 
 ================================================================================
-PACK #33 - Score: 25 pts
+PACK #32 - Score: 47 pts
 --------------------------------------------------------------------------------
-  1. Common 88            | Common       | Standard
-  2. Common 118           | Common       | Standard
-  3. Common 39            | Common       | Standard
-  4. Common 119           | Common       | Standard
-  5. Common 17            | Common       | Standard
-  6. Uncommon 152         | Uncommon     | Standard
-  7. Uncommon 193         | Uncommon     | Standard
-  8. Uncommon 199         | Uncommon     | Standard
-  9. Common 138           | Common       | Reverse Holo
-  10. Rare 200             | Rare         | Holo
+  1. Common 22            | Common       | Standard
+  2. Common 23            | Common       | Standard
+  3. Common 104           | Common       | Standard
+  4. Common 39            | Common       | Standard
+  5. Common 91            | Common       | Standard
+  6. Uncommon 183         | Uncommon     | Standard
+  7. Uncommon 187         | Uncommon     | Standard
+  8. Uncommon 180         | Uncommon     | Standard
+  9. Uncommon 181         | Uncommon     | Reverse Holo
+  10. V 224                | V            | Ultra Rare
 
 ================================================================================
-PACK #34 - Score: 25 pts
+PACK #33 - Score: 65 pts
 --------------------------------------------------------------------------------
-  1. Common 26            | Common       | Standard
-  2. Common 115           | Common       | Standard
-  3. Common 114           | Common       | Standard
-  4. Common 22            | Common       | Standard
-  5. Common 34            | Common       | Standard
-  6. Uncommon 165         | Uncommon     | Standard
-  7. Uncommon 170         | Uncommon     | Standard
-  8. Uncommon 158         | Uncommon     | Standard
-  9. Common 83            | Common       | Reverse Holo
-  10. Rare 200             | Rare         | Holo
+  1. Common 133           | Common       | Standard
+  2. Common 97            | Common       | Standard
+  3. Common 30            | Common       | Standard
+  4. Common 57            | Common       | Standard
+  5. Common 66            | Common       | Standard
+  6. Uncommon 187         | Uncommon     | Standard
+  7. Uncommon 163         | Uncommon     | Standard
+  8. Uncommon 181         | Uncommon     | Standard
+  9. Common 75            | Common       | Reverse Holo
+  10. VMAX 232             | VMAX         | Ultra Rare
+
+================================================================================
+PACK #34 - Score: 67 pts
+--------------------------------------------------------------------------------
+  1. Common 7             | Common       | Standard
+  2. Common 40            | Common       | Standard
+  3. Common 48            | Common       | Standard
+  4. Common 49            | Common       | Standard
+  5. Common 97            | Common       | Standard
+  6. Uncommon 158         | Uncommon     | Standard
+  7. Uncommon 197         | Uncommon     | Standard
+  8. Uncommon 155         | Uncommon     | Standard
+  9. Uncommon 141         | Uncommon     | Reverse Holo
+  10. VMAX 231             | VMAX         | Ultra Rare
 
 ================================================================================
 PACK #35 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 93            | Common       | Standard
-  2. Common 111           | Common       | Standard
-  3. Common 86            | Common       | Standard
-  4. Common 55            | Common       | Standard
-  5. Common 31            | Common       | Standard
-  6. Uncommon 172         | Uncommon     | Standard
-  7. Uncommon 175         | Uncommon     | Standard
-  8. Uncommon 164         | Uncommon     | Standard
-  9. Uncommon 191         | Uncommon     | Reverse Holo
-  10. Rare 209             | Rare         | Holo
+  1. Common 14            | Common       | Standard
+  2. Common 15            | Common       | Standard
+  3. Common 122           | Common       | Standard
+  4. Common 30            | Common       | Standard
+  5. Common 132           | Common       | Standard
+  6. Uncommon 164         | Uncommon     | Standard
+  7. Uncommon 171         | Uncommon     | Standard
+  8. Uncommon 187         | Uncommon     | Standard
+  9. Uncommon 177         | Uncommon     | Reverse Holo
+  10. Rare 211             | Rare         | Holo
 
 ================================================================================
 PACK #36 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 82            | Common       | Standard
-  2. Common 128           | Common       | Standard
-  3. Common 36            | Common       | Standard
-  4. Common 37            | Common       | Standard
-  5. Common 41            | Common       | Standard
-  6. Uncommon 155         | Uncommon     | Standard
-  7. Uncommon 195         | Uncommon     | Standard
-  8. Uncommon 190         | Uncommon     | Standard
-  9. Common 13            | Common       | Reverse Holo
-  10. Rare 211             | Rare         | Holo
+  1. Common 60            | Common       | Standard
+  2. Common 36            | Common       | Standard
+  3. Common 107           | Common       | Standard
+  4. Common 71            | Common       | Standard
+  5. Common 102           | Common       | Standard
+  6. Uncommon 144         | Uncommon     | Standard
+  7. Uncommon 170         | Uncommon     | Standard
+  8. Uncommon 175         | Uncommon     | Standard
+  9. Common 85            | Common       | Reverse Holo
+  10. Rare 208             | Rare         | Holo
 
 ================================================================================
-PACK #37 - Score: 65 pts
+PACK #37 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 94            | Common       | Standard
-  2. Common 33            | Common       | Standard
-  3. Common 86            | Common       | Standard
-  4. Common 101           | Common       | Standard
-  5. Common 90            | Common       | Standard
-  6. Uncommon 192         | Uncommon     | Standard
-  7. Uncommon 193         | Uncommon     | Standard
-  8. Uncommon 145         | Uncommon     | Standard
-  9. Common 58            | Common       | Reverse Holo
-  10. VMAX 231             | VMAX         | Ultra Rare
+  1. Common 74            | Common       | Standard
+  2. Common 64            | Common       | Standard
+  3. Common 63            | Common       | Standard
+  4. Common 12            | Common       | Standard
+  5. Common 134           | Common       | Standard
+  6. Uncommon 175         | Uncommon     | Standard
+  7. Uncommon 145         | Uncommon     | Standard
+  8. Uncommon 192         | Uncommon     | Standard
+  9. Uncommon 147         | Uncommon     | Reverse Holo
+  10. Rare 201             | Rare         | Holo
 
 ================================================================================
-PACK #38 - Score: 27 pts
+PACK #38 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 62            | Common       | Standard
+  1. Common 114           | Common       | Standard
   2. Common 58            | Common       | Standard
-  3. Common 92            | Common       | Standard
-  4. Common 34            | Common       | Standard
-  5. Common 19            | Common       | Standard
-  6. Uncommon 156         | Uncommon     | Standard
-  7. Uncommon 188         | Uncommon     | Standard
-  8. Uncommon 159         | Uncommon     | Standard
-  9. Uncommon 195         | Uncommon     | Reverse Holo
-  10. Rare 218             | Rare         | Holo
+  3. Common 64            | Common       | Standard
+  4. Common 30            | Common       | Standard
+  5. Common 93            | Common       | Standard
+  6. Uncommon 194         | Uncommon     | Standard
+  7. Uncommon 178         | Uncommon     | Standard
+  8. Uncommon 154         | Uncommon     | Standard
+  9. Common 113           | Common       | Reverse Holo
+  10. Rare 202             | Rare         | Holo
 
 ================================================================================
-PACK #39 - Score: 27 pts
+PACK #39 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 48            | Common       | Standard
-  2. Common 52            | Common       | Standard
-  3. Common 65            | Common       | Standard
-  4. Common 9             | Common       | Standard
-  5. Common 128           | Common       | Standard
-  6. Uncommon 174         | Uncommon     | Standard
-  7. Uncommon 185         | Uncommon     | Standard
-  8. Uncommon 178         | Uncommon     | Standard
-  9. Uncommon 195         | Uncommon     | Reverse Holo
-  10. Rare 200             | Rare         | Holo
+  1. Common 140           | Common       | Standard
+  2. Common 75            | Common       | Standard
+  3. Common 109           | Common       | Standard
+  4. Common 134           | Common       | Standard
+  5. Common 123           | Common       | Standard
+  6. Uncommon 178         | Uncommon     | Standard
+  7. Uncommon 158         | Uncommon     | Standard
+  8. Uncommon 191         | Uncommon     | Standard
+  9. Common 37            | Common       | Reverse Holo
+  10. Rare 215             | Rare         | Holo
 
 ================================================================================
-PACK #40 - Score: 28 pts
+PACK #40 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 136           | Common       | Standard
-  2. Common 7             | Common       | Standard
-  3. Common 118           | Common       | Standard
-  4. Common 109           | Common       | Standard
-  5. Common 5             | Common       | Standard
+  1. Common 30            | Common       | Standard
+  2. Common 36            | Common       | Standard
+  3. Common 81            | Common       | Standard
+  4. Common 1             | Common       | Standard
+  5. Common 70            | Common       | Standard
+  6. Uncommon 194         | Uncommon     | Standard
+  7. Uncommon 163         | Uncommon     | Standard
+  8. Uncommon 199         | Uncommon     | Standard
+  9. Common 102           | Common       | Reverse Holo
+  10. Rare 206             | Rare         | Holo
+
+================================================================================
+PACK #41 - Score: 27 pts
+--------------------------------------------------------------------------------
+  1. Common 107           | Common       | Standard
+  2. Common 51            | Common       | Standard
+  3. Common 140           | Common       | Standard
+  4. Common 55            | Common       | Standard
+  5. Common 129           | Common       | Standard
   6. Uncommon 160         | Uncommon     | Standard
-  7. Uncommon 156         | Uncommon     | Standard
-  8. Uncommon 167         | Uncommon     | Standard
-  9. Rare 209             | Rare         | Reverse Holo
-  10. Rare 210             | Rare         | Holo
-
-================================================================================
-PACK #41 - Score: 45 pts
---------------------------------------------------------------------------------
-  1. Common 116           | Common       | Standard
-  2. Common 139           | Common       | Standard
-  3. Common 75            | Common       | Standard
-  4. Common 95            | Common       | Standard
-  5. Common 108           | Common       | Standard
-  6. Uncommon 164         | Uncommon     | Standard
-  7. Uncommon 150         | Uncommon     | Standard
-  8. Uncommon 174         | Uncommon     | Standard
-  9. Common 86            | Common       | Reverse Holo
-  10. V 226                | V            | Ultra Rare
+  7. Uncommon 192         | Uncommon     | Standard
+  8. Uncommon 153         | Uncommon     | Standard
+  9. Uncommon 142         | Uncommon     | Reverse Holo
+  10. Rare 206             | Rare         | Holo
 
 ================================================================================
 PACK #42 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 8             | Common       | Standard
-  2. Common 71            | Common       | Standard
-  3. Common 18            | Common       | Standard
-  4. Common 3             | Common       | Standard
-  5. Common 120           | Common       | Standard
-  6. Uncommon 182         | Uncommon     | Standard
-  7. Uncommon 155         | Uncommon     | Standard
-  8. Uncommon 174         | Uncommon     | Standard
-  9. Common 26            | Common       | Reverse Holo
-  10. Rare 210             | Rare         | Holo
+  1. Common 83            | Common       | Standard
+  2. Common 122           | Common       | Standard
+  3. Common 29            | Common       | Standard
+  4. Common 67            | Common       | Standard
+  5. Common 133           | Common       | Standard
+  6. Uncommon 188         | Uncommon     | Standard
+  7. Uncommon 154         | Uncommon     | Standard
+  8. Uncommon 145         | Uncommon     | Standard
+  9. Common 55            | Common       | Reverse Holo
+  10. Rare 203             | Rare         | Holo
 
 ================================================================================
-PACK #43 - Score: 27 pts
+PACK #43 - Score: 45 pts
 --------------------------------------------------------------------------------
-  1. Common 53            | Common       | Standard
-  2. Common 119           | Common       | Standard
-  3. Common 20            | Common       | Standard
-  4. Common 88            | Common       | Standard
-  5. Common 62            | Common       | Standard
-  6. Uncommon 185         | Uncommon     | Standard
-  7. Uncommon 160         | Uncommon     | Standard
-  8. Uncommon 176         | Uncommon     | Standard
-  9. Uncommon 180         | Uncommon     | Reverse Holo
-  10. Rare 215             | Rare         | Holo
+  1. Common 117           | Common       | Standard
+  2. Common 32            | Common       | Standard
+  3. Common 11            | Common       | Standard
+  4. Common 101           | Common       | Standard
+  5. Common 30            | Common       | Standard
+  6. Uncommon 197         | Uncommon     | Standard
+  7. Uncommon 179         | Uncommon     | Standard
+  8. Uncommon 198         | Uncommon     | Standard
+  9. Common 47            | Common       | Reverse Holo
+  10. V 223                | V            | Ultra Rare
 
 ================================================================================
-PACK #44 - Score: 27 pts
+PACK #44 - Score: 47 pts
 --------------------------------------------------------------------------------
-  1. Common 140           | Common       | Standard
-  2. Common 65            | Common       | Standard
-  3. Common 36            | Common       | Standard
-  4. Common 70            | Common       | Standard
-  5. Common 112           | Common       | Standard
-  6. Uncommon 149         | Uncommon     | Standard
-  7. Uncommon 180         | Uncommon     | Standard
-  8. Uncommon 174         | Uncommon     | Standard
-  9. Uncommon 177         | Uncommon     | Reverse Holo
-  10. Rare 200             | Rare         | Holo
+  1. Common 62            | Common       | Standard
+  2. Common 8             | Common       | Standard
+  3. Common 56            | Common       | Standard
+  4. Common 83            | Common       | Standard
+  5. Common 122           | Common       | Standard
+  6. Uncommon 142         | Uncommon     | Standard
+  7. Uncommon 159         | Uncommon     | Standard
+  8. Uncommon 193         | Uncommon     | Standard
+  9. Uncommon 183         | Uncommon     | Reverse Holo
+  10. V 227                | V            | Ultra Rare
 
 ================================================================================
-PACK #45 - Score: 25 pts
+PACK #45 - Score: 67 pts
 --------------------------------------------------------------------------------
-  1. Common 133           | Common       | Standard
-  2. Common 80            | Common       | Standard
-  3. Common 30            | Common       | Standard
-  4. Common 61            | Common       | Standard
-  5. Common 94            | Common       | Standard
-  6. Uncommon 182         | Uncommon     | Standard
-  7. Uncommon 156         | Uncommon     | Standard
-  8. Uncommon 196         | Uncommon     | Standard
-  9. Common 72            | Common       | Reverse Holo
-  10. Rare 206             | Rare         | Holo
+  1. Common 129           | Common       | Standard
+  2. Common 73            | Common       | Standard
+  3. Common 128           | Common       | Standard
+  4. Common 58            | Common       | Standard
+  5. Common 109           | Common       | Standard
+  6. Uncommon 184         | Uncommon     | Standard
+  7. Uncommon 192         | Uncommon     | Standard
+  8. Uncommon 154         | Uncommon     | Standard
+  9. Uncommon 190         | Uncommon     | Reverse Holo
+  10. VMAX 231             | VMAX         | Ultra Rare
 
 ================================================================================
 PACK #46 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 30            | Common       | Standard
-  2. Common 41            | Common       | Standard
-  3. Common 122           | Common       | Standard
-  4. Common 13            | Common       | Standard
-  5. Common 17            | Common       | Standard
-  6. Uncommon 160         | Uncommon     | Standard
-  7. Uncommon 154         | Uncommon     | Standard
-  8. Uncommon 182         | Uncommon     | Standard
-  9. Uncommon 150         | Uncommon     | Reverse Holo
-  10. Rare 221             | Rare         | Holo
+  1. Common 122           | Common       | Standard
+  2. Common 39            | Common       | Standard
+  3. Common 103           | Common       | Standard
+  4. Common 14            | Common       | Standard
+  5. Common 93            | Common       | Standard
+  6. Uncommon 149         | Uncommon     | Standard
+  7. Uncommon 146         | Uncommon     | Standard
+  8. Uncommon 165         | Uncommon     | Standard
+  9. Uncommon 163         | Uncommon     | Reverse Holo
+  10. Rare 207             | Rare         | Holo
 
 ================================================================================
-PACK #47 - Score: 25 pts
+PACK #47 - Score: 67 pts
 --------------------------------------------------------------------------------
-  1. Common 62            | Common       | Standard
-  2. Common 63            | Common       | Standard
-  3. Common 134           | Common       | Standard
-  4. Common 139           | Common       | Standard
-  5. Common 1             | Common       | Standard
-  6. Uncommon 196         | Uncommon     | Standard
-  7. Uncommon 193         | Uncommon     | Standard
-  8. Uncommon 188         | Uncommon     | Standard
-  9. Common 103           | Common       | Reverse Holo
-  10. Rare 216             | Rare         | Holo
+  1. Common 20            | Common       | Standard
+  2. Common 100           | Common       | Standard
+  3. Common 15            | Common       | Standard
+  4. Common 16            | Common       | Standard
+  5. Common 54            | Common       | Standard
+  6. Uncommon 164         | Uncommon     | Standard
+  7. Uncommon 183         | Uncommon     | Standard
+  8. Uncommon 153         | Uncommon     | Standard
+  9. Uncommon 192         | Uncommon     | Reverse Holo
+  10. VMAX 230             | VMAX         | Ultra Rare
 
 ================================================================================
 PACK #48 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 5             | Common       | Standard
-  2. Common 71            | Common       | Standard
-  3. Common 86            | Common       | Standard
-  4. Common 94            | Common       | Standard
-  5. Common 32            | Common       | Standard
-  6. Uncommon 179         | Uncommon     | Standard
-  7. Uncommon 181         | Uncommon     | Standard
-  8. Uncommon 190         | Uncommon     | Standard
-  9. Common 23            | Common       | Reverse Holo
-  10. Rare 218             | Rare         | Holo
+  1. Common 77            | Common       | Standard
+  2. Common 63            | Common       | Standard
+  3. Common 115           | Common       | Standard
+  4. Common 36            | Common       | Standard
+  5. Common 99            | Common       | Standard
+  6. Uncommon 154         | Uncommon     | Standard
+  7. Uncommon 176         | Uncommon     | Standard
+  8. Uncommon 157         | Uncommon     | Standard
+  9. Common 110           | Common       | Reverse Holo
+  10. Rare 209             | Rare         | Holo
 
 ================================================================================
-PACK #49 - Score: 45 pts
+PACK #49 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 102           | Common       | Standard
-  2. Common 60            | Common       | Standard
-  3. Common 5             | Common       | Standard
-  4. Common 1             | Common       | Standard
-  5. Common 130           | Common       | Standard
-  6. Uncommon 179         | Uncommon     | Standard
-  7. Uncommon 178         | Uncommon     | Standard
-  8. Uncommon 168         | Uncommon     | Standard
-  9. Common 28            | Common       | Reverse Holo
-  10. V 227                | V            | Ultra Rare
-
-================================================================================
-PACK #50 - Score: 45 pts
---------------------------------------------------------------------------------
-  1. Common 37            | Common       | Standard
-  2. Common 41            | Common       | Standard
-  3. Common 89            | Common       | Standard
-  4. Common 100           | Common       | Standard
-  5. Common 80            | Common       | Standard
-  6. Uncommon 160         | Uncommon     | Standard
-  7. Uncommon 167         | Uncommon     | Standard
+  1. Common 85            | Common       | Standard
+  2. Common 64            | Common       | Standard
+  3. Common 53            | Common       | Standard
+  4. Common 62            | Common       | Standard
+  5. Common 102           | Common       | Standard
+  6. Uncommon 148         | Uncommon     | Standard
+  7. Uncommon 197         | Uncommon     | Standard
   8. Uncommon 176         | Uncommon     | Standard
-  9. Common 42            | Common       | Reverse Holo
-  10. V 226                | V            | Ultra Rare
+  9. Uncommon 160         | Uncommon     | Reverse Holo
+  10. Rare 219             | Rare         | Holo
 
 ================================================================================
-PACK #51 - Score: 45 pts
+PACK #50 - Score: 47 pts
 --------------------------------------------------------------------------------
-  1. Common 19            | Common       | Standard
-  2. Common 58            | Common       | Standard
-  3. Common 6             | Common       | Standard
-  4. Common 118           | Common       | Standard
-  5. Common 88            | Common       | Standard
-  6. Uncommon 158         | Uncommon     | Standard
-  7. Uncommon 152         | Uncommon     | Standard
-  8. Uncommon 195         | Uncommon     | Standard
-  9. Common 60            | Common       | Reverse Holo
-  10. V 227                | V            | Ultra Rare
+  1. Common 61            | Common       | Standard
+  2. Common 112           | Common       | Standard
+  3. Common 46            | Common       | Standard
+  4. Common 123           | Common       | Standard
+  5. Common 89            | Common       | Standard
+  6. Uncommon 159         | Uncommon     | Standard
+  7. Uncommon 185         | Uncommon     | Standard
+  8. Uncommon 194         | Uncommon     | Standard
+  9. Uncommon 196         | Uncommon     | Reverse Holo
+  10. V 229                | V            | Ultra Rare
+
+================================================================================
+PACK #51 - Score: 25 pts
+--------------------------------------------------------------------------------
+  1. Common 138           | Common       | Standard
+  2. Common 49            | Common       | Standard
+  3. Common 94            | Common       | Standard
+  4. Common 131           | Common       | Standard
+  5. Common 84            | Common       | Standard
+  6. Uncommon 155         | Uncommon     | Standard
+  7. Uncommon 170         | Uncommon     | Standard
+  8. Uncommon 161         | Uncommon     | Standard
+  9. Common 16            | Common       | Reverse Holo
+  10. Rare 210             | Rare         | Holo
 
 ================================================================================
 PACK #52 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 88            | Common       | Standard
-  2. Common 48            | Common       | Standard
-  3. Common 111           | Common       | Standard
+  1. Common 58            | Common       | Standard
+  2. Common 35            | Common       | Standard
+  3. Common 92            | Common       | Standard
+  4. Common 51            | Common       | Standard
+  5. Common 124           | Common       | Standard
+  6. Uncommon 178         | Uncommon     | Standard
+  7. Uncommon 182         | Uncommon     | Standard
+  8. Uncommon 162         | Uncommon     | Standard
+  9. Common 131           | Common       | Reverse Holo
+  10. Rare 210             | Rare         | Holo
+
+================================================================================
+PACK #53 - Score: 25 pts
+--------------------------------------------------------------------------------
+  1. Common 26            | Common       | Standard
+  2. Common 5             | Common       | Standard
+  3. Common 138           | Common       | Standard
   4. Common 55            | Common       | Standard
-  5. Common 60            | Common       | Standard
-  6. Uncommon 145         | Uncommon     | Standard
-  7. Uncommon 173         | Uncommon     | Standard
-  8. Uncommon 172         | Uncommon     | Standard
-  9. Common 47            | Common       | Reverse Holo
-  10. Rare 222             | Rare         | Holo
+  5. Common 70            | Common       | Standard
+  6. Uncommon 194         | Uncommon     | Standard
+  7. Uncommon 147         | Uncommon     | Standard
+  8. Uncommon 191         | Uncommon     | Standard
+  9. Common 42            | Common       | Reverse Holo
+  10. Rare 219             | Rare         | Holo
 
 ================================================================================
-PACK #53 - Score: 48 pts
+PACK #54 - Score: 67 pts
 --------------------------------------------------------------------------------
-  1. Common 138           | Common       | Standard
-  2. Common 10            | Common       | Standard
-  3. Common 8             | Common       | Standard
-  4. Common 116           | Common       | Standard
-  5. Common 111           | Common       | Standard
-  6. Uncommon 141         | Uncommon     | Standard
-  7. Uncommon 176         | Uncommon     | Standard
-  8. Uncommon 190         | Uncommon     | Standard
-  9. Rare 212             | Rare         | Reverse Holo
-  10. V 227                | V            | Ultra Rare
-
-================================================================================
-PACK #54 - Score: 25 pts
---------------------------------------------------------------------------------
-  1. Common 89            | Common       | Standard
-  2. Common 51            | Common       | Standard
-  3. Common 39            | Common       | Standard
-  4. Common 7             | Common       | Standard
-  5. Common 11            | Common       | Standard
-  6. Uncommon 152         | Uncommon     | Standard
-  7. Uncommon 188         | Uncommon     | Standard
-  8. Uncommon 151         | Uncommon     | Standard
-  9. Common 86            | Common       | Reverse Holo
-  10. Rare 202             | Rare         | Holo
-
-================================================================================
-PACK #55 - Score: 27 pts
---------------------------------------------------------------------------------
-  1. Common 54            | Common       | Standard
-  2. Common 21            | Common       | Standard
-  3. Common 31            | Common       | Standard
-  4. Common 93            | Common       | Standard
-  5. Common 52            | Common       | Standard
-  6. Uncommon 161         | Uncommon     | Standard
-  7. Uncommon 165         | Uncommon     | Standard
-  8. Uncommon 149         | Uncommon     | Standard
-  9. Uncommon 150         | Uncommon     | Reverse Holo
-  10. Rare 211             | Rare         | Holo
-
-================================================================================
-PACK #56 - Score: 45 pts
---------------------------------------------------------------------------------
-  1. Common 25            | Common       | Standard
-  2. Common 24            | Common       | Standard
-  3. Common 135           | Common       | Standard
-  4. Common 132           | Common       | Standard
-  5. Common 126           | Common       | Standard
-  6. Uncommon 184         | Uncommon     | Standard
-  7. Uncommon 170         | Uncommon     | Standard
-  8. Uncommon 142         | Uncommon     | Standard
-  9. Common 6             | Common       | Reverse Holo
-  10. V 226                | V            | Ultra Rare
-
-================================================================================
-PACK #57 - Score: 28 pts
---------------------------------------------------------------------------------
-  1. Common 75            | Common       | Standard
-  2. Common 36            | Common       | Standard
-  3. Common 52            | Common       | Standard
-  4. Common 90            | Common       | Standard
-  5. Common 9             | Common       | Standard
+  1. Common 64            | Common       | Standard
+  2. Common 136           | Common       | Standard
+  3. Common 59            | Common       | Standard
+  4. Common 131           | Common       | Standard
+  5. Common 133           | Common       | Standard
   6. Uncommon 174         | Uncommon     | Standard
-  7. Uncommon 181         | Uncommon     | Standard
-  8. Uncommon 145         | Uncommon     | Standard
-  9. Rare 220             | Rare         | Reverse Holo
-  10. Rare 216             | Rare         | Holo
+  7. Uncommon 172         | Uncommon     | Standard
+  8. Uncommon 179         | Uncommon     | Standard
+  9. Uncommon 156         | Uncommon     | Reverse Holo
+  10. VMAX 230             | VMAX         | Ultra Rare
+
+================================================================================
+PACK #55 - Score: 65 pts
+--------------------------------------------------------------------------------
+  1. Common 84            | Common       | Standard
+  2. Common 27            | Common       | Standard
+  3. Common 104           | Common       | Standard
+  4. Common 36            | Common       | Standard
+  5. Common 100           | Common       | Standard
+  6. Uncommon 181         | Uncommon     | Standard
+  7. Uncommon 163         | Uncommon     | Standard
+  8. Uncommon 175         | Uncommon     | Standard
+  9. Common 95            | Common       | Reverse Holo
+  10. VMAX 230             | VMAX         | Ultra Rare
+
+================================================================================
+PACK #56 - Score: 25 pts
+--------------------------------------------------------------------------------
+  1. Common 34            | Common       | Standard
+  2. Common 31            | Common       | Standard
+  3. Common 50            | Common       | Standard
+  4. Common 20            | Common       | Standard
+  5. Common 105           | Common       | Standard
+  6. Uncommon 159         | Uncommon     | Standard
+  7. Uncommon 149         | Uncommon     | Standard
+  8. Uncommon 194         | Uncommon     | Standard
+  9. Common 61            | Common       | Reverse Holo
+  10. Rare 209             | Rare         | Holo
+
+================================================================================
+PACK #57 - Score: 25 pts
+--------------------------------------------------------------------------------
+  1. Common 9             | Common       | Standard
+  2. Common 39            | Common       | Standard
+  3. Common 131           | Common       | Standard
+  4. Common 115           | Common       | Standard
+  5. Common 25            | Common       | Standard
+  6. Uncommon 160         | Uncommon     | Standard
+  7. Uncommon 190         | Uncommon     | Standard
+  8. Uncommon 188         | Uncommon     | Standard
+  9. Common 81            | Common       | Reverse Holo
+  10. Rare 214             | Rare         | Holo
 
 ================================================================================
 PACK #58 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 102           | Common       | Standard
-  2. Common 110           | Common       | Standard
-  3. Common 31            | Common       | Standard
-  4. Common 116           | Common       | Standard
-  5. Common 123           | Common       | Standard
-  6. Uncommon 197         | Uncommon     | Standard
-  7. Uncommon 164         | Uncommon     | Standard
-  8. Uncommon 190         | Uncommon     | Standard
-  9. Uncommon 145         | Uncommon     | Reverse Holo
+  1. Common 140           | Common       | Standard
+  2. Common 115           | Common       | Standard
+  3. Common 120           | Common       | Standard
+  4. Common 44            | Common       | Standard
+  5. Common 45            | Common       | Standard
+  6. Uncommon 167         | Uncommon     | Standard
+  7. Uncommon 189         | Uncommon     | Standard
+  8. Uncommon 196         | Uncommon     | Standard
+  9. Uncommon 153         | Uncommon     | Reverse Holo
   10. Rare 214             | Rare         | Holo
 
 ================================================================================
-PACK #59 - Score: 28 pts
+PACK #59 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 132           | Common       | Standard
-  2. Common 64            | Common       | Standard
-  3. Common 21            | Common       | Standard
-  4. Common 77            | Common       | Standard
-  5. Common 134           | Common       | Standard
-  6. Uncommon 172         | Uncommon     | Standard
-  7. Uncommon 159         | Uncommon     | Standard
-  8. Uncommon 151         | Uncommon     | Standard
-  9. Rare 201             | Rare         | Reverse Holo
-  10. Rare 200             | Rare         | Holo
+  1. Common 108           | Common       | Standard
+  2. Common 78            | Common       | Standard
+  3. Common 45            | Common       | Standard
+  4. Common 99            | Common       | Standard
+  5. Common 65            | Common       | Standard
+  6. Uncommon 152         | Uncommon     | Standard
+  7. Uncommon 147         | Uncommon     | Standard
+  8. Uncommon 196         | Uncommon     | Standard
+  9. Uncommon 197         | Uncommon     | Reverse Holo
+  10. Rare 212             | Rare         | Holo
 
 ================================================================================
-PACK #60 - Score: 28 pts
+PACK #60 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 129           | Common       | Standard
-  2. Common 30            | Common       | Standard
-  3. Common 2             | Common       | Standard
-  4. Common 126           | Common       | Standard
-  5. Common 18            | Common       | Standard
-  6. Uncommon 190         | Uncommon     | Standard
+  1. Common 122           | Common       | Standard
+  2. Common 138           | Common       | Standard
+  3. Common 15            | Common       | Standard
+  4. Common 64            | Common       | Standard
+  5. Common 107           | Common       | Standard
+  6. Uncommon 148         | Uncommon     | Standard
   7. Uncommon 168         | Uncommon     | Standard
-  8. Uncommon 162         | Uncommon     | Standard
-  9. Rare 202             | Rare         | Reverse Holo
-  10. Rare 205             | Rare         | Holo
+  8. Uncommon 186         | Uncommon     | Standard
+  9. Uncommon 172         | Uncommon     | Reverse Holo
+  10. Rare 202             | Rare         | Holo
 
 ================================================================================
-PACK #61 - Score: 27 pts
+PACK #61 - Score: 45 pts
 --------------------------------------------------------------------------------
-  1. Common 42            | Common       | Standard
-  2. Common 128           | Common       | Standard
-  3. Common 49            | Common       | Standard
-  4. Common 95            | Common       | Standard
-  5. Common 47            | Common       | Standard
-  6. Uncommon 179         | Uncommon     | Standard
-  7. Uncommon 172         | Uncommon     | Standard
-  8. Uncommon 169         | Uncommon     | Standard
-  9. Uncommon 161         | Uncommon     | Reverse Holo
-  10. Rare 222             | Rare         | Holo
-
-================================================================================
-PACK #62 - Score: 67 pts
---------------------------------------------------------------------------------
-  1. Common 73            | Common       | Standard
-  2. Common 29            | Common       | Standard
-  3. Common 138           | Common       | Standard
-  4. Common 116           | Common       | Standard
-  5. Common 66            | Common       | Standard
-  6. Uncommon 190         | Uncommon     | Standard
+  1. Common 50            | Common       | Standard
+  2. Common 2             | Common       | Standard
+  3. Common 67            | Common       | Standard
+  4. Common 9             | Common       | Standard
+  5. Common 46            | Common       | Standard
+  6. Uncommon 159         | Uncommon     | Standard
   7. Uncommon 194         | Uncommon     | Standard
-  8. Uncommon 192         | Uncommon     | Standard
-  9. Uncommon 185         | Uncommon     | Reverse Holo
-  10. VMAX 231             | VMAX         | Ultra Rare
+  8. Uncommon 149         | Uncommon     | Standard
+  9. Common 89            | Common       | Reverse Holo
+  10. V 227                | V            | Ultra Rare
+
+================================================================================
+PACK #62 - Score: 25 pts
+--------------------------------------------------------------------------------
+  1. Common 49            | Common       | Standard
+  2. Common 47            | Common       | Standard
+  3. Common 105           | Common       | Standard
+  4. Common 131           | Common       | Standard
+  5. Common 92            | Common       | Standard
+  6. Uncommon 141         | Uncommon     | Standard
+  7. Uncommon 194         | Uncommon     | Standard
+  8. Uncommon 156         | Uncommon     | Standard
+  9. Common 115           | Common       | Reverse Holo
+  10. Rare 218             | Rare         | Holo
 
 ================================================================================
 PACK #63 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 100           | Common       | Standard
-  2. Common 134           | Common       | Standard
-  3. Common 117           | Common       | Standard
-  4. Common 25            | Common       | Standard
-  5. Common 13            | Common       | Standard
-  6. Uncommon 181         | Uncommon     | Standard
-  7. Uncommon 171         | Uncommon     | Standard
-  8. Uncommon 153         | Uncommon     | Standard
-  9. Common 11            | Common       | Reverse Holo
-  10. Rare 211             | Rare         | Holo
+  1. Common 89            | Common       | Standard
+  2. Common 26            | Common       | Standard
+  3. Common 101           | Common       | Standard
+  4. Common 16            | Common       | Standard
+  5. Common 59            | Common       | Standard
+  6. Uncommon 149         | Uncommon     | Standard
+  7. Uncommon 175         | Uncommon     | Standard
+  8. Uncommon 141         | Uncommon     | Standard
+  9. Common 105           | Common       | Reverse Holo
+  10. Rare 221             | Rare         | Holo
 
 ================================================================================
-PACK #64 - Score: 48 pts
+PACK #64 - Score: 47 pts
 --------------------------------------------------------------------------------
-  1. Common 120           | Common       | Standard
-  2. Common 19            | Common       | Standard
-  3. Common 54            | Common       | Standard
-  4. Common 3             | Common       | Standard
-  5. Common 84            | Common       | Standard
-  6. Uncommon 161         | Uncommon     | Standard
-  7. Uncommon 181         | Uncommon     | Standard
-  8. Uncommon 176         | Uncommon     | Standard
-  9. Rare 201             | Rare         | Reverse Holo
-  10. V 223                | V            | Ultra Rare
+  1. Common 74            | Common       | Standard
+  2. Common 6             | Common       | Standard
+  3. Common 4             | Common       | Standard
+  4. Common 100           | Common       | Standard
+  5. Common 30            | Common       | Standard
+  6. Uncommon 166         | Uncommon     | Standard
+  7. Uncommon 182         | Uncommon     | Standard
+  8. Uncommon 180         | Uncommon     | Standard
+  9. Uncommon 181         | Uncommon     | Reverse Holo
+  10. V 227                | V            | Ultra Rare
 
 ================================================================================
-PACK #65 - Score: 27 pts
+PACK #65 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 29            | Common       | Standard
-  2. Common 37            | Common       | Standard
-  3. Common 109           | Common       | Standard
-  4. Common 89            | Common       | Standard
-  5. Common 81            | Common       | Standard
-  6. Uncommon 181         | Uncommon     | Standard
-  7. Uncommon 149         | Uncommon     | Standard
-  8. Uncommon 179         | Uncommon     | Standard
-  9. Uncommon 144         | Uncommon     | Reverse Holo
-  10. Rare 206             | Rare         | Holo
+  1. Common 11            | Common       | Standard
+  2. Common 76            | Common       | Standard
+  3. Common 61            | Common       | Standard
+  4. Common 91            | Common       | Standard
+  5. Common 123           | Common       | Standard
+  6. Uncommon 196         | Uncommon     | Standard
+  7. Uncommon 141         | Uncommon     | Standard
+  8. Uncommon 170         | Uncommon     | Standard
+  9. Common 101           | Common       | Reverse Holo
+  10. Rare 201             | Rare         | Holo
 
 ================================================================================
-PACK #66 - Score: 27 pts
+PACK #66 - Score: 45 pts
 --------------------------------------------------------------------------------
-  1. Common 103           | Common       | Standard
-  2. Common 102           | Common       | Standard
-  3. Common 76            | Common       | Standard
-  4. Common 107           | Common       | Standard
-  5. Common 128           | Common       | Standard
-  6. Uncommon 198         | Uncommon     | Standard
-  7. Uncommon 144         | Uncommon     | Standard
-  8. Uncommon 169         | Uncommon     | Standard
-  9. Uncommon 143         | Uncommon     | Reverse Holo
-  10. Rare 212             | Rare         | Holo
+  1. Common 138           | Common       | Standard
+  2. Common 38            | Common       | Standard
+  3. Common 110           | Common       | Standard
+  4. Common 68            | Common       | Standard
+  5. Common 94            | Common       | Standard
+  6. Uncommon 158         | Uncommon     | Standard
+  7. Uncommon 179         | Uncommon     | Standard
+  8. Uncommon 150         | Uncommon     | Standard
+  9. Common 1             | Common       | Reverse Holo
+  10. V 227                | V            | Ultra Rare
 
 ================================================================================
 PACK #67 - Score: 28 pts
 --------------------------------------------------------------------------------
-  1. Common 63            | Common       | Standard
-  2. Common 65            | Common       | Standard
-  3. Common 111           | Common       | Standard
-  4. Common 123           | Common       | Standard
-  5. Common 105           | Common       | Standard
-  6. Uncommon 162         | Uncommon     | Standard
-  7. Uncommon 194         | Uncommon     | Standard
+  1. Common 93            | Common       | Standard
+  2. Common 5             | Common       | Standard
+  3. Common 1             | Common       | Standard
+  4. Common 9             | Common       | Standard
+  5. Common 84            | Common       | Standard
+  6. Uncommon 159         | Uncommon     | Standard
+  7. Uncommon 146         | Uncommon     | Standard
+  8. Uncommon 148         | Uncommon     | Standard
+  9. Rare 209             | Rare         | Reverse Holo
+  10. Rare 207             | Rare         | Holo
+
+================================================================================
+PACK #68 - Score: 27 pts
+--------------------------------------------------------------------------------
+  1. Common 91            | Common       | Standard
+  2. Common 25            | Common       | Standard
+  3. Common 82            | Common       | Standard
+  4. Common 32            | Common       | Standard
+  5. Common 107           | Common       | Standard
+  6. Uncommon 197         | Uncommon     | Standard
+  7. Uncommon 173         | Uncommon     | Standard
+  8. Uncommon 144         | Uncommon     | Standard
+  9. Uncommon 155         | Uncommon     | Reverse Holo
+  10. Rare 221             | Rare         | Holo
+
+================================================================================
+PACK #69 - Score: 25 pts
+--------------------------------------------------------------------------------
+  1. Common 13            | Common       | Standard
+  2. Common 55            | Common       | Standard
+  3. Common 114           | Common       | Standard
+  4. Common 51            | Common       | Standard
+  5. Common 62            | Common       | Standard
+  6. Uncommon 158         | Uncommon     | Standard
+  7. Uncommon 180         | Uncommon     | Standard
+  8. Uncommon 176         | Uncommon     | Standard
+  9. Common 14            | Common       | Reverse Holo
+  10. Rare 213             | Rare         | Holo
+
+================================================================================
+PACK #70 - Score: 28 pts
+--------------------------------------------------------------------------------
+  1. Common 33            | Common       | Standard
+  2. Common 97            | Common       | Standard
+  3. Common 127           | Common       | Standard
+  4. Common 80            | Common       | Standard
+  5. Common 37            | Common       | Standard
+  6. Uncommon 164         | Uncommon     | Standard
+  7. Uncommon 162         | Uncommon     | Standard
   8. Uncommon 170         | Uncommon     | Standard
-  9. Rare 201             | Rare         | Reverse Holo
-  10. Rare 212             | Rare         | Holo
-
-================================================================================
-PACK #68 - Score: 45 pts
---------------------------------------------------------------------------------
-  1. Common 106           | Common       | Standard
-  2. Common 9             | Common       | Standard
-  3. Common 10            | Common       | Standard
-  4. Common 122           | Common       | Standard
-  5. Common 23            | Common       | Standard
-  6. Uncommon 168         | Uncommon     | Standard
-  7. Uncommon 170         | Uncommon     | Standard
-  8. Uncommon 160         | Uncommon     | Standard
-  9. Common 114           | Common       | Reverse Holo
-  10. V 224                | V            | Ultra Rare
-
-================================================================================
-PACK #69 - Score: 27 pts
---------------------------------------------------------------------------------
-  1. Common 28            | Common       | Standard
-  2. Common 101           | Common       | Standard
-  3. Common 58            | Common       | Standard
-  4. Common 75            | Common       | Standard
-  5. Common 93            | Common       | Standard
-  6. Uncommon 194         | Uncommon     | Standard
-  7. Uncommon 168         | Uncommon     | Standard
-  8. Uncommon 171         | Uncommon     | Standard
-  9. Uncommon 153         | Uncommon     | Reverse Holo
-  10. Rare 206             | Rare         | Holo
-
-================================================================================
-PACK #70 - Score: 45 pts
---------------------------------------------------------------------------------
-  1. Common 85            | Common       | Standard
-  2. Common 65            | Common       | Standard
-  3. Common 113           | Common       | Standard
-  4. Common 75            | Common       | Standard
-  5. Common 12            | Common       | Standard
-  6. Uncommon 156         | Uncommon     | Standard
-  7. Uncommon 183         | Uncommon     | Standard
-  8. Uncommon 173         | Uncommon     | Standard
-  9. Common 123           | Common       | Reverse Holo
-  10. V 227                | V            | Ultra Rare
+  9. Rare 204             | Rare         | Reverse Holo
+  10. Rare 222             | Rare         | Holo
 
 ================================================================================
 PACK #71 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 92            | Common       | Standard
-  2. Common 60            | Common       | Standard
-  3. Common 18            | Common       | Standard
-  4. Common 87            | Common       | Standard
-  5. Common 55            | Common       | Standard
-  6. Uncommon 152         | Uncommon     | Standard
-  7. Uncommon 170         | Uncommon     | Standard
-  8. Uncommon 185         | Uncommon     | Standard
-  9. Common 106           | Common       | Reverse Holo
-  10. Rare 221             | Rare         | Holo
+  1. Common 76            | Common       | Standard
+  2. Common 15            | Common       | Standard
+  3. Common 11            | Common       | Standard
+  4. Common 43            | Common       | Standard
+  5. Common 82            | Common       | Standard
+  6. Uncommon 172         | Uncommon     | Standard
+  7. Uncommon 143         | Uncommon     | Standard
+  8. Uncommon 184         | Uncommon     | Standard
+  9. Common 112           | Common       | Reverse Holo
+  10. Rare 214             | Rare         | Holo
 
 ================================================================================
-PACK #72 - Score: 45 pts
+PACK #72 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 18            | Common       | Standard
-  2. Common 72            | Common       | Standard
-  3. Common 31            | Common       | Standard
-  4. Common 93            | Common       | Standard
-  5. Common 82            | Common       | Standard
-  6. Uncommon 188         | Uncommon     | Standard
-  7. Uncommon 143         | Uncommon     | Standard
-  8. Uncommon 174         | Uncommon     | Standard
-  9. Common 55            | Common       | Reverse Holo
-  10. V 225                | V            | Ultra Rare
+  1. Common 31            | Common       | Standard
+  2. Common 94            | Common       | Standard
+  3. Common 103           | Common       | Standard
+  4. Common 66            | Common       | Standard
+  5. Common 26            | Common       | Standard
+  6. Uncommon 184         | Uncommon     | Standard
+  7. Uncommon 150         | Uncommon     | Standard
+  8. Uncommon 190         | Uncommon     | Standard
+  9. Uncommon 176         | Uncommon     | Reverse Holo
+  10. Rare 201             | Rare         | Holo
 
 ================================================================================
 PACK #73 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 53            | Common       | Standard
-  2. Common 67            | Common       | Standard
-  3. Common 51            | Common       | Standard
-  4. Common 73            | Common       | Standard
-  5. Common 3             | Common       | Standard
-  6. Uncommon 166         | Uncommon     | Standard
-  7. Uncommon 199         | Uncommon     | Standard
-  8. Uncommon 158         | Uncommon     | Standard
-  9. Uncommon 191         | Uncommon     | Reverse Holo
-  10. Rare 201             | Rare         | Holo
+  1. Common 69            | Common       | Standard
+  2. Common 108           | Common       | Standard
+  3. Common 55            | Common       | Standard
+  4. Common 17            | Common       | Standard
+  5. Common 5             | Common       | Standard
+  6. Uncommon 189         | Uncommon     | Standard
+  7. Uncommon 143         | Uncommon     | Standard
+  8. Uncommon 146         | Uncommon     | Standard
+  9. Uncommon 174         | Uncommon     | Reverse Holo
+  10. Rare 212             | Rare         | Holo
 
 ================================================================================
 PACK #74 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 63            | Common       | Standard
-  2. Common 120           | Common       | Standard
-  3. Common 3             | Common       | Standard
-  4. Common 43            | Common       | Standard
-  5. Common 69            | Common       | Standard
-  6. Uncommon 168         | Uncommon     | Standard
-  7. Uncommon 179         | Uncommon     | Standard
+  1. Common 127           | Common       | Standard
+  2. Common 94            | Common       | Standard
+  3. Common 1             | Common       | Standard
+  4. Common 66            | Common       | Standard
+  5. Common 5             | Common       | Standard
+  6. Uncommon 182         | Uncommon     | Standard
+  7. Uncommon 186         | Uncommon     | Standard
   8. Uncommon 180         | Uncommon     | Standard
-  9. Common 74            | Common       | Reverse Holo
-  10. Rare 217             | Rare         | Holo
-
-================================================================================
-PACK #75 - Score: 25 pts
---------------------------------------------------------------------------------
-  1. Common 119           | Common       | Standard
-  2. Common 121           | Common       | Standard
-  3. Common 133           | Common       | Standard
-  4. Common 128           | Common       | Standard
-  5. Common 92            | Common       | Standard
-  6. Uncommon 187         | Uncommon     | Standard
-  7. Uncommon 158         | Uncommon     | Standard
-  8. Uncommon 143         | Uncommon     | Standard
-  9. Common 89            | Common       | Reverse Holo
-  10. Rare 210             | Rare         | Holo
-
-================================================================================
-PACK #76 - Score: 27 pts
---------------------------------------------------------------------------------
-  1. Common 55            | Common       | Standard
-  2. Common 93            | Common       | Standard
-  3. Common 6             | Common       | Standard
-  4. Common 87            | Common       | Standard
-  5. Common 39            | Common       | Standard
-  6. Uncommon 197         | Uncommon     | Standard
-  7. Uncommon 193         | Uncommon     | Standard
-  8. Uncommon 145         | Uncommon     | Standard
-  9. Uncommon 150         | Uncommon     | Reverse Holo
-  10. Rare 213             | Rare         | Holo
-
-================================================================================
-PACK #77 - Score: 27 pts
---------------------------------------------------------------------------------
-  1. Common 39            | Common       | Standard
-  2. Common 34            | Common       | Standard
-  3. Common 22            | Common       | Standard
-  4. Common 24            | Common       | Standard
-  5. Common 80            | Common       | Standard
-  6. Uncommon 144         | Uncommon     | Standard
-  7. Uncommon 174         | Uncommon     | Standard
-  8. Uncommon 164         | Uncommon     | Standard
-  9. Uncommon 181         | Uncommon     | Reverse Holo
-  10. Rare 200             | Rare         | Holo
-
-================================================================================
-PACK #78 - Score: 25 pts
---------------------------------------------------------------------------------
-  1. Common 22            | Common       | Standard
-  2. Common 126           | Common       | Standard
-  3. Common 107           | Common       | Standard
-  4. Common 100           | Common       | Standard
-  5. Common 94            | Common       | Standard
-  6. Uncommon 149         | Uncommon     | Standard
-  7. Uncommon 167         | Uncommon     | Standard
-  8. Uncommon 146         | Uncommon     | Standard
-  9. Common 127           | Common       | Reverse Holo
+  9. Common 134           | Common       | Reverse Holo
   10. Rare 212             | Rare         | Holo
 
 ================================================================================
-PACK #79 - Score: 65 pts
+PACK #75 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 66            | Common       | Standard
-  2. Common 6             | Common       | Standard
-  3. Common 101           | Common       | Standard
-  4. Common 30            | Common       | Standard
-  5. Common 91            | Common       | Standard
-  6. Uncommon 174         | Uncommon     | Standard
-  7. Uncommon 193         | Uncommon     | Standard
-  8. Uncommon 183         | Uncommon     | Standard
-  9. Common 134           | Common       | Reverse Holo
-  10. VMAX 230             | VMAX         | Ultra Rare
-
-================================================================================
-PACK #80 - Score: 28 pts
---------------------------------------------------------------------------------
-  1. Common 121           | Common       | Standard
-  2. Common 39            | Common       | Standard
-  3. Common 55            | Common       | Standard
-  4. Common 91            | Common       | Standard
-  5. Common 42            | Common       | Standard
-  6. Uncommon 152         | Uncommon     | Standard
-  7. Uncommon 193         | Uncommon     | Standard
-  8. Uncommon 186         | Uncommon     | Standard
-  9. Rare 216             | Rare         | Reverse Holo
+  1. Common 110           | Common       | Standard
+  2. Common 1             | Common       | Standard
+  3. Common 15            | Common       | Standard
+  4. Common 28            | Common       | Standard
+  5. Common 114           | Common       | Standard
+  6. Uncommon 151         | Uncommon     | Standard
+  7. Uncommon 173         | Uncommon     | Standard
+  8. Uncommon 153         | Uncommon     | Standard
+  9. Uncommon 189         | Uncommon     | Reverse Holo
   10. Rare 205             | Rare         | Holo
 
 ================================================================================
-PACK #81 - Score: 25 pts
---------------------------------------------------------------------------------
-  1. Common 90            | Common       | Standard
-  2. Common 71            | Common       | Standard
-  3. Common 131           | Common       | Standard
-  4. Common 9             | Common       | Standard
-  5. Common 23            | Common       | Standard
-  6. Uncommon 173         | Uncommon     | Standard
-  7. Uncommon 180         | Uncommon     | Standard
-  8. Uncommon 152         | Uncommon     | Standard
-  9. Common 113           | Common       | Reverse Holo
-  10. Rare 216             | Rare         | Holo
-
-================================================================================
-PACK #82 - Score: 27 pts
---------------------------------------------------------------------------------
-  1. Common 106           | Common       | Standard
-  2. Common 104           | Common       | Standard
-  3. Common 54            | Common       | Standard
-  4. Common 3             | Common       | Standard
-  5. Common 50            | Common       | Standard
-  6. Uncommon 171         | Uncommon     | Standard
-  7. Uncommon 187         | Uncommon     | Standard
-  8. Uncommon 169         | Uncommon     | Standard
-  9. Uncommon 157         | Uncommon     | Reverse Holo
-  10. Rare 215             | Rare         | Holo
-
-================================================================================
-PACK #83 - Score: 25 pts
---------------------------------------------------------------------------------
-  1. Common 19            | Common       | Standard
-  2. Common 39            | Common       | Standard
-  3. Common 1             | Common       | Standard
-  4. Common 72            | Common       | Standard
-  5. Common 2             | Common       | Standard
-  6. Uncommon 182         | Uncommon     | Standard
-  7. Uncommon 167         | Uncommon     | Standard
-  8. Uncommon 196         | Uncommon     | Standard
-  9. Common 21            | Common       | Reverse Holo
-  10. Rare 202             | Rare         | Holo
-
-================================================================================
-PACK #84 - Score: 45 pts
---------------------------------------------------------------------------------
-  1. Common 30            | Common       | Standard
-  2. Common 140           | Common       | Standard
-  3. Common 104           | Common       | Standard
-  4. Common 134           | Common       | Standard
-  5. Common 109           | Common       | Standard
-  6. Uncommon 181         | Uncommon     | Standard
-  7. Uncommon 175         | Uncommon     | Standard
-  8. Uncommon 151         | Uncommon     | Standard
-  9. Common 124           | Common       | Reverse Holo
-  10. V 228                | V            | Ultra Rare
-
-================================================================================
-PACK #85 - Score: 28 pts
+PACK #76 - Score: 47 pts
 --------------------------------------------------------------------------------
   1. Common 45            | Common       | Standard
-  2. Common 119           | Common       | Standard
-  3. Common 46            | Common       | Standard
-  4. Common 42            | Common       | Standard
-  5. Common 107           | Common       | Standard
-  6. Uncommon 194         | Uncommon     | Standard
-  7. Uncommon 174         | Uncommon     | Standard
-  8. Uncommon 147         | Uncommon     | Standard
-  9. Rare 207             | Rare         | Reverse Holo
-  10. Rare 202             | Rare         | Holo
+  2. Common 69            | Common       | Standard
+  3. Common 132           | Common       | Standard
+  4. Common 22            | Common       | Standard
+  5. Common 120           | Common       | Standard
+  6. Uncommon 168         | Uncommon     | Standard
+  7. Uncommon 162         | Uncommon     | Standard
+  8. Uncommon 143         | Uncommon     | Standard
+  9. Uncommon 183         | Uncommon     | Reverse Holo
+  10. V 225                | V            | Ultra Rare
 
 ================================================================================
-PACK #86 - Score: 67 pts
+PACK #77 - Score: 45 pts
 --------------------------------------------------------------------------------
-  1. Common 99            | Common       | Standard
-  2. Common 82            | Common       | Standard
-  3. Common 122           | Common       | Standard
-  4. Common 63            | Common       | Standard
-  5. Common 48            | Common       | Standard
-  6. Uncommon 166         | Uncommon     | Standard
-  7. Uncommon 143         | Uncommon     | Standard
-  8. Uncommon 159         | Uncommon     | Standard
-  9. Uncommon 142         | Uncommon     | Reverse Holo
-  10. VMAX 232             | VMAX         | Ultra Rare
+  1. Common 130           | Common       | Standard
+  2. Common 18            | Common       | Standard
+  3. Common 69            | Common       | Standard
+  4. Common 115           | Common       | Standard
+  5. Common 55            | Common       | Standard
+  6. Uncommon 143         | Uncommon     | Standard
+  7. Uncommon 192         | Uncommon     | Standard
+  8. Uncommon 174         | Uncommon     | Standard
+  9. Common 61            | Common       | Reverse Holo
+  10. V 225                | V            | Ultra Rare
 
 ================================================================================
-PACK #87 - Score: 25 pts
+PACK #78 - Score: 48 pts
 --------------------------------------------------------------------------------
-  1. Common 25            | Common       | Standard
-  2. Common 53            | Common       | Standard
-  3. Common 52            | Common       | Standard
-  4. Common 60            | Common       | Standard
-  5. Common 113           | Common       | Standard
-  6. Uncommon 141         | Uncommon     | Standard
-  7. Uncommon 197         | Uncommon     | Standard
-  8. Uncommon 171         | Uncommon     | Standard
-  9. Common 67            | Common       | Reverse Holo
-  10. Rare 218             | Rare         | Holo
+  1. Common 114           | Common       | Standard
+  2. Common 12            | Common       | Standard
+  3. Common 48            | Common       | Standard
+  4. Common 128           | Common       | Standard
+  5. Common 71            | Common       | Standard
+  6. Uncommon 167         | Uncommon     | Standard
+  7. Uncommon 184         | Uncommon     | Standard
+  8. Uncommon 185         | Uncommon     | Standard
+  9. Rare 218             | Rare         | Reverse Holo
+  10. V 226                | V            | Ultra Rare
 
 ================================================================================
-PACK #88 - Score: 25 pts
+PACK #79 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 51            | Common       | Standard
-  2. Common 13            | Common       | Standard
-  3. Common 121           | Common       | Standard
-  4. Common 97            | Common       | Standard
-  5. Common 38            | Common       | Standard
-  6. Uncommon 145         | Uncommon     | Standard
-  7. Uncommon 154         | Uncommon     | Standard
+  1. Common 138           | Common       | Standard
+  2. Common 20            | Common       | Standard
+  3. Common 69            | Common       | Standard
+  4. Common 27            | Common       | Standard
+  5. Common 90            | Common       | Standard
+  6. Uncommon 153         | Uncommon     | Standard
+  7. Uncommon 195         | Uncommon     | Standard
   8. Uncommon 183         | Uncommon     | Standard
+  9. Uncommon 155         | Uncommon     | Reverse Holo
+  10. Rare 205             | Rare         | Holo
+
+================================================================================
+PACK #80 - Score: 25 pts
+--------------------------------------------------------------------------------
+  1. Common 93            | Common       | Standard
+  2. Common 107           | Common       | Standard
+  3. Common 58            | Common       | Standard
+  4. Common 23            | Common       | Standard
+  5. Common 100           | Common       | Standard
+  6. Uncommon 150         | Uncommon     | Standard
+  7. Uncommon 183         | Uncommon     | Standard
+  8. Uncommon 161         | Uncommon     | Standard
   9. Common 91            | Common       | Reverse Holo
   10. Rare 201             | Rare         | Holo
 
 ================================================================================
-PACK #89 - Score: 25 pts
+PACK #81 - Score: 47 pts
 --------------------------------------------------------------------------------
-  1. Common 104           | Common       | Standard
-  2. Common 54            | Common       | Standard
-  3. Common 21            | Common       | Standard
-  4. Common 68            | Common       | Standard
-  5. Common 27            | Common       | Standard
-  6. Uncommon 153         | Uncommon     | Standard
-  7. Uncommon 168         | Uncommon     | Standard
-  8. Uncommon 189         | Uncommon     | Standard
-  9. Common 84            | Common       | Reverse Holo
-  10. Rare 212             | Rare         | Holo
+  1. Common 113           | Common       | Standard
+  2. Common 88            | Common       | Standard
+  3. Common 136           | Common       | Standard
+  4. Common 133           | Common       | Standard
+  5. Common 140           | Common       | Standard
+  6. Uncommon 152         | Uncommon     | Standard
+  7. Uncommon 151         | Uncommon     | Standard
+  8. Uncommon 190         | Uncommon     | Standard
+  9. Uncommon 193         | Uncommon     | Reverse Holo
+  10. V 227                | V            | Ultra Rare
+
+================================================================================
+PACK #82 - Score: 67 pts
+--------------------------------------------------------------------------------
+  1. Common 108           | Common       | Standard
+  2. Common 67            | Common       | Standard
+  3. Common 65            | Common       | Standard
+  4. Common 101           | Common       | Standard
+  5. Common 2             | Common       | Standard
+  6. Uncommon 190         | Uncommon     | Standard
+  7. Uncommon 177         | Uncommon     | Standard
+  8. Uncommon 196         | Uncommon     | Standard
+  9. Uncommon 178         | Uncommon     | Reverse Holo
+  10. VMAX 232             | VMAX         | Ultra Rare
+
+================================================================================
+PACK #83 - Score: 67 pts
+--------------------------------------------------------------------------------
+  1. Common 94            | Common       | Standard
+  2. Common 91            | Common       | Standard
+  3. Common 68            | Common       | Standard
+  4. Common 123           | Common       | Standard
+  5. Common 109           | Common       | Standard
+  6. Uncommon 173         | Uncommon     | Standard
+  7. Uncommon 153         | Uncommon     | Standard
+  8. Uncommon 177         | Uncommon     | Standard
+  9. Uncommon 152         | Uncommon     | Reverse Holo
+  10. VMAX 230             | VMAX         | Ultra Rare
+
+================================================================================
+PACK #84 - Score: 25 pts
+--------------------------------------------------------------------------------
+  1. Common 26            | Common       | Standard
+  2. Common 33            | Common       | Standard
+  3. Common 137           | Common       | Standard
+  4. Common 4             | Common       | Standard
+  5. Common 55            | Common       | Standard
+  6. Uncommon 146         | Uncommon     | Standard
+  7. Uncommon 161         | Uncommon     | Standard
+  8. Uncommon 157         | Uncommon     | Standard
+  9. Common 114           | Common       | Reverse Holo
+  10. Rare 210             | Rare         | Holo
+
+================================================================================
+PACK #85 - Score: 100 pts
+--------------------------------------------------------------------------------
+  1. Common 47            | Common       | Standard
+  2. Common 131           | Common       | Standard
+  3. Common 104           | Common       | Standard
+  4. Common 58            | Common       | Standard
+  5. Common 113           | Common       | Standard
+  6. Uncommon 159         | Uncommon     | Standard
+  7. Uncommon 182         | Uncommon     | Standard
+  8. Uncommon 175         | Uncommon     | Standard
+  9. Common 53            | Common       | Reverse Holo
+  10. Secret Rare 233      | Secret Rare  | Secret Rare
+
+================================================================================
+PACK #86 - Score: 27 pts
+--------------------------------------------------------------------------------
+  1. Common 61            | Common       | Standard
+  2. Common 27            | Common       | Standard
+  3. Common 44            | Common       | Standard
+  4. Common 125           | Common       | Standard
+  5. Common 104           | Common       | Standard
+  6. Uncommon 191         | Uncommon     | Standard
+  7. Uncommon 196         | Uncommon     | Standard
+  8. Uncommon 161         | Uncommon     | Standard
+  9. Uncommon 181         | Uncommon     | Reverse Holo
+  10. Rare 219             | Rare         | Holo
+
+================================================================================
+PACK #87 - Score: 27 pts
+--------------------------------------------------------------------------------
+  1. Common 124           | Common       | Standard
+  2. Common 117           | Common       | Standard
+  3. Common 24            | Common       | Standard
+  4. Common 113           | Common       | Standard
+  5. Common 31            | Common       | Standard
+  6. Uncommon 173         | Uncommon     | Standard
+  7. Uncommon 195         | Uncommon     | Standard
+  8. Uncommon 145         | Uncommon     | Standard
+  9. Uncommon 177         | Uncommon     | Reverse Holo
+  10. Rare 206             | Rare         | Holo
+
+================================================================================
+PACK #88 - Score: 47 pts
+--------------------------------------------------------------------------------
+  1. Common 48            | Common       | Standard
+  2. Common 92            | Common       | Standard
+  3. Common 61            | Common       | Standard
+  4. Common 72            | Common       | Standard
+  5. Common 127           | Common       | Standard
+  6. Uncommon 196         | Uncommon     | Standard
+  7. Uncommon 177         | Uncommon     | Standard
+  8. Uncommon 199         | Uncommon     | Standard
+  9. Uncommon 165         | Uncommon     | Reverse Holo
+  10. V 228                | V            | Ultra Rare
+
+================================================================================
+PACK #89 - Score: 27 pts
+--------------------------------------------------------------------------------
+  1. Common 52            | Common       | Standard
+  2. Common 105           | Common       | Standard
+  3. Common 8             | Common       | Standard
+  4. Common 21            | Common       | Standard
+  5. Common 58            | Common       | Standard
+  6. Uncommon 141         | Uncommon     | Standard
+  7. Uncommon 196         | Uncommon     | Standard
+  8. Uncommon 157         | Uncommon     | Standard
+  9. Uncommon 180         | Uncommon     | Reverse Holo
+  10. Rare 213             | Rare         | Holo
 
 ================================================================================
 PACK #90 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 32            | Common       | Standard
-  2. Common 122           | Common       | Standard
-  3. Common 91            | Common       | Standard
-  4. Common 93            | Common       | Standard
-  5. Common 13            | Common       | Standard
-  6. Uncommon 188         | Uncommon     | Standard
-  7. Uncommon 158         | Uncommon     | Standard
-  8. Uncommon 147         | Uncommon     | Standard
-  9. Uncommon 171         | Uncommon     | Reverse Holo
-  10. Rare 219             | Rare         | Holo
+  1. Common 7             | Common       | Standard
+  2. Common 77            | Common       | Standard
+  3. Common 110           | Common       | Standard
+  4. Common 18            | Common       | Standard
+  5. Common 90            | Common       | Standard
+  6. Uncommon 193         | Uncommon     | Standard
+  7. Uncommon 188         | Uncommon     | Standard
+  8. Uncommon 169         | Uncommon     | Standard
+  9. Uncommon 183         | Uncommon     | Reverse Holo
+  10. Rare 214             | Rare         | Holo
 
 ================================================================================
-PACK #91 - Score: 27 pts
+PACK #91 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 85            | Common       | Standard
-  2. Common 94            | Common       | Standard
-  3. Common 18            | Common       | Standard
-  4. Common 14            | Common       | Standard
-  5. Common 28            | Common       | Standard
-  6. Uncommon 152         | Uncommon     | Standard
-  7. Uncommon 151         | Uncommon     | Standard
-  8. Uncommon 193         | Uncommon     | Standard
-  9. Uncommon 144         | Uncommon     | Reverse Holo
-  10. Rare 213             | Rare         | Holo
+  1. Common 53            | Common       | Standard
+  2. Common 31            | Common       | Standard
+  3. Common 130           | Common       | Standard
+  4. Common 118           | Common       | Standard
+  5. Common 24            | Common       | Standard
+  6. Uncommon 173         | Uncommon     | Standard
+  7. Uncommon 185         | Uncommon     | Standard
+  8. Uncommon 166         | Uncommon     | Standard
+  9. Common 89            | Common       | Reverse Holo
+  10. Rare 217             | Rare         | Holo
 
 ================================================================================
 PACK #92 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 92            | Common       | Standard
-  2. Common 79            | Common       | Standard
-  3. Common 41            | Common       | Standard
-  4. Common 88            | Common       | Standard
-  5. Common 64            | Common       | Standard
-  6. Uncommon 167         | Uncommon     | Standard
-  7. Uncommon 186         | Uncommon     | Standard
-  8. Uncommon 176         | Uncommon     | Standard
-  9. Uncommon 162         | Uncommon     | Reverse Holo
-  10. Rare 214             | Rare         | Holo
+  1. Common 68            | Common       | Standard
+  2. Common 88            | Common       | Standard
+  3. Common 24            | Common       | Standard
+  4. Common 140           | Common       | Standard
+  5. Common 129           | Common       | Standard
+  6. Uncommon 180         | Uncommon     | Standard
+  7. Uncommon 176         | Uncommon     | Standard
+  8. Uncommon 161         | Uncommon     | Standard
+  9. Uncommon 177         | Uncommon     | Reverse Holo
+  10. Rare 209             | Rare         | Holo
 
 ================================================================================
-PACK #93 - Score: 27 pts
+PACK #93 - Score: 65 pts
 --------------------------------------------------------------------------------
-  1. Common 9             | Common       | Standard
-  2. Common 116           | Common       | Standard
-  3. Common 11            | Common       | Standard
-  4. Common 125           | Common       | Standard
-  5. Common 53            | Common       | Standard
-  6. Uncommon 170         | Uncommon     | Standard
-  7. Uncommon 171         | Uncommon     | Standard
-  8. Uncommon 143         | Uncommon     | Standard
-  9. Uncommon 149         | Uncommon     | Reverse Holo
-  10. Rare 217             | Rare         | Holo
+  1. Common 90            | Common       | Standard
+  2. Common 33            | Common       | Standard
+  3. Common 42            | Common       | Standard
+  4. Common 76            | Common       | Standard
+  5. Common 74            | Common       | Standard
+  6. Uncommon 165         | Uncommon     | Standard
+  7. Uncommon 146         | Uncommon     | Standard
+  8. Uncommon 160         | Uncommon     | Standard
+  9. Common 3             | Common       | Reverse Holo
+  10. VMAX 232             | VMAX         | Ultra Rare
 
 ================================================================================
-PACK #94 - Score: 27 pts
+PACK #94 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 133           | Common       | Standard
-  2. Common 2             | Common       | Standard
-  3. Common 102           | Common       | Standard
-  4. Common 112           | Common       | Standard
-  5. Common 126           | Common       | Standard
-  6. Uncommon 158         | Uncommon     | Standard
-  7. Uncommon 151         | Uncommon     | Standard
-  8. Uncommon 196         | Uncommon     | Standard
-  9. Uncommon 165         | Uncommon     | Reverse Holo
-  10. Rare 216             | Rare         | Holo
+  1. Common 91            | Common       | Standard
+  2. Common 39            | Common       | Standard
+  3. Common 109           | Common       | Standard
+  4. Common 92            | Common       | Standard
+  5. Common 137           | Common       | Standard
+  6. Uncommon 195         | Uncommon     | Standard
+  7. Uncommon 158         | Uncommon     | Standard
+  8. Uncommon 171         | Uncommon     | Standard
+  9. Common 95            | Common       | Reverse Holo
+  10. Rare 208             | Rare         | Holo
 
 ================================================================================
 PACK #95 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 50            | Common       | Standard
-  2. Common 86            | Common       | Standard
-  3. Common 78            | Common       | Standard
-  4. Common 132           | Common       | Standard
-  5. Common 128           | Common       | Standard
-  6. Uncommon 197         | Uncommon     | Standard
-  7. Uncommon 156         | Uncommon     | Standard
-  8. Uncommon 182         | Uncommon     | Standard
-  9. Common 15            | Common       | Reverse Holo
-  10. Rare 206             | Rare         | Holo
+  1. Common 63            | Common       | Standard
+  2. Common 96            | Common       | Standard
+  3. Common 15            | Common       | Standard
+  4. Common 35            | Common       | Standard
+  5. Common 79            | Common       | Standard
+  6. Uncommon 163         | Uncommon     | Standard
+  7. Uncommon 146         | Uncommon     | Standard
+  8. Uncommon 175         | Uncommon     | Standard
+  9. Common 77            | Common       | Reverse Holo
+  10. Rare 200             | Rare         | Holo
 
 ================================================================================
 PACK #96 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 140           | Common       | Standard
-  2. Common 108           | Common       | Standard
-  3. Common 50            | Common       | Standard
-  4. Common 107           | Common       | Standard
-  5. Common 18            | Common       | Standard
-  6. Uncommon 181         | Uncommon     | Standard
-  7. Uncommon 184         | Uncommon     | Standard
-  8. Uncommon 177         | Uncommon     | Standard
-  9. Common 14            | Common       | Reverse Holo
-  10. Rare 202             | Rare         | Holo
+  1. Common 132           | Common       | Standard
+  2. Common 76            | Common       | Standard
+  3. Common 73            | Common       | Standard
+  4. Common 82            | Common       | Standard
+  5. Common 131           | Common       | Standard
+  6. Uncommon 171         | Uncommon     | Standard
+  7. Uncommon 185         | Uncommon     | Standard
+  8. Uncommon 170         | Uncommon     | Standard
+  9. Common 74            | Common       | Reverse Holo
+  10. Rare 213             | Rare         | Holo
 
 ================================================================================
-PACK #97 - Score: 65 pts
+PACK #97 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 96            | Common       | Standard
-  2. Common 89            | Common       | Standard
-  3. Common 95            | Common       | Standard
-  4. Common 107           | Common       | Standard
-  5. Common 108           | Common       | Standard
-  6. Uncommon 145         | Uncommon     | Standard
-  7. Uncommon 150         | Uncommon     | Standard
-  8. Uncommon 178         | Uncommon     | Standard
-  9. Common 121           | Common       | Reverse Holo
-  10. VMAX 232             | VMAX         | Ultra Rare
+  1. Common 79            | Common       | Standard
+  2. Common 88            | Common       | Standard
+  3. Common 101           | Common       | Standard
+  4. Common 33            | Common       | Standard
+  5. Common 25            | Common       | Standard
+  6. Uncommon 174         | Uncommon     | Standard
+  7. Uncommon 187         | Uncommon     | Standard
+  8. Uncommon 153         | Uncommon     | Standard
+  9. Common 50            | Common       | Reverse Holo
+  10. Rare 201             | Rare         | Holo
 
 ================================================================================
-PACK #98 - Score: 25 pts
+PACK #98 - Score: 27 pts
 --------------------------------------------------------------------------------
-  1. Common 99            | Common       | Standard
-  2. Common 52            | Common       | Standard
-  3. Common 134           | Common       | Standard
-  4. Common 106           | Common       | Standard
-  5. Common 49            | Common       | Standard
-  6. Uncommon 187         | Uncommon     | Standard
-  7. Uncommon 141         | Uncommon     | Standard
-  8. Uncommon 152         | Uncommon     | Standard
-  9. Common 79            | Common       | Reverse Holo
-  10. Rare 217             | Rare         | Holo
+  1. Common 112           | Common       | Standard
+  2. Common 129           | Common       | Standard
+  3. Common 81            | Common       | Standard
+  4. Common 110           | Common       | Standard
+  5. Common 17            | Common       | Standard
+  6. Uncommon 167         | Uncommon     | Standard
+  7. Uncommon 190         | Uncommon     | Standard
+  8. Uncommon 153         | Uncommon     | Standard
+  9. Uncommon 164         | Uncommon     | Reverse Holo
+  10. Rare 200             | Rare         | Holo
 
 ================================================================================
 PACK #99 - Score: 25 pts
 --------------------------------------------------------------------------------
-  1. Common 44            | Common       | Standard
-  2. Common 30            | Common       | Standard
-  3. Common 128           | Common       | Standard
-  4. Common 115           | Common       | Standard
-  5. Common 25            | Common       | Standard
-  6. Uncommon 166         | Uncommon     | Standard
-  7. Uncommon 153         | Uncommon     | Standard
-  8. Uncommon 162         | Uncommon     | Standard
-  9. Common 109           | Common       | Reverse Holo
-  10. Rare 207             | Rare         | Holo
+  1. Common 62            | Common       | Standard
+  2. Common 105           | Common       | Standard
+  3. Common 136           | Common       | Standard
+  4. Common 48            | Common       | Standard
+  5. Common 129           | Common       | Standard
+  6. Uncommon 149         | Uncommon     | Standard
+  7. Uncommon 143         | Uncommon     | Standard
+  8. Uncommon 184         | Uncommon     | Standard
+  9. Common 115           | Common       | Reverse Holo
+  10. Rare 220             | Rare         | Holo
 
 ================================================================================
-PACK #100 - Score: 25 pts
+PACK #100 - Score: 45 pts
 --------------------------------------------------------------------------------
-  1. Common 49            | Common       | Standard
-  2. Common 132           | Common       | Standard
-  3. Common 60            | Common       | Standard
-  4. Common 42            | Common       | Standard
-  5. Common 5             | Common       | Standard
-  6. Uncommon 179         | Uncommon     | Standard
-  7. Uncommon 180         | Uncommon     | Standard
-  8. Uncommon 181         | Uncommon     | Standard
-  9. Common 52            | Common       | Reverse Holo
-  10. Rare 202             | Rare         | Holo
+  1. Common 6             | Common       | Standard
+  2. Common 19            | Common       | Standard
+  3. Common 78            | Common       | Standard
+  4. Common 31            | Common       | Standard
+  5. Common 75            | Common       | Standard
+  6. Uncommon 172         | Uncommon     | Standard
+  7. Uncommon 187         | Uncommon     | Standard
+  8. Uncommon 199         | Uncommon     | Standard
+  9. Common 103           | Common       | Reverse Holo
+  10. V 229                | V            | Ultra Rare
 
 
 ================================================================================
@@ -1411,24 +1411,24 @@ SUMMARY STATISTICS
 ================================================================================
 
 Score Statistics:
-  Average: 31.35 pts
+  Average: 37.05 pts
   Minimum: 25 pts
-  Maximum: 67 pts
+  Maximum: 100 pts
 
 Score Distribution:
   0-20: 0 packs (0.0%)
-  21-40: 80 packs (80.0%)
-  41-60: 13 packs (13.0%)
-  61-80: 7 packs (7.0%)
-  81-100: 0 packs (0.0%)
+  21-40: 68 packs (68.0%)
+  41-60: 16 packs (16.0%)
+  61-80: 12 packs (12.0%)
+  81-100: 4 packs (4.0%)
 
 Rarity Distribution (1100 total cards from 100 packs):
-  Secret Rare: 0 cards (0.00%)
-  VMAX: 7 cards (0.64%)
-  V: 13 cards (1.18%)
-  Rare: 95 cards (8.64%)
-  Uncommon: 325 cards (29.55%)
-  Common: 560 cards (50.91%)
+  Secret Rare: 4 cards (0.36%)
+  VMAX: 12 cards (1.09%)
+  V: 16 cards (1.45%)
+  Rare: 76 cards (6.91%)
+  Uncommon: 342 cards (31.09%)
+  Common: 550 cards (50.00%)
 
 ================================================================================
 END OF REPORT

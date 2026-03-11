@@ -56,17 +56,55 @@ const pools = {
   secretRares: mockCards.filter(c => c.rarity === 'Secret Rare')
 };
 
-// Determine finish based on slot type
-function determineFinish(card, slotType) {
-  if (slotType === 'reverse') return 'Reverse Holo';
+// Returns all valid finish types for a card based on its rarity
+function getValidFinishes(card) {
+  switch (card.rarity) {
+    case 'Common':
+    case 'Uncommon':
+      return ['Standard', 'Reverse Holo'];
+    case 'Rare':
+      return ['Standard', 'Reverse Holo', 'Holo'];
+    case 'V':
+    case 'VMAX':
+      return ['Ultra Rare'];
+    case 'Secret Rare':
+      return ['Secret Rare'];
+    default:
+      return ['Standard'];
+  }
+}
+
+// Selects a valid finish for a card, using preferred finish if legal
+function selectValidFinish(card, preferredFinish) {
+  const validFinishes = getValidFinishes(card);
   
-  if (slotType === 'rare') {
-    if (card.rarity === 'Secret Rare') return 'Secret Rare';
-    if (card.rarity === 'VMAX' || card.rarity === 'V') return 'Ultra Rare';
-    if (card.rarity === 'Rare') return 'Holo';
+  if (validFinishes.includes(preferredFinish)) {
+    return preferredFinish;
   }
   
-  return 'Standard';
+  if (validFinishes.includes('Standard')) {
+    return 'Standard';
+  }
+  
+  return validFinishes[0];
+}
+
+// Determine finish based on slot type with validation
+function determineFinish(card, slotType) {
+  let preferredFinish;
+  
+  if (slotType === 'reverse') {
+    preferredFinish = 'Reverse Holo';
+  } else if (slotType === 'rare') {
+    if (card.rarity === 'Secret Rare') preferredFinish = 'Secret Rare';
+    else if (card.rarity === 'VMAX' || card.rarity === 'V') preferredFinish = 'Ultra Rare';
+    else if (card.rarity === 'Rare') preferredFinish = 'Holo';
+    else preferredFinish = 'Standard';
+  } else {
+    preferredFinish = 'Standard';
+  }
+  
+  return selectValidFinish(card, preferredFinish);
 }
 
 // Simulate pack with configuration
