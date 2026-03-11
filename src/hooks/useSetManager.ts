@@ -7,7 +7,9 @@ const STORAGE_KEY = 'pokemonPackSimulatorSets';
 // Helper to save to localStorage
 const saveToStorage = (sets: SavedSet[]) => {
   console.log(`💾 Saving ${sets.length} set(s) to localStorage`);
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(sets));
+  // Strip out rarityPools before saving (they're rebuilt on load)
+  const setsToSave = sets.map(({ rarityPools, ...set }) => set);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(setsToSave));
 };
 
 // Helper to load from localStorage
@@ -83,6 +85,8 @@ export function useSetManager() {
       });
       // Sort collection by number
       newCollection.sort((a, b) => parseInt(a.number, 10) - parseInt(b.number, 10));
+      
+      console.log(`📦 Updated collection: ${newCollection.length} unique cards, ${set.packsOpened + 1} packs opened`);
       
       return {
         ...set,

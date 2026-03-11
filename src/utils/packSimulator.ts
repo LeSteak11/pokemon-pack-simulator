@@ -58,7 +58,7 @@ function determineFinish(card: Card, slotType: 'standard' | 'reverse' | 'rare'):
 
 export function simulatePack(pools: RarityPools, config: PackConfig = DEFAULT_PACK_CONFIG): Card[] {
   const pack: Card[] = [];
-  const usedCardNumbers = new Set<number>();
+  const usedCardNumbers = new Set<string>();
   
   // Helper to get random card from array, excluding already-used card numbers
   const getRandomExcluding = (arr: Card[]) => {
