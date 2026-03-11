@@ -1,9 +1,10 @@
 import React from 'react';
-import { SavedSet } from '../types';
+import { SavedSet, InventoryProfile } from '../types';
 import { PackageOpen } from 'lucide-react';
 
 interface PackOpenerProps {
   activeSet: SavedSet | null;
+  activeProfile: InventoryProfile | null;
   onOpenPack: () => void;
   saveToInventory: boolean;
   onToggleSaveInventory: (value: boolean) => void;
@@ -11,6 +12,7 @@ interface PackOpenerProps {
 
 export default function PackOpener({
   activeSet,
+  activeProfile,
   onOpenPack,
   saveToInventory,
   onToggleSaveInventory,
@@ -22,9 +24,9 @@ export default function PackOpener({
           <PackageOpen className="w-5 h-5 text-indigo-500" />
           Open Packs
         </h2>
-        {activeSet && (
+        {activeProfile && (
           <span className="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md text-xs font-bold">
-            {activeSet.packsOpened} Opened
+            {activeProfile.packsOpened} Opened
           </span>
         )}
       </div>

@@ -1,3 +1,88 @@
+PM UPDATE — INVENTORY PROFILES & RESET CAPABILITY
+Date: March 10, 2026
+================================================================================
+
+✅ COMPLETED: Inventory Profiles & Reset Capability
+
+--------------------------------------------------------------------------------
+CHANGE 6.5: INVENTORY PROFILES & RESET CAPABILITY
+--------------------------------------------------------------------------------
+
+GOAL: Allow users to manage multiple inventory profiles per set, each tracking
+      independent collections (e.g., "Kayleigh", "Stream Opening", "Test Run")
+      with optional reset capability.
+
+IMPLEMENTATION OVERVIEW:
+
+**New Data Structures:**
+
+1. **InventoryProfile Interface** (types.ts)
+   ```typescript
+   interface InventoryProfile {
+     id: string;              // Unique identifier
+     name: string;            // Display name (e.g., "Kayleigh")
+     collection: CollectionItem[];
+     packsOpened: number;
+   }
+   ```
+
+2. **Modified SavedSet Interface** (types.ts)
+   ```typescript
+   interface SavedSet {
+     profiles: InventoryProfile[];      // Multiple profiles per set
+     activeProfileId: string | null;    // Currently selected profile
+     // Legacy fields for migration compatibility:
+     collection?: CollectionItem[];
+     packsOpened?: number;
+   }
+   ```
+
+**Migration Strategy:**
+
+- Old Format: `{collection: [...], packsOpened: 5}`
+- New Format: `{profiles: [{id: 'default', name: 'Default', ...}], activeProfileId: 'default'}`
+- Automatic Migration: Detects old format → creates "Default" profile with existing data
+- Applied on every load via `migrateToProfiles()` function
+- Legacy fields preserved for backward compatibility
+
+**Backend Functions Added (useSetManager.ts):**
+
+1. **createProfile(setId, profileName)**
+   - Creates new profile with unique ID
+   - Initializes empty collection and 0 packs opened
+   - Automatically sets as active profile
+   - Saves to storage immediately
+
+2. **setActiveProfile(setId, profileId)**
+   - Switches the active profile for a set
+   - Used when selecting from dropdown
+   - Saves to storage immediately
+
+3. **updateProfileCollection(setId, profileId, pack)**
+   - Replaces old updateSetCollection()
+   - Updates specific profile's collection
+   - Merges cards, increments counts
+   - Increments profile's packsOpened counter
+   - Saves to storage immediately
+
+4. **resetProfile(setId, profileId)**
+   - Clears all cards from profile collection
+   - Resets packsOpened counter to 0
+   - Preserves profile name and ID
+   - Saves to storage immediately
+
+5. **deleteProfile(setId, profileId)**
+   - Removes profile from profiles array
+   - If active profile deleted, sets activeProfileId to remaining profile or null
+   - Cannot delete if only one profile exists (UI enforced)
+   - Saves to storage immediately
+
+6. **activeProfile (exported state)**
+   - Computed value: finds active profile from activeSet
+   - Returns null if no active profile or no active set
+   - Used by UI to display current profile data
+
+
 PM UPDATE — INVENTORY PERSISTENCE & COLLECTION TRACKING
 Date: March 10, 2026
 ================================================================================

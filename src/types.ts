@@ -12,6 +12,13 @@ export interface CollectionItem extends Card {
   count: number;
 }
 
+export interface InventoryProfile {
+  id: string;
+  name: string;
+  collection: CollectionItem[];
+  packsOpened: number;
+}
+
 export interface RarityPools {
   commons: Card[];
   uncommons: Card[];
@@ -50,6 +57,9 @@ export interface SavedSet {
   cards: Card[];
   rarityPools?: RarityPools; // Built on load/import, not persisted
   packConfig?: PackConfig;   // Pack structure configuration, uses default if not specified
-  collection: CollectionItem[];
-  packsOpened: number;
+  profiles: InventoryProfile[];
+  activeProfileId: string | null;
+  // Legacy fields for migration
+  collection?: CollectionItem[];
+  packsOpened?: number;
 }

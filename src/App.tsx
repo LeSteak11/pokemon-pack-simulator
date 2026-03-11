@@ -9,6 +9,7 @@ import SetUploader from './components/SetUploader';
 import PackOpener from './components/PackOpener';
 import PackResults from './components/PackResults';
 import CollectionTable from './components/CollectionTable';
+import ProfileManager from './components/ProfileManager';
 import { Trash } from 'lucide-react';
 
 export default function App() {
@@ -38,12 +39,25 @@ export default function App() {
   const handleOpenPack = () => {
     if (!setManager.activeSet || !setManager.activeSet.rarityPools || setManager.activeSet.cards.length === 0) return;
     
+    // Check if saving to inventory but no active profile exists
+    if (saveToInventory && setManager.activeSetId) {
+      if (!setManager.activeProfile) {
+        // No profile exists - prompt user to create one
+        const profileName = prompt('Create a new inventory profile (e.g., "My Collection"):');
+        if (!profileName || profileName.trim() === '') {
+          alert('Profile creation cancelled. Uncheck "Save to Collection Inventory" to open packs without saving.');
+          return;
+        }
+        setManager.createProfile(setManager.activeSetId, profileName.trim());
+      }
+    }
+    
     const config = setManager.activeSet.packConfig || DEFAULT_PACK_CONFIG;
     const pack = simulatePack(setManager.activeSet.rarityPools, config);
     setCurrentPack(pack);
     
-    if (saveToInventory && setManager.activeSetId) {
-      setManager.updateSetCollection(setManager.activeSetId, pack);
+    if (saveToInventory && setManager.activeSetId && setManager.activeProfile) {
+      setManager.updateProfileCollection(setManager.activeSetId, setManager.activeProfile.id, pack);
     }
   };
 
@@ -62,10 +76,40 @@ export default function App() {
     setCurrentPack([]);
   };
 
+  const handleCreateProfile = () => {
+    if (!setManager.activeSetId) return;
+    
+    const profileName = prompt('Enter a name for the new profile:');
+    if (!profileName || profileName.trim() === '') return;
+    
+    setManager.createProfile(setManager.activeSetId, profileName.trim());
+  };
+
+  const handleSelectProfile = (profileId: string) => {
+    if (!setManager.activeSetId) return;
+    setManager.setActiveProfile(setManager.activeSetId, profileId);
+  };
+
+  const handleResetProfile = () => {
+    if (!setManager.activeSetId || !setManager.activeProfile) return;
+    
+    if (confirm(`⚠️ Reset "${setManager.activeProfile.name}"? This will delete all cards and reset the pack counter.`)) {
+      setManager.resetProfile(setManager.activeSetId, setManager.activeProfile.id);
+    }
+  };
+
+  const handleDeleteProfile = () => {
+    if (!setManager.activeSetId || !setManager.activeProfile) return;
+    
+    if (confirm(`⚠️ Permanently delete "${setManager.activeProfile.name}"?`)) {
+      setManager.deleteProfile(setManager.activeSetId, setManager.activeProfile.id);
+    }
+  };
+
   const currentScore = currentPack.length > 0 ? calculatePackScore(currentPack) : 0;
-  const collectionStats = setManager.activeSet ? {
-    unique: setManager.activeSet.collection.length,
-    total: setManager.activeSet.collection.reduce((acc, c) => acc + c.count, 0)
+  const collectionStats = setManager.activeProfile ? {
+    unique: setManager.activeProfile.collection.length,
+    total: setManager.activeProfile.collection.reduce((acc, c) => acc + c.count, 0)
   } : { unique: 0, total: 0 };
 
   return (
@@ -104,9 +148,19 @@ export default function App() {
 
             <PackOpener
               activeSet={setManager.activeSet}
+              activeProfile={setManager.activeProfile}
               onOpenPack={handleOpenPack}
               saveToInventory={saveToInventory}
               onToggleSaveInventory={setSaveToInventory}
+            />
+
+            <ProfileManager
+              activeSet={setManager.activeSet}
+              activeProfile={setManager.activeProfile}
+              onCreateProfile={handleCreateProfile}
+              onSelectProfile={handleSelectProfile}
+              onResetProfile={handleResetProfile}
+              onDeleteProfile={handleDeleteProfile}
             />
 
             {/* Clear Data Button */}
@@ -135,7 +189,7 @@ export default function App() {
             />
 
             <CollectionTable
-              collection={setManager.activeSet?.collection}
+              collection={setManager.activeProfile?.collection}
               uniqueCount={collectionStats.unique}
               totalCount={collectionStats.total}
             />
