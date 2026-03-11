@@ -79,6 +79,9 @@ function simulatePack(pools, config = DEFAULT_PACK_CONFIG) {
   };
   const allCards = [...pools.commons, ...pools.uncommons, ...pools.rares, ...pools.vs, ...pools.vmaxs, ...pools.secretRares];
   
+  // Reverse slot can only pull from common/uncommon/rare pools (never ultra-rares)
+  const reverseEligibleCards = [...pools.commons, ...pools.uncommons, ...pools.rares];
+  
   // Commons (configurable count)
   for (let i = 0; i < config.slots.commons; i++) {
     const c = getRandomExcluding(pools.commons) || getRandomExcluding(allCards);
@@ -108,7 +111,7 @@ function simulatePack(pools, config = DEFAULT_PACK_CONFIG) {
     } else if (pools.rares.length > 0) {
       revCard = getRandomExcluding(pools.rares);
     }
-    if (!revCard) revCard = getRandomExcluding(allCards);
+    if (!revCard) revCard = getRandomExcluding(reverseEligibleCards);
     if (revCard) {
       pack.push({ ...revCard, finish: determineFinish(revCard, 'reverse') });
       usedCardNumbers.add(revCard.number);

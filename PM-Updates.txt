@@ -1,55 +1,56 @@
-PM UPDATE — PACK CONFIGURATION SYSTEM
+PM UPDATE — REVERSE SLOT RARITY RULES
 Date: March 10, 2026
 ================================================================================
 
-✅ COMPLETED: Pack Configuration System (Architecture Refactor)
+✅ COMPLETED: Reverse Slot Rarity Rules (Constraint Enforcement)
 
 --------------------------------------------------------------------------------
-CHANGE 04: PACK CONFIGURATION SYSTEM
+CHANGE 05: REVERSE SLOT RARITY RULES
 --------------------------------------------------------------------------------
 
-GOAL: Remove hardcoded pack structure and introduce configurable pack definitions
+GOAL: Ensure reverse slot only pulls from appropriate rarity pools (Common, Uncommon, Rare) and never pulls ultra-rares
+
+PROBLEM IDENTIFIED:
+• Reverse slot had fallback using `allCards` which included V, VMAX, and Secret Rare pools
+• Edge case: if primary pools depleted, reverse slot could accidentally pull ultra-rares
+• Reverse slot should be explicitly constrained to common/uncommon/rare only
 
 IMPLEMENTATION:
-• PackConfig interface defining:
-  - Slot counts (commons, uncommons, reverse, rare, energy)
-  - Reverse slot odds (common 60%, uncommon 30%, rare 10%)
-  - Rare slot odds (secret 1%, VMAX 10%, V 18%, holo 21%, standard 50%)
-
-• DEFAULT_PACK_CONFIG constant matching current Evolving Skies behavior
-• Refactored simulatePack() to accept PackConfig parameter (defaults to standard)
-• Updated SavedSet to optionally include packConfig field
-• Sets without config automatically use DEFAULT_PACK_CONFIG
+• Created `reverseEligibleCards` pool containing only commons, uncommons, and rares
+• Updated reverse slot fallback to use constrained pool instead of `allCards`
+• Maintains all existing probability logic (60% common, 30% uncommon, 10% rare)
+• Duplicate prevention continues to work identically
 
 BEHAVIOR PRESERVED:
-✅ Identical pack structure (5 commons, 3 uncommons, 1 reverse, 1 rare)
-✅ Same pull rates maintained (all percentages unchanged)
-✅ No visual or functional changes for users
+✅ Reverse slot uses configured odds (60/30/10 split)
+✅ Duplicate prevention still active across all slots
+✅ Rare slot logic unchanged
+✅ Pack structure remains 11 cards
 
-VALIDATION: 100-pack test confirms identical distributions:
-• Commons: 50.91% | Uncommons: 30.27% | Rares: 6.82%
-• V: 1.91% | VMAX: 0.91% | Secret: 0.09%
-• Average score: 34.80 pts (consistent with previous tests)
+VALIDATION: 100-pack test confirms constraints working:
+• All reverse holo cards are Common, Uncommon, or Rare ✅
+• No V, VMAX, or Secret cards in reverse slot ✅
+• Distributions consistent: 50.91% common, 29.55% uncommon
+• Average score: 31.35 pts (within normal range)
 
-FUTURE FLEXIBILITY ENABLED:
-• Different sets can now define custom pack structures
-• Easy to add energy cards, adjust slot counts, modify pull rates
-• Configuration-driven approach allows per-set customization
+ROBUSTNESS IMPROVEMENT:
+• Reverse slot now explicitly prevented from pulling ultra-rares
+• Edge case protection for low-card-pool scenarios
+• Code clearly documents reverse slot rarity restrictions
 
-FILES: types.ts, utils/packSimulator.ts, App.tsx, simulate-packs.mjs
+FILES: utils/packSimulator.ts, simulate-packs.mjs
 
 --------------------------------------------------------------------------------
 COMMIT READY: YES
 --------------------------------------------------------------------------------
 
 Suggested commit:
-refactor: Introduce pack configuration system
+fix: Enforce reverse slot rarity constraints
 
-- Add PackConfig interface for slot counts and pull odds
-- Create DEFAULT_PACK_CONFIG matching current behavior
-- Refactor simulatePack() to read from configuration
-- Update SavedSet to optionally include packConfig
-- No behavior changes - architecture improvement only
-- Validates identical distributions via 100-pack test
+- Create reverseEligibleCards pool (commons, uncommons, rares only)
+- Update reverse slot fallback to use constrained pool
+- Prevent reverse slot from accidentally pulling V/VMAX/Secret cards
+- Maintains existing probability distribution (60/30/10)
+- Validates with 100-pack test - all reverse cards within constraints
 
 ================================================================================

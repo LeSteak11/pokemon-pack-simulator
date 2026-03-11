@@ -69,6 +69,9 @@ export function simulatePack(pools: RarityPools, config: PackConfig = DEFAULT_PA
   // Fallback to any available cards if pools are empty
   const allCards = [...pools.commons, ...pools.uncommons, ...pools.rares, ...pools.vs, ...pools.vmaxs, ...pools.secretRares];
   
+  // Reverse slot can only pull from common/uncommon/rare pools (never ultra-rares)
+  const reverseEligibleCards = [...pools.commons, ...pools.uncommons, ...pools.rares];
+  
   // Commons (configurable count)
   for (let i = 0; i < config.slots.commons; i++) {
     const c = getRandomExcluding(pools.commons) || getRandomExcluding(allCards);
@@ -100,7 +103,7 @@ export function simulatePack(pools: RarityPools, config: PackConfig = DEFAULT_PA
     } else if (pools.rares.length > 0) {
       revCard = getRandomExcluding(pools.rares);
     }
-    if (!revCard) revCard = getRandomExcluding(allCards);
+    if (!revCard) revCard = getRandomExcluding(reverseEligibleCards);
     if (revCard) {
       const finish = determineFinish(revCard, 'reverse');
       pack.push({ ...revCard, finish });
