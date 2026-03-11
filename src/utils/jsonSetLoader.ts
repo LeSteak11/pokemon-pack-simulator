@@ -117,12 +117,24 @@ export function parseUploadedJSON(fileContent: string): JSONSetData {
 }
 
 /**
- * Lists all available built-in sets.
- * In production, this would be a static list or fetched from a manifest.
+ * Lists all available built-in sets by reading the manifest file.
+ * The manifest is automatically updated by the set generation script.
  */
-export function getAvailableBuiltInSets(): Array<{ filename: string; displayName: string }> {
-  return [
-    { filename: 'evolving-skies.json', displayName: 'Evolving Skies (EVS)' }
-    // Add more sets as JSON files are created
-  ];
+export async function getAvailableBuiltInSets(): Promise<Array<{ filename: string; displayName: string }>> {
+  try {
+    const response = await fetch('/data/sets/sets-manifest.json');
+    if (!response.ok) {
+      console.warn('Failed to load sets manifest, using fallback');
+      return [{ filename: 'evolving-skies.json', displayName: 'Evolving Skies (EVS)' }];
+    }
+    
+    const manifest = await response.json() as Array<{ filename: string; setName: string; setCode: string }>;
+    return manifest.map(set => ({
+      filename: set.filename,
+      displayName: `${set.setName} (${set.setCode})`
+    }));
+  } catch (error) {
+    console.error('Error loading sets manifest:', error);
+    return [{ filename: 'evolving-skies.json', displayName: 'Evolving Skies (EVS)' }];
+  }
 }

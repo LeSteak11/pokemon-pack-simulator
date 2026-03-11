@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Package } from 'lucide-react';
 import { getAvailableBuiltInSets } from '../utils/jsonSetLoader';
 
@@ -13,7 +13,19 @@ export default function SetLoader({
   onSelectSet,
   isLoading
 }: SetLoaderProps) {
-  const builtInSets = getAvailableBuiltInSets();
+  const [builtInSets, setBuiltInSets] = useState<Array<{ filename: string; displayName: string }>>([]);
+  const [loadingManifest, setLoadingManifest] = useState(true);
+
+  // Load available sets from manifest on mount
+  useEffect(() => {
+    const loadSets = async () => {
+      setLoadingManifest(true);
+      const sets = await getAvailableBuiltInSets();
+      setBuiltInSets(sets);
+      setLoadingManifest(false);
+    };
+    loadSets();
+  }, []);
 
   const handleSetChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const filename = event.target.value;
@@ -33,10 +45,10 @@ export default function SetLoader({
         <select
           value={currentSet || ''}
           onChange={handleSetChange}
-          disabled={isLoading}
+          disabled={isLoading || loadingManifest}
           className="w-full px-3 py-2 bg-white border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          <option value="">Select a set...</option>
+          <option value="">{loadingManifest ? 'Loading sets...' : 'Select a set...'}</option>
           {builtInSets.map((set) => (
             <option key={set.filename} value={set.filename}>
               {set.displayName}

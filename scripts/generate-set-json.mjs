@@ -188,3 +188,40 @@ console.log(`   Secret Rares: ${internalRarityCounts['Secret Rare']}`);
 console.log(`\n✅ Set JSON written to: ${outputPath}`);
 console.log(`   Total cards: ${cards.length}`);
 console.log(`   Base set size: ${baseSetSize}`);
+
+// Update manifest file
+const manifestPath = path.join(__dirname, '..', 'data', 'sets', 'sets-manifest.json');
+let manifest = [];
+
+try {
+  if (fs.existsSync(manifestPath)) {
+    const manifestContent = fs.readFileSync(manifestPath, 'utf-8');
+    manifest = JSON.parse(manifestContent);
+  }
+} catch (e) {
+  console.warn('⚠️ Could not read existing manifest, creating new one');
+}
+
+// Add or update this set in the manifest
+const manifestEntry = {
+  filename: outputFilename,
+  setName: setName,
+  setCode: setCode
+};
+
+const existingIndex = manifest.findIndex(entry => entry.filename === outputFilename);
+if (existingIndex >= 0) {
+  manifest[existingIndex] = manifestEntry;
+  console.log(`\n📝 Updated manifest entry for ${outputFilename}`);
+} else {
+  manifest.push(manifestEntry);
+  console.log(`\n📝 Added ${outputFilename} to manifest`);
+}
+
+// Sort manifest by filename
+manifest.sort((a, b) => a.filename.localeCompare(b.filename));
+
+// Write updated manifest
+fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf-8');
+console.log(`✅ Manifest updated: ${manifestPath}`);
+console.log(`   Total sets in manifest: ${manifest.length}`);

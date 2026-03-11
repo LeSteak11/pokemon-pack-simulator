@@ -20,7 +20,7 @@ export default function App() {
   useEffect(() => {
     const autoLoadFirstSet = async () => {
       if (!setManager.activeSet && !setManager.isLoading) {
-        const availableSets = getAvailableBuiltInSets();
+        const availableSets = await getAvailableBuiltInSets();
         if (availableSets.length > 0) {
           console.log('📦 No active set - auto-loading first available set...');
           try {

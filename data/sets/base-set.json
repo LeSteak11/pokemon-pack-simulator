@@ -1,7 +1,7 @@
 {
-  "setName": "Unknown Set",
-  "setCode": "UNK",
-  "baseSetSize": 0,
+  "setName": "Base Set",
+  "setCode": "BS1",
+  "baseSetSize": 102,
   "cards": [
     {
       "number": "001",
@@ -678,21 +678,21 @@
     {
       "number": "097",
       "name": "Fighting Energy",
-      "rarity": "$0.39",
+      "rarity": "Common",
       "category": "Energy",
       "variant": null
     },
     {
       "number": "099",
       "name": "Grass Energy",
-      "rarity": "$0.39",
+      "rarity": "Common",
       "category": "Energy",
       "variant": null
     },
     {
       "number": "101",
       "name": "Psychic Energy",
-      "rarity": "$0.54",
+      "rarity": "Common",
       "category": "Energy",
       "variant": null
     }

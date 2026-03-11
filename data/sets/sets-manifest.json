@@ -1,0 +1,12 @@
+[
+  {
+    "filename": "base-set.json",
+    "setName": "Base Set",
+    "setCode": "BS1"
+  },
+  {
+    "filename": "evolving-skies.json",
+    "setName": "Evolving Skies",
+    "setCode": "EVS"
+  }
+]
