@@ -5,6 +5,11 @@
     "setCode": "BS1"
   },
   {
+    "filename": "jungle.json",
+    "setName": "Jungle",
+    "setCode": "JU"
+  },
+  {
     "filename": "evolving-skies.json",
     "setName": "Evolving Skies",
     "setCode": "EVS"

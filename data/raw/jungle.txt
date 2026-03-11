@@ -1,0 +1,451 @@
+Set Name: Jungle (JU)
+
+-----------------------------
+
+JU
+1
+Clefable
+Pkmn › Stage 1
+{C}
+Rare Holo
+$33.58
+JU
+2
+Electrode
+Pkmn › Stage 1
+{L}
+Rare Holo
+$23.21
+JU
+3
+Flareon
+Pkmn › Stage 1
+{R}
+Rare Holo
+$81.81
+JU
+4
+Jolteon
+Pkmn › Stage 1
+{L}
+Rare Holo
+$84.45
+JU
+5
+Kangaskhan
+Pkmn › Basic
+{C}
+Rare Holo
+$13.33
+JU
+6
+Mr. Mime
+Pkmn › Basic
+{P}
+Rare Holo
+$28.11
+JU
+7
+Nidoqueen
+Pkmn › Stage 2
+{G}
+Rare Holo
+$34.68
+JU
+8
+Pidgeot
+Pkmn › Stage 2
+{C}
+Rare Holo
+$53.91
+JU
+9
+Pinsir
+Pkmn › Basic
+{G}
+Rare Holo
+$30.36
+JU
+10
+Scyther
+Pkmn › Basic
+{G}
+Rare Holo
+$38.51
+JU
+11
+Snorlax
+Pkmn › Basic
+{C}
+Rare Holo
+$96.11
+JU
+12
+Vaporeon
+Pkmn › Stage 1
+{W}
+Rare Holo
+$40.77
+JU
+13
+Venomoth
+Pkmn › Stage 1
+{G}
+Rare Holo
+$24.18
+JU
+14
+Victreebel
+Pkmn › Stage 2
+{G}
+Rare Holo
+$28.89
+JU
+15
+Vileplume
+Pkmn › Stage 2
+{G}
+Rare Holo
+$33.32
+JU
+16
+Wigglytuff
+Pkmn › Stage 1
+{C}
+Rare Holo
+$36.04
+JU
+17
+Clefable
+Pkmn › Stage 1
+{C}
+Rare
+$5.56
+JU
+18
+Electrode
+Pkmn › Stage 1
+{L}
+Rare
+$4.67
+JU
+19
+Flareon
+Pkmn › Stage 1
+{R}
+Rare
+$13.89
+JU
+20
+Jolteon
+Pkmn › Stage 1
+{L}
+Rare
+$14.03
+JU
+21
+Kangaskhan
+Pkmn › Basic
+{C}
+Rare
+$5.03
+JU
+22
+Mr. Mime
+Pkmn › Basic
+{P}
+Rare
+$7.65
+JU
+23
+Nidoqueen
+Pkmn › Stage 2
+{G}
+Rare
+$8.42
+JU
+24
+Pidgeot
+Pkmn › Stage 2
+{C}
+Rare
+$5.70
+JU
+25
+Pinsir
+Pkmn › Basic
+{G}
+Rare
+$4.82
+JU
+26
+Scyther
+Pkmn › Basic
+{G}
+Rare
+$13.03
+JU
+27
+Snorlax
+Pkmn › Basic
+{C}
+Rare
+$13.47
+JU
+28
+Vaporeon
+Pkmn › Stage 1
+{W}
+Rare
+$11.87
+JU
+29
+Venomoth
+Pkmn › Stage 1
+{G}
+Rare
+$5.53
+JU
+30
+Victreebel
+Pkmn › Stage 2
+{G}
+Rare
+$4.18
+JU
+31
+Vileplume
+Pkmn › Stage 2
+{G}
+Rare
+$6.78
+JU
+32
+Wigglytuff
+Pkmn › Stage 1
+{C}
+Rare
+$5.94
+JU
+33
+Butterfree
+Pkmn › Stage 2
+{G}
+Uncommon
+$1.55
+JU
+34
+Dodrio
+Pkmn › Stage 1
+{C}
+Uncommon
+$1.15
+JU
+35
+Exeggutor
+Pkmn › Stage 1
+{G}
+Uncommon
+$1.51
+JU
+36
+Fearow
+Pkmn › Stage 1
+{C}
+Uncommon
+$1.05
+JU
+37
+Gloom
+Pkmn › Stage 1
+{G}
+Uncommon
+$0.64
+JU
+38
+Lickitung
+Pkmn › Basic
+{C}
+Uncommon
+$1.49
+JU
+39
+Marowak
+Pkmn › Stage 1
+{F}
+Uncommon
+$1.15
+JU
+40
+Nidorina
+Pkmn › Stage 1
+{G}
+Uncommon
+$0.49
+JU
+41
+Parasect
+Pkmn › Stage 1
+{G}
+Uncommon
+$0.77
+JU
+42
+Persian
+Pkmn › Stage 1
+{C}
+Uncommon
+$0.72
+JU
+43
+Primeape
+Pkmn › Stage 1
+{F}
+Uncommon
+$1.20
+JU
+44
+Rapidash
+Pkmn › Stage 1
+{R}
+Uncommon
+$1.84
+JU
+45
+Rhydon
+Pkmn › Stage 1
+{F}
+Uncommon
+$0.95
+JU
+46
+Seaking
+Pkmn › Stage 1
+{W}
+Uncommon
+$0.96
+JU
+47
+Tauros
+Pkmn › Basic
+{C}
+Uncommon
+$0.89
+JU
+48
+Weepinbell
+Pkmn › Stage 1
+{G}
+Uncommon
+$0.47
+JU
+49
+Bellsprout
+Pkmn › Basic
+{G}
+Common
+$0.42
+JU
+50
+Cubone
+Pkmn › Basic
+{F}
+Common
+$1.49
+JU
+51
+Eevee
+Pkmn › Basic
+{C}
+Common
+$1.98
+JU
+52
+Exeggcute
+Pkmn › Basic
+{G}
+Common
+$0.42
+JU
+53
+Goldeen
+Pkmn › Basic
+{W}
+Common
+$0.40
+JU
+54
+Jigglypuff
+Pkmn › Basic
+{C}
+Common
+$1.45
+JU
+55
+Mankey
+Pkmn › Basic
+{F}
+Common
+$0.39
+JU
+56
+Meowth
+Pkmn › Basic
+{C}
+Common
+$0.75
+JU
+57
+Nidoran Female
+Pkmn › Basic
+{G}
+Common
+$0.36
+JU
+58
+Oddish
+Pkmn › Basic
+{G}
+Common
+$0.37
+JU
+59
+Paras
+Pkmn › Basic
+{G}
+Common
+$0.35
+JU
+60
+Pikachu
+Pkmn › Basic
+{L}
+Common
+$4.16
+JU
+61
+Rhyhorn
+Pkmn › Basic
+{F}
+Common
+$0.41
+JU
+62
+Spearow
+Pkmn › Basic
+{C}
+Common
+$0.38
+JU
+63
+Venonat
+Pkmn › Basic
+{G}
+Common
+$0.38
+JU
+64
+Poké Ball
+Trainer › Item
+Common
+$0.31
