@@ -1,0 +1,1 @@
+- Add Custom API from Github (rather than TCG API we tried earlier) --> https://github.com/tcgdex/cards-database

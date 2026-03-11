@@ -1,9 +1,9 @@
 import React from 'react';
-import { SavedSet, InventoryProfile } from '../types';
+import { InventoryProfile } from '../types';
 import { User, Plus, RotateCcw, Trash2 } from 'lucide-react';
 
 interface ProfileManagerProps {
-  activeSet: SavedSet | null;
+  profiles: InventoryProfile[];
   activeProfile: InventoryProfile | null;
   onCreateProfile: () => void;
   onSelectProfile: (profileId: string) => void;
@@ -12,16 +12,13 @@ interface ProfileManagerProps {
 }
 
 export default function ProfileManager({
-  activeSet,
+  profiles,
   activeProfile,
   onCreateProfile,
   onSelectProfile,
   onResetProfile,
   onDeleteProfile,
 }: ProfileManagerProps) {
-  if (!activeSet) return null;
-
-  const profiles = activeSet.profiles || [];
   const canDelete = profiles.length > 1;
 
   return (

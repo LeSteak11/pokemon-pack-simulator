@@ -1,9 +1,9 @@
 import React from 'react';
-import { SavedSet, InventoryProfile } from '../types';
+import { ActiveSet, InventoryProfile } from '../types';
 import { PackageOpen } from 'lucide-react';
 
 interface PackOpenerProps {
-  activeSet: SavedSet | null;
+  activeSet: ActiveSet | null;
   activeProfile: InventoryProfile | null;
   onOpenPack: () => void;
   saveToInventory: boolean;

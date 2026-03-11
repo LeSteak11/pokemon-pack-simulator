@@ -50,18 +50,19 @@ export interface PackConfig {
   };
 }
 
-export interface SavedSet {
-  id: string;
-  name: string;
+export interface ActiveSet {
+  filename: string;  // e.g. "evolving-skies.json"
+  name: string;      // e.g. "Evolving Skies (EVS)"
+  code: string;      // e.g. "EVS"
   baseSetSize: number;
   cards: Card[];
-  rarityPools?: RarityPools; // Built on load/import, not persisted
-  packConfig?: PackConfig;   // Pack structure configuration, uses default if not specified
-  profiles: InventoryProfile[];
+  rarityPools: RarityPools;
+  packConfig?: PackConfig;
   activeProfileId: string | null;
-  // Legacy fields for migration
-  collection?: CollectionItem[];
-  packsOpened?: number;
+}
+
+export interface ProfileStorage {
+  [setFilename: string]: InventoryProfile[];
 }
 
 // JSON Set Data Types

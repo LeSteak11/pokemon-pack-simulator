@@ -1,0 +1,675 @@
+BS
+1
+Alakazam
+Pkmn › Stage 2
+{P}
+Rare Holo
+$61.13
+BS
+2
+Blastoise
+Pkmn › Stage 2
+{W}
+Rare Holo
+$178.82
+BS
+3
+Chansey
+Pkmn › Basic
+{C}
+Rare Holo
+$45.56
+BS
+4
+Charizard
+Pkmn › Stage 2
+{R}
+Rare Holo
+$527.91
+BS
+5
+Clefairy
+Pkmn › Basic
+{C}
+Rare Holo
+$28.21
+BS
+6
+Gyarados
+Pkmn › Stage 1
+{W}
+Rare Holo
+$39.51
+BS
+7
+Hitmonchan
+Pkmn › Basic
+{F}
+Rare Holo
+$18.88
+BS
+8
+Machamp
+Pkmn › Stage 2
+{F}
+Rare Holo
+$67.00
+BS
+9
+Magneton
+Pkmn › Stage 1
+{L}
+Rare Holo
+$32.25
+BS
+10
+Mewtwo
+Pkmn › Basic
+{P}
+Rare Holo
+$63.17
+BS
+11
+Nidoking
+Pkmn › Stage 2
+{G}
+Rare Holo
+$36.79
+BS
+12
+Ninetales
+Pkmn › Stage 1
+{R}
+Rare Holo
+$36.22
+BS
+13
+Poliwrath
+Pkmn › Stage 2
+{W}
+Rare Holo
+$26.80
+BS
+14
+Raichu
+Pkmn › Stage 1
+{L}
+Rare Holo
+$62.48
+BS
+15
+Venusaur
+Pkmn › Stage 2
+{G}
+Rare Holo
+$140.87
+BS
+16
+Zapdos
+Pkmn › Basic
+{L}
+Rare Holo
+$52.19
+BS
+17
+Beedrill
+Pkmn › Stage 2
+{G}
+Rare
+$5.09
+BS
+18
+Dragonair
+Pkmn › Stage 1
+{C}
+Rare
+$13.77
+BS
+19
+Dugtrio
+Pkmn › Stage 1
+{F}
+Rare
+$8.05
+BS
+20
+Electabuzz
+Pkmn › Basic
+{L}
+Rare
+$13.03
+BS
+21
+Electrode
+Pkmn › Stage 1
+{L}
+Rare
+$6.95
+BS
+22
+Pidgeotto
+Pkmn › Stage 1
+{C}
+Rare
+$9.83
+BS
+23
+Arcanine
+Pkmn › Stage 1
+{R}
+Uncommon
+$3.02
+BS
+24
+Charmeleon
+Pkmn › Stage 1
+{R}
+Uncommon
+$2.54
+BS
+25
+Dewgong
+Pkmn › Stage 1
+{W}
+Uncommon
+$3.71
+BS
+26
+Dratini
+Pkmn › Basic
+{C}
+Uncommon
+$2.91
+BS
+27
+Farfetch’d
+Pkmn › Basic
+{C}
+Uncommon
+$1.32
+BS
+28
+Growlithe
+Pkmn › Basic
+{R}
+Uncommon
+$1.17
+BS
+29
+Haunter
+Pkmn › Stage 1
+{P}
+Uncommon
+$3.07
+BS
+30
+Ivysaur
+Pkmn › Stage 1
+{G}
+Uncommon
+$3.90
+BS
+31
+Jynx
+Pkmn › Basic
+{P}
+Uncommon
+$1.02
+BS
+32
+Kadabra
+Pkmn › Stage 1
+{P}
+Uncommon
+$1.84
+BS
+33
+Kakuna
+Pkmn › Stage 1
+{G}
+Uncommon
+$1.85
+BS
+34
+Machoke
+Pkmn › Stage 1
+{F}
+Uncommon
+$1.12
+BS
+35
+Magikarp
+Pkmn › Basic
+{W}
+Uncommon
+$2.96
+BS
+36
+Magmar
+Pkmn › Basic
+{R}
+Uncommon
+$2.34
+BS
+37
+Nidorino
+Pkmn › Stage 1
+{G}
+Uncommon
+$2.64
+BS
+38
+Poliwhirl
+Pkmn › Stage 1
+{W}
+Uncommon
+$1.35
+BS
+39
+Porygon
+Pkmn › Basic
+{C}
+Uncommon
+$3.07
+BS
+40
+Raticate
+Pkmn › Stage 1
+{C}
+Uncommon
+$2.31
+BS
+41
+Seel
+Pkmn › Basic
+{W}
+Uncommon
+$1.12
+BS
+42
+Wartortle
+Pkmn › Stage 1
+{W}
+Uncommon
+$3.85
+BS
+43
+Abra
+Pkmn › Basic
+{P}
+Common
+$1.27
+BS
+44
+Bulbasaur
+Pkmn › Basic
+{G}
+Common
+$3.32
+BS
+45
+Caterpie
+Pkmn › Basic
+{G}
+Common
+$1.35
+BS
+46
+Charmander
+Pkmn › Basic
+{R}
+Common
+$2.27
+BS
+47
+Diglett
+Pkmn › Basic
+{F}
+Common
+$0.81
+BS
+48
+Doduo
+Pkmn › Basic
+{C}
+Common
+$1.14
+BS
+49
+Drowzee
+Pkmn › Basic
+{P}
+Common
+$0.61
+BS
+50
+Gastly
+Pkmn › Basic
+{P}
+Common
+$0.77
+BS
+51
+Koffing
+Pkmn › Basic
+{G}
+Common
+$0.67
+BS
+52
+Machop
+Pkmn › Basic
+{F}
+Common
+$0.44
+BS
+53
+Magnemite
+Pkmn › Basic
+{L}
+Common
+$0.70
+BS
+54
+Metapod
+Pkmn › Stage 1
+{G}
+Common
+$1.05
+BS
+55
+Nidoran Male
+Pkmn › Basic
+{G}
+Common
+$0.64
+BS
+56
+Onix
+Pkmn › Basic
+{F}
+Common
+$1.11
+BS
+57
+Pidgey
+Pkmn › Basic
+{C}
+Common
+$1.61
+BS
+58
+Pikachu
+Pkmn › Basic
+{L}
+Common
+$5.28
+BS
+59
+Poliwag
+Pkmn › Basic
+{W}
+Common
+$0.68
+BS
+60
+Ponyta
+Pkmn › Basic
+{R}
+Common
+$0.49
+BS
+61
+Rattata
+Pkmn › Basic
+{C}
+Common
+$0.62
+BS
+62
+Sandshrew
+Pkmn › Basic
+{F}
+Common
+$1.01
+BS
+63
+Squirtle
+Pkmn › Basic
+{W}
+Common
+$6.17
+BS
+64
+Starmie
+Pkmn › Stage 1
+{W}
+Common
+$0.62
+BS
+65
+Staryu
+Pkmn › Basic
+{W}
+Common
+$0.65
+BS
+66
+Tangela
+Pkmn › Basic
+{G}
+Common
+$0.89
+BS
+67
+Voltorb
+Pkmn › Basic
+{L}
+Common
+$3.27
+BS
+68
+Vulpix
+Pkmn › Basic
+{R}
+Common
+$0.87
+BS
+69
+Weedle
+Pkmn › Basic
+{G}
+Common
+$0.50
+BS
+70
+Clefairy Doll
+Trainer › Item
+Rare
+$7.36
+BS
+71
+Computer Search
+Trainer › Item
+Rare
+$5.29
+BS
+72
+Devolution Spray
+Trainer › Item
+Rare
+$4.69
+BS
+73
+Impostor Professor Oak
+Trainer › Item
+Rare
+$5.91
+BS
+74
+Item Finder
+Trainer › Item
+Rare
+$10.43
+BS
+75
+Lass
+Trainer › Item
+Rare
+$2.80
+BS
+76
+Pokémon Breeder
+Trainer › Item
+Rare
+$7.81
+BS
+77
+Pokémon Trader
+Trainer › Item
+Rare
+$6.49
+BS
+78
+Scoop Up
+Trainer › Item
+Rare
+$8.73
+BS
+79
+Super Energy Removal
+Trainer › Item
+Rare
+$3.95
+BS
+80
+Defender
+Trainer › Item
+Uncommon
+$1.56
+BS
+81
+Energy Retrieval
+Trainer › Item
+Uncommon
+$0.52
+BS
+82
+Full Heal
+Trainer › Item
+Uncommon
+$2.35
+BS
+83
+Maintenance
+Trainer › Item
+Uncommon
+$2.50
+BS
+84
+PlusPower
+Trainer › Item
+Uncommon
+$0.72
+BS
+85
+Pokémon Center
+Trainer › Item
+Uncommon
+$1.72
+BS
+86
+Pokémon Flute
+Trainer › Item
+Uncommon
+$3.37
+BS
+87
+Pokédex
+Trainer › Item
+Uncommon
+$0.77
+BS
+88
+Professor Oak
+Trainer › Item
+Uncommon
+$1.26
+BS
+89
+Revive
+Trainer › Item
+Uncommon
+$2.23
+BS
+90
+Super Potion
+Trainer › Item
+Uncommon
+$0.38
+BS
+91
+Bill
+Trainer › Item
+Common
+$0.37
+BS
+92
+Energy Removal
+Trainer › Item
+Common
+$0.50
+BS
+93
+Gust of Wind
+Trainer › Item
+Common
+$0.35
+BS
+94
+Potion
+Trainer › Item
+Common
+$0.42
+BS
+95
+Switch
+Trainer › Item
+Common
+$0.46
+BS
+96
+Double Colorless Energy
+Energy › Special
+Uncommon
+$5.88
+BS
+97
+Fighting Energy
+Energy › Basic
+$0.39
+BS
+98
+Fire Energy
+Energy › Basic
+$0.43
+BS
+99
+Grass Energy
+Energy › Basic
+$0.39
+BS
+100
+Lightning Energy
+Energy › Basic
+$0.61
+BS
+101
+Psychic Energy
+Energy › Basic
+$0.54
+BS
+102
+Water Energy
+Energy › Basic
+$0.44

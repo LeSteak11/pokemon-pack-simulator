@@ -1,0 +1,1619 @@
+Pokémon Simulator - Set JOSN Maker
+
+Evolving Skies: 
+
+EVS
+001
+Pinsir
+Pkmn › Basic
+{G}
+Rare
+$0.20
+EVS
+002
+Hoppip
+Pkmn › Basic
+{G}
+Common
+$0.13
+EVS
+003
+Skiploom
+Pkmn › Stage 1
+{G}
+Uncommon
+$0.06
+EVS
+004
+Jumpluff
+Pkmn › Stage 2
+{G}
+Rare Holo
+$0.23
+EVS
+005
+Seedot
+Pkmn › Basic
+{G}
+Common
+$0.06
+EVS
+006
+Tropius
+Pkmn › Basic
+{G}
+Rare
+$0.14
+EVS
+007
+Leafeon V
+Pkmn › Basic
+{G}
+Holo Rare V
+$2.20
+EVS
+008
+Leafeon VMAX
+Pkmn › VMAX
+{G}
+Holo Rare VMAX
+$7.42
+EVS
+009
+Petilil
+Pkmn › Basic
+{G}
+Common
+$0.11
+EVS
+010
+Lilligant
+Pkmn › Stage 1
+{G}
+Rare
+$0.14
+EVS
+011
+Dwebble
+Pkmn › Basic
+{G}
+Common
+$0.05
+EVS
+012
+Crustle
+Pkmn › Stage 1
+{G}
+Uncommon
+$0.11
+EVS
+013
+Trevenant V
+Pkmn › Basic
+{G}
+Holo Rare V
+$0.69
+EVS
+014
+Trevenant VMAX
+Pkmn › VMAX
+{G}
+Holo Rare VMAX
+$1.54
+EVS
+015
+Gossifleur
+Pkmn › Basic
+{G}
+Common
+$0.07
+EVS
+016
+Eldegoss
+Pkmn › Stage 1
+{G}
+Rare Holo
+$0.28
+EVS
+017
+Applin
+Pkmn › Basic
+{G}
+Common
+$0.13
+EVS
+018
+Flareon VMAX
+Pkmn › VMAX
+{R}
+Holo Rare VMAX
+$13.30
+EVS
+019
+Entei
+Pkmn › Basic
+{R}
+Rare Holo
+$0.30
+EVS
+020
+Victini
+Pkmn › Basic
+{R}
+Rare Holo
+$0.28
+EVS
+021
+Volcarona V
+Pkmn › Basic
+{R}
+Holo Rare V
+$1.05
+EVS
+022
+Litleo
+Pkmn › Basic
+{R}
+Common
+$0.07
+EVS
+023
+Pyroar
+Pkmn › Stage 1
+{R}
+Uncommon
+$0.07
+EVS
+024
+Psyduck
+Pkmn › Basic
+{W}
+Common
+$0.20
+EVS
+025
+Golduck
+Pkmn › Stage 1
+{W}
+Uncommon
+$0.08
+EVS
+026
+Tentacool
+Pkmn › Basic
+{W}
+Common
+$0.07
+EVS
+027
+Tentacruel
+Pkmn › Stage 1
+{W}
+Uncommon
+$0.14
+EVS
+028
+Gyarados V
+Pkmn › Basic
+{W}
+Holo Rare V
+$2.09
+EVS
+029
+Gyarados VMAX
+Pkmn › VMAX
+{W}
+Holo Rare VMAX
+$7.62
+EVS
+030
+Vaporeon VMAX
+Pkmn › VMAX
+{W}
+Holo Rare VMAX
+$8.73
+EVS
+031
+Suicune V
+Pkmn › Basic
+{W}
+Holo Rare V
+$1.36
+EVS
+032
+Lotad
+Pkmn › Basic
+{W}
+Common
+$0.10
+EVS
+033
+Lombre
+Pkmn › Stage 1
+{W}
+Uncommon
+$0.05
+EVS
+034
+Ludicolo
+Pkmn › Stage 2
+{W}
+Rare Holo
+$0.31
+EVS
+035
+Carvanha
+Pkmn › Basic
+{W}
+Common
+$0.06
+EVS
+036
+Sharpedo
+Pkmn › Stage 1
+{W}
+Rare
+$0.17
+EVS
+037
+Feebas
+Pkmn › Basic
+{W}
+Common
+$0.10
+EVS
+038
+Milotic
+Pkmn › Stage 1
+{W}
+Rare
+$0.14
+EVS
+039
+Luvdisc
+Pkmn › Basic
+{W}
+Common
+$0.06
+EVS
+040
+Glaceon V
+Pkmn › Basic
+{W}
+Holo Rare V
+$1.91
+EVS
+041
+Glaceon VMAX
+Pkmn › VMAX
+{W}
+Holo Rare VMAX
+$5.85
+EVS
+042
+Tympole
+Pkmn › Basic
+{W}
+Common
+$0.07
+EVS
+043
+Cryogonal
+Pkmn › Basic
+{W}
+Common
+$0.08
+EVS
+044
+Bergmite
+Pkmn › Basic
+{W}
+Common
+$0.07
+EVS
+045
+Avalugg
+Pkmn › Stage 1
+{W}
+Uncommon
+$0.11
+EVS
+046
+Wishiwashi
+Pkmn › Basic
+{W}
+Rare
+$0.08
+EVS
+047
+Eiscue
+Pkmn › Basic
+{W}
+Uncommon
+$0.13
+EVS
+048
+Arctovish V
+Pkmn › Basic
+{W}
+Holo Rare V
+$1.12
+EVS
+049
+Pikachu
+Pkmn › Basic
+{L}
+Common
+$0.20
+EVS
+050
+Raichu
+Pkmn › Stage 1
+{L}
+Rare Holo
+$0.28
+EVS
+051
+Jolteon VMAX
+Pkmn › VMAX
+{L}
+Holo Rare VMAX
+$7.30
+EVS
+052
+Chinchou
+Pkmn › Basic
+{L}
+Common
+$0.13
+EVS
+053
+Lanturn
+Pkmn › Stage 1
+{L}
+Uncommon
+$0.20
+EVS
+054
+Mareep
+Pkmn › Basic
+{L}
+Common
+$0.09
+EVS
+055
+Flaaffy
+Pkmn › Stage 1
+{L}
+Uncommon
+$0.16
+EVS
+056
+Ampharos
+Pkmn › Stage 2
+{L}
+Rare
+$0.18
+EVS
+057
+Emolga
+Pkmn › Basic
+{L}
+Common
+$0.06
+EVS
+058
+Dracozolt V
+Pkmn › Basic
+{L}
+Holo Rare V
+$1.11
+EVS
+059
+Dracozolt VMAX
+Pkmn › VMAX
+{L}
+Holo Rare VMAX
+$1.76
+EVS
+060
+Regieleki
+Pkmn › Basic
+{L}
+Rare Holo
+$0.24
+EVS
+061
+Drowzee
+Pkmn › Basic
+{P}
+Common
+$0.19
+EVS
+062
+Hypno
+Pkmn › Stage 1
+{P}
+Uncommon
+$0.10
+EVS
+063
+Galarian Articuno
+Pkmn › Basic
+{P}
+Rare Holo
+$0.49
+EVS
+064
+Espeon V
+Pkmn › Basic
+{P}
+Holo Rare V
+$2.60
+EVS
+065
+Espeon VMAX
+Pkmn › VMAX
+{P}
+Holo Rare VMAX
+$12.72
+EVS
+066
+Wobbuffet
+Pkmn › Basic
+{P}
+Common
+$0.10
+EVS
+067
+Sableye
+Pkmn › Basic
+{P}
+Common
+$0.12
+EVS
+068
+Woobat
+Pkmn › Basic
+{P}
+Common
+$0.20
+EVS
+069
+Swoobat
+Pkmn › Stage 1
+{P}
+Uncommon
+$0.10
+EVS
+070
+Golurk V
+Pkmn › Basic
+{P}
+Holo Rare V
+$0.77
+EVS
+071
+Flabébé
+Pkmn › Basic
+{P}
+Common
+$0.06
+EVS
+072
+Floette
+Pkmn › Stage 1
+{P}
+Uncommon
+$0.11
+EVS
+073
+Florges
+Pkmn › Stage 2
+{P}
+Rare Holo
+$0.27
+EVS
+074
+Sylveon V
+Pkmn › Basic
+{P}
+Holo Rare V
+$4.28
+EVS
+075
+Sylveon VMAX
+Pkmn › VMAX
+{P}
+Holo Rare VMAX
+$15.40
+EVS
+076
+Pumpkaboo
+Pkmn › Basic
+{P}
+Common
+$0.17
+EVS
+077
+Gourgeist
+Pkmn › Stage 1
+{P}
+Rare
+$0.15
+EVS
+078
+Cutiefly
+Pkmn › Basic
+{P}
+Common
+$0.08
+EVS
+079
+Ribombee
+Pkmn › Stage 1
+{P}
+Uncommon
+$0.10
+EVS
+080
+Marshadow
+Pkmn › Basic
+{P}
+Rare Holo
+$0.28
+EVS
+081
+Hitmonchan
+Pkmn › Basic
+{F}
+Common
+$0.08
+EVS
+082
+Galarian Zapdos
+Pkmn › Basic
+{F}
+Rare Holo
+$0.34
+EVS
+083
+Medicham V
+Pkmn › Basic
+{F}
+Holo Rare V
+$0.72
+EVS
+084
+Hippopotas
+Pkmn › Basic
+{F}
+Common
+$0.15
+EVS
+085
+Hippowdon
+Pkmn › Stage 1
+{F}
+Uncommon
+$0.06
+EVS
+086
+Roggenrola
+Pkmn › Basic
+{F}
+Common
+$0.13
+EVS
+087
+Boldore
+Pkmn › Stage 1
+{F}
+Uncommon
+$0.08
+EVS
+088
+Gigalith
+Pkmn › Stage 2
+{F}
+Rare
+$0.21
+EVS
+089
+Palpitoad
+Pkmn › Stage 1
+{F}
+Uncommon
+$0.08
+EVS
+090
+Seismitoad
+Pkmn › Stage 2
+{F}
+Rare
+$0.15
+EVS
+091
+Lycanroc V
+Pkmn › Basic
+{F}
+Holo Rare V
+$0.83
+EVS
+092
+Lycanroc VMAX
+Pkmn › VMAX
+{F}
+Holo Rare VMAX
+$1.85
+EVS
+093
+Galarian Moltres
+Pkmn › Basic
+{D}
+Rare Holo
+$0.37
+EVS
+094
+Umbreon V
+Pkmn › Basic
+{D}
+Holo Rare V
+$5.83
+EVS
+095
+Umbreon VMAX
+Pkmn › VMAX
+{D}
+Holo Rare VMAX
+$22.66
+EVS
+096
+Nuzleaf
+Pkmn › Stage 1
+{D}
+Uncommon
+$0.09
+EVS
+097
+Shiftry
+Pkmn › Stage 2
+{D}
+Rare
+$0.14
+EVS
+098
+Scraggy
+Pkmn › Basic
+{D}
+Common
+$0.06
+EVS
+099
+Scrafty
+Pkmn › Stage 1
+{D}
+Uncommon
+$0.13
+EVS
+100
+Garbodor V
+Pkmn › Basic
+{D}
+Holo Rare V
+$0.82
+EVS
+101
+Garbodor VMAX
+Pkmn › VMAX
+{D}
+Holo Rare VMAX
+$1.84
+EVS
+102
+Zorua
+Pkmn › Basic
+{D}
+Common
+$0.11
+EVS
+103
+Zoroark
+Pkmn › Stage 1
+{D}
+Rare Holo
+$0.27
+EVS
+104
+Nickit
+Pkmn › Basic
+{D}
+Common
+$0.07
+EVS
+105
+Thievul
+Pkmn › Stage 1
+{D}
+Rare
+$0.15
+EVS
+106
+Altaria
+Pkmn › Stage 1
+{N}
+Rare
+$0.19
+EVS
+107
+Bagon
+Pkmn › Basic
+{N}
+Common
+$0.09
+EVS
+108
+Shelgon
+Pkmn › Stage 1
+{N}
+Uncommon
+$0.21
+EVS
+109
+Salamence
+Pkmn › Stage 2
+{N}
+Rare Holo
+$0.44
+EVS
+110
+Rayquaza V
+Pkmn › Basic
+{N}
+Holo Rare V
+$1.27
+EVS
+111
+Rayquaza VMAX
+Pkmn › VMAX
+{N}
+Holo Rare VMAX
+$8.19
+EVS
+112
+Dialga
+Pkmn › Basic
+{N}
+Rare Holo
+$0.17
+EVS
+113
+Deino
+Pkmn › Basic
+{N}
+Common
+$0.16
+EVS
+114
+Zweilous
+Pkmn › Stage 1
+{N}
+Uncommon
+$0.14
+EVS
+115
+Hydreigon
+Pkmn › Stage 2
+{N}
+Rare Holo
+$0.24
+EVS
+116
+Kyurem
+Pkmn › Basic
+{N}
+Rare Holo
+$0.30
+EVS
+117
+Noivern V
+Pkmn › Basic
+{N}
+Holo Rare V
+$0.69
+EVS
+118
+Zygarde
+Pkmn › Basic
+{N}
+Rare Holo
+$0.23
+EVS
+119
+Drampa
+Pkmn › Basic
+{N}
+Rare
+$0.23
+EVS
+120
+Flapple
+Pkmn › Stage 1
+{N}
+Rare
+$0.16
+EVS
+121
+Appletun
+Pkmn › Stage 1
+{N}
+Rare
+$0.16
+EVS
+122
+Duraludon V
+Pkmn › Basic
+{N}
+Holo Rare V
+$0.64
+EVS
+123
+Duraludon VMAX
+Pkmn › VMAX
+{N}
+Holo Rare VMAX
+$1.41
+EVS
+124
+Regidrago
+Pkmn › Basic
+{N}
+Rare Holo
+$0.20
+EVS
+125
+Eevee
+Pkmn › Basic
+{C}
+Common
+$0.32
+EVS
+126
+Teddiursa
+Pkmn › Basic
+{C}
+Common
+$0.13
+EVS
+127
+Ursaring
+Pkmn › Stage 1
+{C}
+Uncommon
+$0.09
+EVS
+128
+Smeargle
+Pkmn › Basic
+{C}
+Rare
+$0.19
+EVS
+129
+Slakoth
+Pkmn › Basic
+{C}
+Common
+$0.11
+EVS
+130
+Vigoroth
+Pkmn › Stage 1
+{C}
+Uncommon
+$0.08
+EVS
+131
+Slaking
+Pkmn › Stage 2
+{C}
+Rare Holo
+$0.31
+EVS
+132
+Swablu
+Pkmn › Basic
+{C}
+Common
+$0.11
+EVS
+133
+Lillipup
+Pkmn › Basic
+{C}
+Common
+$0.10
+EVS
+134
+Herdier
+Pkmn › Stage 1
+{C}
+Uncommon
+$0.07
+EVS
+135
+Stoutland
+Pkmn › Stage 2
+{C}
+Rare
+$0.15
+EVS
+136
+Rufflet
+Pkmn › Basic
+{C}
+Common
+$0.05
+EVS
+137
+Braviary
+Pkmn › Stage 1
+{C}
+Uncommon
+$0.06
+EVS
+138
+Fletchling
+Pkmn › Basic
+{C}
+Common
+$0.09
+EVS
+139
+Fletchinder
+Pkmn › Stage 1
+{C}
+Uncommon
+$0.09
+EVS
+140
+Talonflame
+Pkmn › Stage 2
+{C}
+Rare
+$0.19
+EVS
+141
+Aroma Lady
+Trainer › Supporter
+Uncommon
+$0.10
+EVS
+142
+Boost Shake
+Trainer › Item
+Uncommon
+$0.07
+EVS
+143
+Copycat
+Trainer › Supporter
+Uncommon
+$0.09
+EVS
+144
+Crystal Cave
+Trainer › Stadium
+Uncommon
+$0.11
+EVS
+145
+Digging Gloves
+Trainer › Tool
+Uncommon
+$0.05
+EVS
+146
+Dream Ball
+Trainer › Item
+Uncommon
+$0.09
+EVS
+147
+Elemental Badge
+Trainer › Tool
+Uncommon
+$0.05
+EVS
+148
+Full Face Guard
+Trainer › Tool
+Uncommon
+$0.16
+EVS
+149
+Gordie
+Trainer › Supporter
+Uncommon
+$0.12
+EVS
+150
+Lucky Ice Pop
+Trainer › Item
+Uncommon
+$0.15
+EVS
+151
+Moon & Sun Badge
+Trainer › Tool
+Uncommon
+$0.11
+EVS
+152
+Raihan
+Trainer › Supporter
+Uncommon
+$0.11
+EVS
+153
+Rapid Strike Scroll of the Flying Dragon
+Trainer › Tool
+Uncommon
+$0.10
+EVS
+154
+Rescue Carrier
+Trainer › Item
+Uncommon
+$0.07
+EVS
+155
+Ribbon Badge
+Trainer › Tool
+Uncommon
+$0.11
+EVS
+156
+Rubber Gloves
+Trainer › Tool
+Uncommon
+$0.05
+EVS
+157
+Shopping Center
+Trainer › Stadium
+Uncommon
+$0.09
+EVS
+158
+Single Strike Scroll of the Fanged Dragon
+Trainer › Tool
+Uncommon
+$0.06
+EVS
+159
+Snow Leaf Badge
+Trainer › Tool
+Uncommon
+$0.07
+EVS
+160
+Spirit Mask
+Trainer › Tool
+Uncommon
+$0.07
+EVS
+161
+Stormy Mountains
+Trainer › Stadium
+Uncommon
+$0.17
+EVS
+162
+Switching Cups
+Trainer › Item
+Uncommon
+$0.07
+EVS
+163
+Toy Catcher
+Trainer › Item
+Uncommon
+$0.06
+EVS
+164
+Zinnia’s Resolve
+Trainer › Supporter
+Uncommon
+$0.12
+EVS
+165
+Treasure Energy
+Energy › Special
+Uncommon
+$0.14
+EVS
+166
+Leafeon V
+Pkmn › Basic
+{G}
+Ultra Rare
+$15.67
+EVS
+167
+Leafeon V
+Pkmn › Basic
+{G}
+Ultra Rare
+$111.53
+EVS
+168
+Trevenant V
+Pkmn › Basic
+{G}
+Ultra Rare
+$2.92
+EVS
+169
+Flareon V
+Pkmn › Basic
+{R}
+Ultra Rare
+$16.19
+EVS
+170
+Volcarona V
+Pkmn › Basic
+{R}
+Ultra Rare
+$5.46
+EVS
+171
+Gyarados V
+Pkmn › Basic
+{W}
+Ultra Rare
+$15.21
+EVS
+172
+Vaporeon V
+Pkmn › Basic
+{W}
+Ultra Rare
+$21.30
+EVS
+173
+Suicune V
+Pkmn › Basic
+{W}
+Ultra Rare
+$6.96
+EVS
+174
+Glaceon V
+Pkmn › Basic
+{W}
+Ultra Rare
+$20.90
+EVS
+175
+Glaceon V
+Pkmn › Basic
+{W}
+Ultra Rare
+$108.12
+EVS
+176
+Arctovish V
+Pkmn › Basic
+{W}
+Ultra Rare
+$2.27
+EVS
+177
+Jolteon V
+Pkmn › Basic
+{L}
+Ultra Rare
+$17.94
+EVS
+178
+Dracozolt V
+Pkmn › Basic
+{L}
+Ultra Rare
+$2.70
+EVS
+179
+Espeon V
+Pkmn › Basic
+{P}
+Ultra Rare
+$19.34
+EVS
+180
+Espeon V
+Pkmn › Basic
+{P}
+Ultra Rare
+$204.30
+EVS
+181
+Golurk V
+Pkmn › Basic
+{P}
+Ultra Rare
+$3.67
+EVS
+182
+Golurk V
+Pkmn › Basic
+{P}
+Ultra Rare
+$25.18
+EVS
+183
+Sylveon V
+Pkmn › Basic
+{P}
+Ultra Rare
+$30.32
+EVS
+184
+Sylveon V
+Pkmn › Basic
+{P}
+Ultra Rare
+$138.86
+EVS
+185
+Medicham V
+Pkmn › Basic
+{F}
+Ultra Rare
+$2.19
+EVS
+186
+Medicham V
+Pkmn › Basic
+{F}
+Ultra Rare
+$18.02
+EVS
+187
+Lycanroc V
+Pkmn › Basic
+{F}
+Ultra Rare
+$3.70
+EVS
+188
+Umbreon V
+Pkmn › Basic
+{D}
+Ultra Rare
+$44.23
+EVS
+189
+Umbreon V
+Pkmn › Basic
+{D}
+Ultra Rare
+$299.64
+EVS
+190
+Garbodor V
+Pkmn › Basic
+{D}
+Ultra Rare
+$4.15
+EVS
+191
+Dragonite V
+Pkmn › Basic
+{N}
+Ultra Rare
+$25.07
+EVS
+192
+Dragonite V
+Pkmn › Basic
+{N}
+Ultra Rare
+$360.33
+EVS
+193
+Rayquaza V
+Pkmn › Basic
+{N}
+Ultra Rare
+$30.48
+EVS
+194
+Rayquaza V
+Pkmn › Basic
+{N}
+Ultra Rare
+$279.58
+EVS
+195
+Noivern V
+Pkmn › Basic
+{N}
+Ultra Rare
+$3.72
+EVS
+196
+Noivern V
+Pkmn › Basic
+{N}
+Ultra Rare
+$53.60
+EVS
+197
+Duraludon V
+Pkmn › Basic
+{N}
+Ultra Rare
+$1.85
+EVS
+198
+Duraludon V
+Pkmn › Basic
+{N}
+Ultra Rare
+$16.48
+EVS
+199
+Aroma Lady
+Trainer › Supporter
+Ultra Rare
+$11.49
+EVS
+200
+Copycat
+Trainer › Supporter
+Ultra Rare
+$2.42
+EVS
+201
+Gordie
+Trainer › Supporter
+Ultra Rare
+$1.81
+EVS
+202
+Raihan
+Trainer › Supporter
+Ultra Rare
+$5.85
+EVS
+203
+Zinnia’s Resolve
+Trainer › Supporter
+Ultra Rare
+$4.46
+EVS
+204
+Leafeon VMAX
+Pkmn › VMAX
+{G}
+Rainbow Rare
+$30.20
+EVS
+205
+Leafeon VMAX
+Pkmn › VMAX
+{G}
+Special Full Art
+$321.82
+EVS
+206
+Trevenant VMAX
+Pkmn › VMAX
+{G}
+Rainbow Rare
+$7.15
+EVS
+207
+Gyarados VMAX
+Pkmn › VMAX
+{W}
+Rainbow Rare
+$39.29
+EVS
+208
+Glaceon VMAX
+Pkmn › VMAX
+{W}
+Rainbow Rare
+$30.47
+EVS
+209
+Glaceon VMAX
+Pkmn › VMAX
+{W}
+Special Full Art
+$243.51
+EVS
+210
+Dracozolt VMAX
+Pkmn › VMAX
+{L}
+Rainbow Rare
+$7.58
+EVS
+211
+Sylveon VMAX
+Pkmn › VMAX
+{P}
+Rainbow Rare
+$50.60
+EVS
+212
+Sylveon VMAX
+Pkmn › VMAX
+{P}
+Special Full Art
+$324.14
+EVS
+213
+Lycanroc VMAX
+Pkmn › VMAX
+{F}
+Rainbow Rare
+$7.91
+EVS
+214
+Umbreon VMAX
+Pkmn › VMAX
+{D}
+Rainbow Rare
+$59.49
+EVS
+215
+Umbreon VMAX
+Pkmn › VMAX
+{D}
+Special Full Art
+$1,747.16
+EVS
+216
+Garbodor VMAX
+Pkmn › VMAX
+{D}
+Rainbow Rare
+$7.24
+EVS
+217
+Rayquaza VMAX
+Pkmn › VMAX
+{N}
+Rainbow Rare
+$69.28
+EVS
+218
+Rayquaza VMAX
+Pkmn › VMAX
+{N}
+Special Full Art
+$674.76
+EVS
+219
+Duraludon VMAX
+Pkmn › VMAX
+{N}
+Rainbow Rare
+$6.67
+EVS
+220
+Duraludon VMAX
+Pkmn › VMAX
+{N}
+Special Full Art
+$18.54
+EVS
+221
+Aroma Lady
+Trainer › Supporter
+Rainbow Rare
+$5.15
+EVS
+222
+Copycat
+Trainer › Supporter
+Rainbow Rare
+$4.59
+EVS
+223
+Gordie
+Trainer › Supporter
+Rainbow Rare
+$2.78
+EVS
+224
+Raihan
+Trainer › Supporter
+Rainbow Rare
+$5.01
+EVS
+225
+Zinnia’s Resolve
+Trainer › Supporter
+Rainbow Rare
+$6.21
+EVS
+226
+Froslass
+Pkmn › Stage 1
+{W}
+Rare Secret
+$7.41
+EVS
+227
+Inteleon
+Pkmn › Stage 2
+{W}
+Rare Secret
+$7.33
+EVS
+228
+Cresselia
+Pkmn › Basic
+{P}
+Rare Secret
+$9.69
+EVS
+229
+Boost Shake
+Trainer › Item
+Rare Secret
+$2.10
+EVS
+230
+Crystal Cave
+Trainer › Stadium
+Rare Secret
+$4.82
+EVS
+231
+Full Face Guard
+Trainer › Tool
+Rare Secret
+$2.56
+EVS
+232
+Stormy Mountains
+Trainer › Stadium
+Rare Secret
+$3.58
+EVS
+233
+Toy Catcher
+Trainer › Item
+Rare Secret
+$2.45
+EVS
+234
+Turffield Stadium
+Trainer › Stadium
+Rare Secret
+$3.36
+EVS
+235
+Lightning Energy
+Energy › Basic
+Rare Secret
+$7.55
+EVS
+236
+Darkness Energy
+Energy › Basic
+Rare Secret
+$23.75
+EVS
+237
+Metal Energy
+Energy › Basic
+Rare Secret
+$10.83
