@@ -1,4 +1,8 @@
 import { Card, Rarity, JSONSetData, JSONCard } from '../types';
+import { invoke } from '@tauri-apps/api/core';
+
+// True when the app is running inside a Tauri native window
+const isTauri = typeof window !== 'undefined' && '__TAURI_INTERNALS__' in window;
 
 /**
  * Maps JSON rarity strings to our internal Rarity type.
@@ -91,17 +95,22 @@ export function loadSetFromJSON(jsonData: JSONSetData): {
 }
 
 /**
- * Fetches a built-in JSON set file from /data/sets/
+ * Fetches a built-in JSON set file.
+ * In production Tauri builds, reads directly from the sets/ folder alongside
+ * the .exe via a Rust command — no rebuild needed to add new sets.
+ * In dev/browser, served by Vite from /data/sets/.
  */
 export async function fetchBuiltInSet(filename: string): Promise<JSONSetData> {
+  if (isTauri && !import.meta.env.DEV) {
+    const content = await invoke<string>('read_set_file', { filename });
+    return JSON.parse(content) as JSONSetData;
+  }
+
   const response = await fetch(`/data/sets/${filename}`);
-  
   if (!response.ok) {
     throw new Error(`Failed to load set: ${filename} (${response.status} ${response.statusText})`);
   }
-  
-  const jsonData = await response.json();
-  return jsonData as JSONSetData;
+  return response.json() as Promise<JSONSetData>;
 }
 
 /**
@@ -122,13 +131,20 @@ export function parseUploadedJSON(fileContent: string): JSONSetData {
  */
 export async function getAvailableBuiltInSets(): Promise<Array<{ filename: string; displayName: string }>> {
   try {
-    const response = await fetch('/data/sets/sets-manifest.json');
-    if (!response.ok) {
-      console.warn('Failed to load sets manifest, using fallback');
-      return [{ filename: 'evolving-skies.json', displayName: 'Evolving Skies (EVS)' }];
+    let manifest: Array<{ filename: string; setName: string; setCode: string }>;
+
+    if (isTauri && !import.meta.env.DEV) {
+      const content = await invoke<string>('read_set_file', { filename: 'sets-manifest.json' });
+      manifest = JSON.parse(content);
+    } else {
+      const response = await fetch('/data/sets/sets-manifest.json');
+      if (!response.ok) {
+        console.warn('Failed to load sets manifest, using fallback');
+        return [{ filename: 'evolving-skies.json', displayName: 'Evolving Skies (EVS)' }];
+      }
+      manifest = await response.json() as Array<{ filename: string; setName: string; setCode: string }>;
     }
-    
-    const manifest = await response.json() as Array<{ filename: string; setName: string; setCode: string }>;
+
     return manifest.map(set => ({
       filename: set.filename,
       displayName: `${set.setName} (${set.setCode})`
