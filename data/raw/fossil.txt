@@ -1,0 +1,433 @@
+Set Name: Fossil (FO)
+
+-----------------------------
+
+FO
+1
+Aerodactyl
+Pkmn › Stage 1
+{F}
+Rare Holo
+$34.19
+FO
+2
+Articuno
+Pkmn › Basic
+{W}
+Rare Holo
+sold out
+FO
+3
+Ditto
+Pkmn › Basic
+{C}
+Rare Holo
+$34.07
+FO
+4
+Dragonite
+Pkmn › Stage 2
+{C}
+Rare Holo
+$119.67
+FO
+5
+Gengar
+Pkmn › Stage 2
+{P}
+Rare Holo
+$161.77
+FO
+6
+Haunter
+Pkmn › Stage 1
+{P}
+Rare Holo
+$42.71
+FO
+7
+Hitmonlee
+Pkmn › Basic
+{F}
+Rare Holo
+$40.00
+FO
+8
+Hypno
+Pkmn › Stage 1
+{P}
+Rare Holo
+$25.06
+FO
+9
+Kabutops
+Pkmn › Stage 2
+{F}
+Rare Holo
+$31.66
+FO
+10
+Lapras
+Pkmn › Basic
+{W}
+Rare Holo
+$17.23
+FO
+11
+Magneton
+Pkmn › Stage 1
+{L}
+Rare Holo
+$15.84
+FO
+12
+Moltres
+Pkmn › Basic
+{R}
+Rare Holo
+$56.28
+FO
+13
+Muk
+Pkmn › Stage 1
+{G}
+Rare Holo
+$8.82
+FO
+14
+Raichu
+Pkmn › Stage 1
+{L}
+Rare Holo
+$37.82
+FO
+15
+Zapdos
+Pkmn › Basic
+{L}
+Rare Holo
+$24.85
+FO
+16
+Aerodactyl
+Pkmn › Stage 1
+{F}
+Rare
+$6.93
+FO
+17
+Articuno
+Pkmn › Basic
+{W}
+Rare
+$9.77
+FO
+18
+Ditto
+Pkmn › Basic
+{C}
+Rare
+$10.84
+FO
+19
+Dragonite
+Pkmn › Stage 2
+{C}
+Rare
+$19.14
+FO
+20
+Gengar
+Pkmn › Stage 2
+{P}
+Rare
+$27.24
+FO
+21
+Haunter
+Pkmn › Stage 1
+{P}
+Rare
+$7.97
+FO
+22
+Hitmonlee
+Pkmn › Basic
+{F}
+Rare
+$5.15
+FO
+23
+Hypno
+Pkmn › Stage 1
+{P}
+Rare
+$4.83
+FO
+24
+Kabutops
+Pkmn › Stage 2
+{F}
+Rare
+$4.96
+FO
+25
+Lapras
+Pkmn › Basic
+{W}
+Rare
+$5.11
+FO
+26
+Magneton
+Pkmn › Stage 1
+{L}
+Rare
+$4.76
+FO
+27
+Moltres
+Pkmn › Basic
+{R}
+Rare
+$8.77
+FO
+28
+Muk
+Pkmn › Stage 1
+{G}
+Rare
+$4.73
+FO
+29
+Raichu
+Pkmn › Stage 1
+{L}
+Rare
+$8.46
+FO
+30
+Zapdos
+Pkmn › Basic
+{L}
+Rare
+$7.22
+FO
+31
+Arbok
+Pkmn › Stage 1
+{G}
+Uncommon
+$0.96
+FO
+32
+Cloyster
+Pkmn › Stage 1
+{W}
+Uncommon
+$0.94
+FO
+33
+Gastly
+Pkmn › Basic
+{P}
+Uncommon
+$1.41
+FO
+34
+Golbat
+Pkmn › Stage 1
+{G}
+Uncommon
+$0.69
+FO
+35
+Golduck
+Pkmn › Stage 1
+{W}
+Uncommon
+$1.10
+FO
+36
+Golem
+Pkmn › Stage 2
+{F}
+Uncommon
+$1.35
+FO
+37
+Graveler
+Pkmn › Stage 1
+{F}
+Uncommon
+$0.69
+FO
+38
+Kingler
+Pkmn › Stage 1
+{W}
+Uncommon
+$0.85
+FO
+39
+Magmar
+Pkmn › Basic
+{R}
+Uncommon
+$0.82
+FO
+40
+Omastar
+Pkmn › Stage 2
+{W}
+Uncommon
+$1.23
+FO
+41
+Sandslash
+Pkmn › Stage 1
+{F}
+Uncommon
+$0.97
+FO
+42
+Seadra
+Pkmn › Stage 1
+{W}
+Uncommon
+$0.81
+FO
+43
+Slowbro
+Pkmn › Stage 1
+{P}
+Uncommon
+$1.39
+FO
+44
+Tentacruel
+Pkmn › Stage 1
+{W}
+Uncommon
+$1.12
+FO
+45
+Weezing
+Pkmn › Stage 1
+{G}
+Uncommon
+$1.26
+FO
+46
+Ekans
+Pkmn › Basic
+{G}
+Common
+$0.42
+FO
+47
+Geodude
+Pkmn › Basic
+{F}
+Common
+$0.42
+FO
+48
+Grimer
+Pkmn › Basic
+{G}
+Common
+$0.48
+FO
+49
+Horsea
+Pkmn › Basic
+{W}
+Common
+$0.43
+FO
+50
+Kabuto
+Pkmn › Stage 1
+{F}
+Common
+$3.16
+FO
+51
+Krabby
+Pkmn › Basic
+{W}
+Common
+$0.45
+FO
+52
+Omanyte
+Pkmn › Stage 1
+{W}
+Common
+$0.61
+FO
+53
+Psyduck
+Pkmn › Basic
+{W}
+Common
+$1.50
+FO
+54
+Shellder
+Pkmn › Basic
+{W}
+Common
+$0.48
+FO
+55
+Slowpoke
+Pkmn › Basic
+{P}
+Common
+$0.62
+FO
+56
+Tentacool
+Pkmn › Basic
+{W}
+Common
+$0.39
+FO
+57
+Zubat
+Pkmn › Basic
+{G}
+Common
+$0.52
+FO
+58
+Mr. Fuji
+Trainer › Item
+Uncommon
+$0.74
+FO
+59
+Energy Search
+Trainer › Item
+Common
+$0.31
+FO
+60
+Gambler
+Trainer › Item
+Common
+$0.50
+FO
+61
+Recycle
+Trainer › Item
+Common
+$0.28
+FO
+62
+Mysterious Fossil
+Trainer › Item
+Common
+$0.30

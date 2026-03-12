@@ -1,0 +1,441 @@
+{
+  "setName": "Fossil",
+  "setCode": "FO",
+  "baseSetSize": 62,
+  "cards": [
+    {
+      "number": "001",
+      "name": "Aerodactyl",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "002",
+      "name": "Articuno",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "003",
+      "name": "Ditto",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "004",
+      "name": "Dragonite",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "005",
+      "name": "Gengar",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "006",
+      "name": "Haunter",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "007",
+      "name": "Hitmonlee",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "008",
+      "name": "Hypno",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "009",
+      "name": "Kabutops",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "010",
+      "name": "Lapras",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "011",
+      "name": "Magneton",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "012",
+      "name": "Moltres",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "013",
+      "name": "Muk",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "014",
+      "name": "Raichu",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "015",
+      "name": "Zapdos",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "016",
+      "name": "Aerodactyl",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "017",
+      "name": "Articuno",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "018",
+      "name": "Ditto",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "019",
+      "name": "Dragonite",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "020",
+      "name": "Gengar",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "021",
+      "name": "Haunter",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "022",
+      "name": "Hitmonlee",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "023",
+      "name": "Hypno",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "024",
+      "name": "Kabutops",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "025",
+      "name": "Lapras",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "026",
+      "name": "Magneton",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "027",
+      "name": "Moltres",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "028",
+      "name": "Muk",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "029",
+      "name": "Raichu",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "030",
+      "name": "Zapdos",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "031",
+      "name": "Arbok",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "032",
+      "name": "Cloyster",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "033",
+      "name": "Gastly",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "034",
+      "name": "Golbat",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "035",
+      "name": "Golduck",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "036",
+      "name": "Golem",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "037",
+      "name": "Graveler",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "038",
+      "name": "Kingler",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "039",
+      "name": "Magmar",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "040",
+      "name": "Omastar",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "041",
+      "name": "Sandslash",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "042",
+      "name": "Seadra",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "043",
+      "name": "Slowbro",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "044",
+      "name": "Tentacruel",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "045",
+      "name": "Weezing",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "046",
+      "name": "Ekans",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "047",
+      "name": "Geodude",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "048",
+      "name": "Grimer",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "049",
+      "name": "Horsea",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "050",
+      "name": "Kabuto",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "051",
+      "name": "Krabby",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "052",
+      "name": "Omanyte",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "053",
+      "name": "Psyduck",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "054",
+      "name": "Shellder",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "055",
+      "name": "Slowpoke",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "056",
+      "name": "Tentacool",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "057",
+      "name": "Zubat",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "058",
+      "name": "Mr. Fuji",
+      "rarity": "Uncommon",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "059",
+      "name": "Energy Search",
+      "rarity": "Common",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "060",
+      "name": "Gambler",
+      "rarity": "Common",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "061",
+      "name": "Recycle",
+      "rarity": "Common",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "062",
+      "name": "Mysterious Fossil",
+      "rarity": "Common",
+      "category": "Trainer",
+      "variant": null
+    }
+  ]
+}
