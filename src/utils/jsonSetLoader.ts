@@ -23,6 +23,7 @@ function mapJSONRarityToRarity(jsonRarity: string, variant: string | null): Rari
     
     case 'Rare':
     case 'Holo Rare':
+    case 'Rare Holo':
       return 'Rare';
     
     case 'Rainbow Rare':
