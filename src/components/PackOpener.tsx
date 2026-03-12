@@ -18,14 +18,14 @@ export default function PackOpener({
   onToggleSaveInventory,
 }: PackOpenerProps) {
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+    <div className="bg-[#2A2A2A] p-6 rounded-2xl border border-[#3A3A3A] space-y-4">
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-semibold flex items-center gap-2">
           <PackageOpen className="w-5 h-5 text-indigo-500" />
           Open Packs
         </h2>
         {activeProfile && (
-          <span className="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md text-xs font-bold">
+          <span className="px-2.5 py-1 bg-[#3A3A3A] text-[#B0B0B0] rounded-md text-xs font-bold">
             {activeProfile.packsOpened} Opened
           </span>
         )}
@@ -39,7 +39,7 @@ export default function PackOpener({
           onChange={(e) => onToggleSaveInventory(e.target.checked)}
           className="w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500 cursor-pointer"
         />
-        <label htmlFor="saveToInventory" className="text-sm font-medium text-slate-700 select-none cursor-pointer">
+        <label htmlFor="saveToInventory" className="text-sm font-medium text-[#E5E5E5] select-none cursor-pointer">
           Save to Collection Inventory
         </label>
       </div>
@@ -51,7 +51,7 @@ export default function PackOpener({
       >
         Open Pack
       </button>
-      <p className="text-xs text-center text-slate-500">
+      <p className="text-xs text-center text-[#B0B0B0]">
         {!activeSet ? 'Load a checklist first.' : 'Simulates realistic pull rates.'}
       </p>
     </div>

@@ -120,12 +120,12 @@ export default function App() {
   } : { unique: 0, total: 0 };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans p-6">
+    <div className="min-h-screen bg-[#1E1E1E] text-[#E5E5E5] font-sans p-6">
       <div className="max-w-5xl mx-auto space-y-8">
         
         <header className="text-center space-y-2">
-          <h1 className="text-4xl font-bold tracking-tight text-indigo-900">Pokémon Pack Simulator</h1>
-          <p className="text-slate-500">
+          <h1 className="text-4xl font-bold tracking-tight text-[#E5E5E5]">Pokémon Pack Simulator</h1>
+          <p className="text-[#B0B0B0]">
             {setManager.activeSet 
               ? `Opening packs from ${setManager.activeSet.name}`
               : 'Select a set to start opening packs'
@@ -160,7 +160,7 @@ export default function App() {
             />
 
             {/* Clear Data Button */}
-            <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+            <div className="bg-red-900/20 p-4 rounded-lg border border-red-800">
               <button
                 onClick={handleClearAllData}
                 className="w-full px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 flex items-center justify-center gap-2 text-sm"
@@ -168,7 +168,7 @@ export default function App() {
                 <Trash size={16} />
                 Clear All Data
               </button>
-              <p className="text-xs text-red-600 mt-2 text-center">
+              <p className="text-xs text-red-400 mt-2 text-center">
                 Use if experiencing issues
               </p>
             </div>

@@ -10,11 +10,11 @@ interface PackResultsProps {
 
 export default function PackResults({ pack, score, activeSet }: PackResultsProps) {
   const getScoreColor = (total: number) => {
-    if (total <= 30) return 'text-slate-700 bg-slate-100 border-slate-300';
-    if (total <= 50) return 'text-green-700 bg-green-50 border-green-200';
-    if (total <= 70) return 'text-blue-700 bg-blue-50 border-blue-200';
-    if (total <= 90) return 'text-purple-700 bg-purple-50 border-purple-200';
-    return 'text-amber-700 bg-gradient-to-r from-amber-50 to-yellow-50 border-amber-300';
+    if (total <= 30) return 'text-[#B0B0B0] bg-[#3A3A3A] border-[#4A4A4A]';
+    if (total <= 50) return 'text-green-400 bg-green-900/30 border-green-700';
+    if (total <= 70) return 'text-blue-400 bg-blue-900/30 border-blue-700';
+    if (total <= 90) return 'text-purple-400 bg-purple-900/30 border-purple-700';
+    return 'text-amber-400 bg-gradient-to-r from-amber-900/30 to-yellow-900/30 border-amber-600';
   };
 
   const getScoreTier = (total: number) => {
@@ -30,9 +30,9 @@ export default function PackResults({ pack, score, activeSet }: PackResultsProps
   const tier = getScoreTier(score);
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm border border-slate-200">
+    <div className="bg-[#2A2A2A] rounded-2xl border border-[#3A3A3A]">
       {/* Header with Score */}
-      <div className="p-6 border-b border-slate-100">
+      <div className="p-6 border-b border-[#3A3A3A]">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl font-bold flex items-center gap-2">
             <PackageOpen className="w-6 h-6 text-indigo-500" />
@@ -54,7 +54,7 @@ export default function PackResults({ pack, score, activeSet }: PackResultsProps
       {/* Cards Display */}
       <div className="p-6">
         {pack.length === 0 ? (
-          <div className="h-32 flex items-center justify-center text-slate-400 border-2 border-dashed border-slate-200 rounded-xl">
+          <div className="h-32 flex items-center justify-center text-[#B0B0B0] border-2 border-dashed border-[#3A3A3A] rounded-xl">
             {activeSet ? 'Open a pack to see cards here.' : 'Upload a set to begin.'}
           </div>
         ) : (
@@ -63,11 +63,11 @@ export default function PackResults({ pack, score, activeSet }: PackResultsProps
               <div 
                 key={i} 
                 className={`p-3 rounded-lg border-2 flex flex-col justify-between min-h-[140px] transition-shadow hover:shadow-md
-                  ${card.rarity === 'Secret Rare' ? 'bg-gradient-to-br from-amber-50 to-yellow-50 border-amber-300' :
-                    card.rarity === 'VMAX' ? 'bg-gradient-to-br from-purple-50 to-pink-50 border-purple-300' :
-                    card.rarity === 'V' ? 'bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-300' :
-                    card.rarity === 'Rare' ? 'bg-slate-100 border-slate-300' :
-                    'bg-white border-slate-200'
+                  ${card.rarity === 'Secret Rare' ? 'bg-gradient-to-br from-amber-900/40 to-yellow-900/40 border-amber-600' :
+                    card.rarity === 'VMAX' ? 'bg-gradient-to-br from-purple-900/40 to-pink-900/40 border-purple-600' :
+                    card.rarity === 'V' ? 'bg-gradient-to-br from-blue-900/40 to-indigo-900/40 border-blue-600' :
+                    card.rarity === 'Rare' ? 'bg-[#333333] border-[#555555]' :
+                    'bg-[#2A2A2A] border-[#3A3A3A]'
                   }
                 `}
               >
