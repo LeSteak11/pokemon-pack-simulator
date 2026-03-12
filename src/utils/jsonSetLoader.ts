@@ -12,28 +12,35 @@ function mapJSONRarityToRarity(jsonRarity: string, variant: string | null): Rari
   // V and VMAX are determined by variant field, not rarity
   if (variant === 'V') return 'V';
   if (variant === 'VMAX') return 'VMAX';
-  
+
+  // Normalize string to avoid whitespace/casing edge cases
+  const rarity = jsonRarity.trim();
+
   // Map JSON rarities to internal types
-  switch (jsonRarity) {
+  switch (rarity) {
     case 'Common':
       return 'Common';
-    
+
     case 'Uncommon':
       return 'Uncommon';
-    
+
     case 'Rare':
     case 'Holo Rare':
     case 'Rare Holo':
       return 'Rare';
-    
+
+    case 'Ultra Rare':
+      // Trainer Full Arts (variant: null) — treated as Secret Rare tier
+      return 'Secret Rare';
+
     case 'Rare Secret':
     case 'Rainbow Rare':
     case 'Special Full Art':
     case 'Secret Rare':
       return 'Secret Rare';
-    
+
     default:
-      console.warn(`Unknown rarity: ${jsonRarity}, defaulting to Common`);
+      console.warn(`Unknown rarity: "${jsonRarity}", defaulting to Common`);
       return 'Common';
   }
 }
