@@ -1,0 +1,700 @@
+{
+  "setName": "Base Set",
+  "setCode": "BS1",
+  "baseSetSize": 102,
+  "cards": [
+    {
+      "number": "001",
+      "name": "Alakazam",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "002",
+      "name": "Blastoise",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "003",
+      "name": "Chansey",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "004",
+      "name": "Charizard",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "005",
+      "name": "Clefairy",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "006",
+      "name": "Gyarados",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "007",
+      "name": "Hitmonchan",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "008",
+      "name": "Machamp",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "009",
+      "name": "Magneton",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "010",
+      "name": "Mewtwo",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "011",
+      "name": "Nidoking",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "012",
+      "name": "Ninetales",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "013",
+      "name": "Poliwrath",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "014",
+      "name": "Raichu",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "015",
+      "name": "Venusaur",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "016",
+      "name": "Zapdos",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "017",
+      "name": "Beedrill",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "018",
+      "name": "Dragonair",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "019",
+      "name": "Dugtrio",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "020",
+      "name": "Electabuzz",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "021",
+      "name": "Electrode",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "022",
+      "name": "Pidgeotto",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "023",
+      "name": "Arcanine",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "024",
+      "name": "Charmeleon",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "025",
+      "name": "Dewgong",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "026",
+      "name": "Dratini",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "027",
+      "name": "Farfetch’d",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "028",
+      "name": "Growlithe",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "029",
+      "name": "Haunter",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "030",
+      "name": "Ivysaur",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "031",
+      "name": "Jynx",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "032",
+      "name": "Kadabra",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "033",
+      "name": "Kakuna",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "034",
+      "name": "Machoke",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "035",
+      "name": "Magikarp",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "036",
+      "name": "Magmar",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "037",
+      "name": "Nidorino",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "038",
+      "name": "Poliwhirl",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "039",
+      "name": "Porygon",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "040",
+      "name": "Raticate",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "041",
+      "name": "Seel",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "042",
+      "name": "Wartortle",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "043",
+      "name": "Abra",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "044",
+      "name": "Bulbasaur",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "045",
+      "name": "Caterpie",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "046",
+      "name": "Charmander",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "047",
+      "name": "Diglett",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "048",
+      "name": "Doduo",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "049",
+      "name": "Drowzee",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "050",
+      "name": "Gastly",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "051",
+      "name": "Koffing",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "052",
+      "name": "Machop",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "053",
+      "name": "Magnemite",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "054",
+      "name": "Metapod",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "055",
+      "name": "Nidoran Male",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "056",
+      "name": "Onix",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "057",
+      "name": "Pidgey",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "058",
+      "name": "Pikachu",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "059",
+      "name": "Poliwag",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "060",
+      "name": "Ponyta",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "061",
+      "name": "Rattata",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "062",
+      "name": "Sandshrew",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "063",
+      "name": "Squirtle",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "064",
+      "name": "Starmie",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "065",
+      "name": "Staryu",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "066",
+      "name": "Tangela",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "067",
+      "name": "Voltorb",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "068",
+      "name": "Vulpix",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "069",
+      "name": "Weedle",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "070",
+      "name": "Clefairy Doll",
+      "rarity": "Rare",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "071",
+      "name": "Computer Search",
+      "rarity": "Rare",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "072",
+      "name": "Devolution Spray",
+      "rarity": "Rare",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "073",
+      "name": "Impostor Professor Oak",
+      "rarity": "Rare",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "074",
+      "name": "Item Finder",
+      "rarity": "Rare",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "075",
+      "name": "Lass",
+      "rarity": "Rare",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "076",
+      "name": "Pokémon Breeder",
+      "rarity": "Rare",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "077",
+      "name": "Pokémon Trader",
+      "rarity": "Rare",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "078",
+      "name": "Scoop Up",
+      "rarity": "Rare",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "079",
+      "name": "Super Energy Removal",
+      "rarity": "Rare",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "080",
+      "name": "Defender",
+      "rarity": "Uncommon",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "081",
+      "name": "Energy Retrieval",
+      "rarity": "Uncommon",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "082",
+      "name": "Full Heal",
+      "rarity": "Uncommon",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "083",
+      "name": "Maintenance",
+      "rarity": "Uncommon",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "084",
+      "name": "PlusPower",
+      "rarity": "Uncommon",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "085",
+      "name": "Pokémon Center",
+      "rarity": "Uncommon",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "086",
+      "name": "Pokémon Flute",
+      "rarity": "Uncommon",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "087",
+      "name": "Pokédex",
+      "rarity": "Uncommon",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "088",
+      "name": "Professor Oak",
+      "rarity": "Uncommon",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "089",
+      "name": "Revive",
+      "rarity": "Uncommon",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "090",
+      "name": "Super Potion",
+      "rarity": "Uncommon",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "091",
+      "name": "Bill",
+      "rarity": "Common",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "092",
+      "name": "Energy Removal",
+      "rarity": "Common",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "093",
+      "name": "Gust of Wind",
+      "rarity": "Common",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "094",
+      "name": "Potion",
+      "rarity": "Common",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "095",
+      "name": "Switch",
+      "rarity": "Common",
+      "category": "Trainer",
+      "variant": null
+    },
+    {
+      "number": "096",
+      "name": "Double Colorless Energy",
+      "rarity": "Uncommon",
+      "category": "Energy",
+      "variant": null
+    },
+    {
+      "number": "097",
+      "name": "Fighting Energy",
+      "rarity": "Common",
+      "category": "Energy",
+      "variant": null
+    },
+    {
+      "number": "099",
+      "name": "Grass Energy",
+      "rarity": "Common",
+      "category": "Energy",
+      "variant": null
+    },
+    {
+      "number": "101",
+      "name": "Psychic Energy",
+      "rarity": "Common",
+      "category": "Energy",
+      "variant": null
+    }
+  ]
+}

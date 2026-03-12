@@ -1,1 +1,4 @@
 node_modules
+
+# Tauri build output (large Rust compilation artifacts)
+src-tauri/target/

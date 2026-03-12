@@ -1,0 +1,455 @@
+{
+  "setName": "Jungle",
+  "setCode": "JU",
+  "baseSetSize": 64,
+  "cards": [
+    {
+      "number": "001",
+      "name": "Clefable",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "002",
+      "name": "Electrode",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "003",
+      "name": "Flareon",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "004",
+      "name": "Jolteon",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "005",
+      "name": "Kangaskhan",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "006",
+      "name": "Mr. Mime",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "007",
+      "name": "Nidoqueen",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "008",
+      "name": "Pidgeot",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "009",
+      "name": "Pinsir",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "010",
+      "name": "Scyther",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "011",
+      "name": "Snorlax",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "012",
+      "name": "Vaporeon",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "013",
+      "name": "Venomoth",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "014",
+      "name": "Victreebel",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "015",
+      "name": "Vileplume",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "016",
+      "name": "Wigglytuff",
+      "rarity": "Rare Holo",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "017",
+      "name": "Clefable",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "018",
+      "name": "Electrode",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "019",
+      "name": "Flareon",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "020",
+      "name": "Jolteon",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "021",
+      "name": "Kangaskhan",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "022",
+      "name": "Mr. Mime",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "023",
+      "name": "Nidoqueen",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "024",
+      "name": "Pidgeot",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "025",
+      "name": "Pinsir",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "026",
+      "name": "Scyther",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "027",
+      "name": "Snorlax",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "028",
+      "name": "Vaporeon",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "029",
+      "name": "Venomoth",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "030",
+      "name": "Victreebel",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "031",
+      "name": "Vileplume",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "032",
+      "name": "Wigglytuff",
+      "rarity": "Rare",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "033",
+      "name": "Butterfree",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "034",
+      "name": "Dodrio",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "035",
+      "name": "Exeggutor",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "036",
+      "name": "Fearow",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "037",
+      "name": "Gloom",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "038",
+      "name": "Lickitung",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "039",
+      "name": "Marowak",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "040",
+      "name": "Nidorina",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "041",
+      "name": "Parasect",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "042",
+      "name": "Persian",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "043",
+      "name": "Primeape",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "044",
+      "name": "Rapidash",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "045",
+      "name": "Rhydon",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "046",
+      "name": "Seaking",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "047",
+      "name": "Tauros",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "048",
+      "name": "Weepinbell",
+      "rarity": "Uncommon",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "049",
+      "name": "Bellsprout",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "050",
+      "name": "Cubone",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "051",
+      "name": "Eevee",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "052",
+      "name": "Exeggcute",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "053",
+      "name": "Goldeen",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "054",
+      "name": "Jigglypuff",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "055",
+      "name": "Mankey",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "056",
+      "name": "Meowth",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "057",
+      "name": "Nidoran Female",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "058",
+      "name": "Oddish",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "059",
+      "name": "Paras",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "060",
+      "name": "Pikachu",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "061",
+      "name": "Rhyhorn",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "062",
+      "name": "Spearow",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "063",
+      "name": "Venonat",
+      "rarity": "Common",
+      "category": "Pokemon",
+      "variant": null
+    },
+    {
+      "number": "064",
+      "name": "Poké Ball",
+      "rarity": "Common",
+      "category": "Trainer",
+      "variant": null
+    }
+  ]
+}
