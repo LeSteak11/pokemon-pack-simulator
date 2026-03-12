@@ -17,6 +17,7 @@ export interface InventoryProfile {
   name: string;
   collection: CollectionItem[];
   packsOpened: number;
+  packsBySet: Record<string, number>;
 }
 
 export interface RarityPools {

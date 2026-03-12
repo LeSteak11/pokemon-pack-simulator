@@ -88,7 +88,8 @@ export function useSetManager() {
       id: Date.now().toString(),
       name: profileName,
       collection: [],
-      packsOpened: 0
+      packsOpened: 0,
+      packsBySet: {}
     };
     
     const updatedProfiles = {
@@ -139,6 +140,9 @@ export function useSetManager() {
     
     updatedProfile.collection = newCollection;
     updatedProfile.packsOpened += 1;
+    const packsBySet = { ...(updatedProfile.packsBySet || {}) };
+    packsBySet[activeSet.filename] = (packsBySet[activeSet.filename] || 0) + 1;
+    updatedProfile.packsBySet = packsBySet;
     
     // Update profiles storage
     const updatedProfiles = {
@@ -162,7 +166,7 @@ export function useSetManager() {
       ...profiles,
       [activeSet.filename]: currentSetProfiles.map(p =>
         p.id === profileId
-          ? { ...p, collection: [], packsOpened: 0 }
+          ? { ...p, collection: [], packsOpened: 0, packsBySet: {} }
           : p
       )
     };
