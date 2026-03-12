@@ -1,186 +1,3 @@
-================================================================================
-POKÉMON TCG PACK SIMULATOR — TECHNICAL INVESTIGATION REPORT
-Date: March 11, 2026
-Topic: Can the simulator generate cards not present in the selected set?
-================================================================================
-
-
-================================================================================
-1. ACTIVE CARD SOURCE
-================================================================================
-
-simulatePack() receives a RarityPools object as its only card data input.
-It has no access to any global card list, database, or other loaded sets.
-
-RarityPools is constructed by buildRarityPools(cards: Card[]) where the
-cards array is passed in by the caller at the time of pack generation.
-
-That cards array originates exclusively from loadSetFromJSON(), which
-converts the currently selected set's JSON file into internal Card objects.
-No other set's cards are present in this array.
-
-Conclusion: The card source is strictly the active set. No cross-set
-contamination is architecturally possible at the pool construction stage.
-
-
-================================================================================
-2. RARITY POOL CREATION
-================================================================================
-
-buildRarityPools() filters the cards array into six buckets by rarity:
-
-  commons      → cards where rarity === 'Common'
-  uncommons    → cards where rarity === 'Uncommon'
-  rares        → cards where rarity === 'Rare'
-  vs           → cards where rarity === 'V'
-  vmaxs        → cards where rarity === 'VMAX'
-  secretRares  → cards where rarity === 'Secret Rare'
-
-Example using Jungle JSON:
-
-  Input:  64 cards (16 Rare Holo, 16 Rare, 16 Uncommon, 15 Common, 1 Trainer)
-
-  HOWEVER — due to the active rarity mismatch bug:
-    "Rare Holo" is not a handled case in mapJSONRarityToRarity()
-    It falls through to the default branch → mapped to 'Common'
-
-  Actual output pools for Jungle:
-    commons:     31 cards  (15 true commons + 16 misclassified Rare Holos)
-    uncommons:   16 cards
-    rares:       16 cards  (the non-holo Rare variants, cards 017–032)
-    vs:           0 cards
-    vmaxs:        0 cards
-    secretRares:  0 cards
-
-Note: The 16 holo rares (cards 001–016) ARE present in the commons pool —
-they are real Jungle cards, just in the wrong pool.
-
-
-================================================================================
-3. FALLBACK LOGIC
-================================================================================
-
-simulatePack() defines two fallback structures at the top of the function:
-
-  allCards
-    Concatenation of all six pools:
-    [...commons, ...uncommons, ...rares, ...vs, ...vmaxs, ...secretRares]
-    All entries originate from the active set only.
-
-  reverseEligibleCards
-    Subset of allCards: [...commons, ...uncommons, ...rares]
-    Same source — active set only.
-
-Fallback triggers and behavior:
-
-  COMMON SLOT
-    Primary:  getRandomExcluding(pools.commons)
-    Fallback: getRandomExcluding(allCards)
-    Source:   active set only
-
-  UNCOMMON SLOT
-    Primary:  getRandomExcluding(pools.uncommons)
-    Fallback: getRandomExcluding(allCards)
-    Source:   active set only
-
-  REVERSE HOLO SLOT
-    Tries commons → uncommons → rares by weighted odds.
-    If all return null: getRandomExcluding(reverseEligibleCards)
-    Source:   active set only
-
-  RARE SLOT (cascading downgrade fallbacks)
-    Secret Rare miss → tries vmaxs → vs → rares
-    VMAX miss        → tries vs → rares
-    V miss           → tries rares
-    Holo/Standard    → tries rares
-    Final fallback:  getRandomExcluding(pools.rares) || getRandomExcluding(allCards)
-    Source:   active set only in all branches
-
-No fallback path references any structure outside the active set's pools.
-
-
-================================================================================
-4. DUPLICATE PREVENTION
-================================================================================
-
-usedCardNumbers is a Set<string> tracking card numbers already placed in
-the current pack. getRandomExcluding() filters out any card whose number
-is in this set before sampling.
-
-If the available filtered array is empty (all cards of that rarity used),
-getRandomExcluding() returns null — it does not pull from another set.
-The fallback is then allCards (still the active set), filtered the same way.
-
-Duplicate prevention cannot force a cross-set pull. It can only return null,
-which triggers the allCards fallback (same set) or skips the slot entirely.
-
-
-================================================================================
-5. CARD OBJECT CREATION
-================================================================================
-
-No card objects are created dynamically or synthesized from scratch.
-
-Every card placed in a pack follows this exact path:
-
-  1. JSON file parsed → raw JSONCard objects
-  2. convertJSONCard() maps each JSONCard to an internal Card object
-     (number, name, rarity via mapJSONRarityToRarity(), finish = 'Standard')
-  3. Cards array stored in state
-  4. buildRarityPools() partitions the array by rarity — same objects
-  5. simulatePack() selects a card reference from a pool
-  6. Spread copy created: { ...card, finish } — only the finish field is
-     overwritten; all identity fields (number, name, rarity) are unchanged
-
-The finish field is the only value set during generation. It does not
-affect whether the card exists in the set.
-
-
-================================================================================
-6. FINAL PACK OUTPUT
-================================================================================
-
-simulatePack() returns a Card[] array built by pushing spread copies of
-pool-sourced cards with their assigned finish values.
-
-Every card in the returned array:
-  - originated from the active set's JSON file
-  - has an unmodified number, name, and rarity from that JSON
-  - has a finish value assigned by determineFinish() based on slot type
-
-The function returns the pack array directly. No post-processing, filtering,
-or augmentation occurs after the array is built.
-
-
-================================================================================
-SUMMARY FOR POKÉMON EXPERT REVIEW
-================================================================================
-
-The architecture is set-isolated end to end. Every card in a generated pack
-traces back to the active set's JSON file with no possible cross-set leakage.
-
-The one confirmed data quality issue relevant to this investigation:
-
-  RARITY MISMATCH BUG
-  JSON stores "Rare Holo" but the loader only handles "Holo Rare".
-  All 16 Jungle holo rares (and all Base Set holos) fall into the commons
-  pool instead of the rares pool.
-
-  Effect on the non-existent card question:
-    The cards ARE real cards from the set — they are not fabricated.
-    They will appear in packs but at common-slot frequency rather than
-    rare-slot frequency, and without Holo finish.
-
-  This is a correctness bug (wrong rarity treatment), not a containment
-  bug (cards from outside the set). The set boundary is not breached.
-
-No other issues were identified that could produce cards outside the
-currently selected set.
-
-================================================================================
-END OF REPORT
-================================================================================
-
 
 ================================================================================
 POKÉMON TCG PACK SIMULATOR — DAY 4 v1.02 CHANGE 01 REPORT
@@ -245,5 +62,72 @@ FILES CHANGED
 
 ================================================================================
 END OF CHANGE 01 REPORT
+================================================================================
+
+================================================================================
+POKÉMON TCG PACK SIMULATOR — DAY 4 v1.02 BUG REPORT
+Date: March 11, 2026
+Bug: Impossible Card Slot Pull (Secret Rare appearing outside rare slot)
+================================================================================
+
+REPORTED ISSUE
+--------------
+A pack was observed containing both a Secret Rare (Cresselia #228) and a
+Holo Rare (Victini #020) simultaneously. Pack structure allows only one
+rare-tier card per pack. The JSON source data was confirmed correct.
+
+ROOT CAUSE
+----------
+The rarity mapping function mapJSONRarityToRarity() in jsonSetLoader.ts
+contained an incomplete switch statement. The EVS set uses the rarity string
+"Rare Secret" for all secret rare cards. The switch had a case for
+'Secret Rare' but no case for 'Rare Secret'.
+
+Because 'Rare Secret' was not handled, it fell through to the default branch:
+  default:
+    console.warn(`Unknown rarity: ${jsonRarity}, defaulting to Common`);
+    return 'Common';
+
+All 12 EVS secret rares — including Cresselia, all Alt Arts, all Rainbow
+Rares — were silently classified as Common and placed into pools.commons.
+
+REPRODUCTION PATH
+-----------------
+1. EVS secret rare (e.g. Cresselia #228) lands in pools.commons due to
+   'Rare Secret' hitting the default branch.
+2. Commons slot loop draws Cresselia normally.
+3. determineFinish(cresselia, 'standard') requests 'Standard' finish.
+4. selectValidFinish checks getValidFinishes('Secret Rare') → ['Secret Rare'].
+   'Standard' is not valid, fallback returns validFinishes[0] = 'Secret Rare'.
+5. Cresselia enters the pack with 'Secret Rare' finish from a commons slot.
+6. Rare slot fires independently, draws Victini → correct 'Holo' finish.
+7. Pack contains two rare-tier cards.
+
+SCOPE
+-----
+Affected all 12 Evolving Skies secret rares (numbers 219–230). No other
+current set uses the 'Rare Secret' string. Base Set, Jungle, and Fossil
+are unaffected.
+
+FIX
+---
+Added 'Rare Secret' as a case in the switch statement:
+
+  case 'Rare Secret':     ← added
+  case 'Rainbow Rare':
+  case 'Special Full Art':
+  case 'Secret Rare':
+    return 'Secret Rare';
+
+All 12 EVS secret rares now correctly enter pools.secretRares and can only
+appear via the rare slot at the configured 1% odds.
+
+FILE CHANGED
+------------
+  src/utils/jsonSetLoader.ts
+    Added case 'Rare Secret': to mapJSONRarityToRarity() switch.
+
+================================================================================
+END OF BUG REPORT
 ================================================================================
 
