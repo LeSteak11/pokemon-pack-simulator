@@ -12,21 +12,25 @@ interface CollectionTableProps {
 }
 
 const RARITY_LABEL: Record<Rarity, string> = {
-  Common:       'C',
-  Uncommon:     'U',
-  Rare:         'R',
-  V:            'V',
-  VMAX:         'VM',
-  'Secret Rare':'SR',
+  Common:              'C',
+  Uncommon:            'U',
+  Rare:                'R',
+  V:                   'V',
+  VMAX:                'VM',
+  'Secret Rare':       'SR',
+  'Rainbow Rare':      'RR',
+  'Special Full Art':  'SFA',
 };
 
 const RARITY_COLOR: Record<Rarity, string> = {
-  Common:       'text-[#888888]',
-  Uncommon:     'text-green-500',
-  Rare:         'text-blue-400',
-  V:            'text-orange-400',
-  VMAX:         'text-red-400',
-  'Secret Rare':'text-amber-400',
+  Common:              'text-[#888888]',
+  Uncommon:            'text-green-500',
+  Rare:                'text-blue-400',
+  V:                   'text-orange-400',
+  VMAX:                'text-red-400',
+  'Secret Rare':       'text-amber-400',
+  'Rainbow Rare':      'text-cyan-400',
+  'Special Full Art':  'text-fuchsia-400',
 };
 
 export default function CollectionTable({

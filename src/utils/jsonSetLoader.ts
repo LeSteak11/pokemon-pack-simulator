@@ -9,14 +9,19 @@ const isTauri = typeof window !== 'undefined' && '__TAURI_INTERNALS__' in window
  * Uses the variant field to distinguish V and VMAX cards.
  */
 function mapJSONRarityToRarity(jsonRarity: string, variant: string | null): Rarity {
-  // V and VMAX are determined by variant field, not rarity
-  if (variant === 'V') return 'V';
-  if (variant === 'VMAX') return 'VMAX';
-
   // Normalize string to avoid whitespace/casing edge cases
   const rarity = jsonRarity.trim();
 
-  // Map JSON rarities to internal types
+  // High-tier foil rarities take precedence over variant — a Rainbow Rare VMAX
+  // is a Rainbow Rare first, a VMAX second.
+  if (rarity === 'Rainbow Rare') return 'Rainbow Rare';
+  if (rarity === 'Special Full Art') return 'Special Full Art';
+
+  // V and VMAX determined by variant field
+  if (variant === 'V') return 'V';
+  if (variant === 'VMAX') return 'VMAX';
+
+  // Map remaining JSON rarities to internal types
   switch (rarity) {
     case 'Common':
       return 'Common';
@@ -30,12 +35,10 @@ function mapJSONRarityToRarity(jsonRarity: string, variant: string | null): Rari
       return 'Rare';
 
     case 'Ultra Rare':
-      // Trainer Full Arts (variant: null) — treated as Secret Rare tier
+      // Trainer Full Arts (variant: null) — Secret Rare tier
       return 'Secret Rare';
 
     case 'Rare Secret':
-    case 'Rainbow Rare':
-    case 'Special Full Art':
     case 'Secret Rare':
       return 'Secret Rare';
 

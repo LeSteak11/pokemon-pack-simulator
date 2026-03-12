@@ -37,7 +37,9 @@ export function buildRarityPools(cards: Card[]): RarityPools {
     rares: cards.filter(c => c.rarity === 'Rare'),
     vs: cards.filter(c => c.rarity === 'V'),
     vmaxs: cards.filter(c => c.rarity === 'VMAX'),
-    secretRares: cards.filter(c => c.rarity === 'Secret Rare')
+    secretRares: cards.filter(c =>
+      c.rarity === 'Secret Rare' || c.rarity === 'Rainbow Rare' || c.rarity === 'Special Full Art'
+    )
   };
 }
 
@@ -62,11 +64,11 @@ function getValidFinishes(card: Card): FinishType[] {
       return ['Ultra Rare'];
     
     case 'Secret Rare':
-      // Secret Rares only exist with Secret Rare finish
+    case 'Rainbow Rare':
+    case 'Special Full Art':
       return ['Secret Rare'];
-    
+
     default:
-      // Fallback to Standard for unknown rarities
       return ['Standard'];
   }
 }
@@ -102,7 +104,7 @@ function determineFinish(card: Card, slotType: 'standard' | 'reverse' | 'rare'):
   if (slotType === 'reverse') {
     preferredFinish = 'Reverse Holo';
   } else if (slotType === 'rare') {
-    if (card.rarity === 'Secret Rare') preferredFinish = 'Secret Rare';
+    if (card.rarity === 'Secret Rare' || card.rarity === 'Rainbow Rare' || card.rarity === 'Special Full Art') preferredFinish = 'Secret Rare';
     else if (card.rarity === 'VMAX' || card.rarity === 'V') preferredFinish = 'Ultra Rare';
     else if (card.rarity === 'Rare') preferredFinish = 'Holo';
     else preferredFinish = 'Standard';
@@ -222,6 +224,8 @@ function scoreCard(card: Card): number {
 
   switch (card.finish) {
     case 'Secret Rare':
+      if (card.rarity === 'Special Full Art') return 80;
+      if (card.rarity === 'Rainbow Rare') return 75;
       return 70;
     case 'Ultra Rare':
       // Distinguish V (25) from VMAX (40) by rarity
