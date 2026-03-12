@@ -213,33 +213,40 @@ export function simulatePack(pools: RarityPools, config: PackConfig = DEFAULT_PA
 }
 
 /**
- * Calculate simple pack score based on rarity and finish only
+ * Score a single card based on rarity and finish.
+ * Commons and uncommons include a small random variance (0–1) so packs
+ * with different bulk feel meaningfully different over many openings.
+ */
+function scoreCard(card: Card): number {
+  const variance = () => Math.random() < 0.5 ? 1 : 0;
+
+  switch (card.finish) {
+    case 'Secret Rare':
+      return 70;
+    case 'Ultra Rare':
+      // Distinguish V (25) from VMAX (40) by rarity
+      return card.rarity === 'VMAX' ? 40 : 25;
+    case 'Holo':
+      return 12;
+    case 'Reverse Holo':
+      if (card.rarity === 'Rare') return 6;
+      if (card.rarity === 'Uncommon') return 4;
+      return 3; // Common reverse
+    default:
+      // Standard finish — score by rarity
+      if (card.rarity === 'Rare') return 8;
+      if (card.rarity === 'Uncommon') return 1 + variance();
+      return variance(); // Common
+  }
+}
+
+/**
+ * Calculate pack score by summing individual card scores.
+ * No hard cap — scores above 100 are valid and trigger elevated tiers.
  */
 export function calculatePackScore(pack: Card[]): number {
   if (pack.length < 10) return 0;
-  
-  let score = 10; // Baseline score
-  
-  pack.forEach(card => {
-    // Rarity scoring
-    if (card.rarity === 'Secret Rare') {
-      score += 85;
-    } else if (card.rarity === 'VMAX') {
-      score += 50;
-    } else if (card.rarity === 'V') {
-      score += 30;
-    } else if (card.rarity === 'Rare') {
-      score += card.finish === 'Holo' ? 10 : 5;
-    } else if (card.rarity === 'Uncommon') {
-      score += card.finish === 'Reverse Holo' ? 4 : 1;
-    } else {
-      // Common
-      score += card.finish === 'Reverse Holo' ? 2 : 0;
-    }
-  });
-  
-  // Cap score at 100
-  return Math.min(score, 100);
+  return pack.reduce((total, card) => total + scoreCard(card), 0);
 }
 
 /**

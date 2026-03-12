@@ -10,6 +10,11 @@
     "setCode": "JU"
   },
   {
+    "filename": "fossil.json",
+    "setName": "Fossil",
+    "setCode": "FO"
+  },
+  {
     "filename": "evolving-skies.json",
     "setName": "Evolving Skies",
     "setCode": "EVS"

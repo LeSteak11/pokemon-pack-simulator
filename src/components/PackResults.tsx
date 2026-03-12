@@ -10,20 +10,22 @@ interface PackResultsProps {
 
 export default function PackResults({ pack, score, activeSet }: PackResultsProps) {
   const getScoreColor = (total: number) => {
-    if (total <= 30) return 'text-[#B0B0B0] bg-[#3A3A3A] border-[#4A4A4A]';
-    if (total <= 50) return 'text-green-400 bg-green-900/30 border-green-700';
-    if (total <= 70) return 'text-blue-400 bg-blue-900/30 border-blue-700';
-    if (total <= 90) return 'text-purple-400 bg-purple-900/30 border-purple-700';
-    return 'text-amber-400 bg-gradient-to-r from-amber-900/30 to-yellow-900/30 border-amber-600';
+    if (total <= 20)  return 'text-[#B0B0B0] bg-[#3A3A3A] border-[#4A4A4A]';
+    if (total <= 40)  return 'text-[#B0B0B0] bg-[#3A3A3A] border-[#4A4A4A]';
+    if (total <= 60)  return 'text-green-400 bg-green-900/30 border-green-700';
+    if (total <= 80)  return 'text-blue-400 bg-blue-900/30 border-blue-700';
+    if (total <= 100) return 'text-purple-400 bg-purple-900/30 border-purple-700';
+    if (total <= 120) return 'text-amber-400 bg-amber-900/30 border-amber-600';
+    return 'text-yellow-300 bg-gradient-to-r from-amber-900/40 to-yellow-900/40 border-yellow-500';
   };
 
   const getScoreTier = (total: number) => {
-    if (total <= 20) return { emoji: '😔', label: 'Bulk Pack' };
-    if (total <= 40) return { emoji: '😐', label: 'Standard Pack' };
-    if (total <= 60) return { emoji: '😊', label: 'Good Pack' };
-    if (total <= 80) return { emoji: '😃', label: 'Great Pack' };
-    if (total <= 90) return { emoji: '🤩', label: 'Amazing Pack' };
-    if (total <= 100) return { emoji: '🔥', label: 'Fire Pack' };
+    if (total <= 20)  return { emoji: '😔', label: 'Bulk Pack' };
+    if (total <= 40)  return { emoji: '😐', label: 'Standard Pack' };
+    if (total <= 60)  return { emoji: '😊', label: 'Good Pack' };
+    if (total <= 80)  return { emoji: '😃', label: 'Great Pack' };
+    if (total <= 100) return { emoji: '🤩', label: 'Amazing Pack' };
+    if (total <= 120) return { emoji: '🔥', label: 'Fire Pack' };
     return { emoji: '⭐', label: 'GOD PACK' };
   };
 

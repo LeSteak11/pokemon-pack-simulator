@@ -180,3 +180,70 @@ currently selected set.
 ================================================================================
 END OF REPORT
 ================================================================================
+
+
+================================================================================
+POKÉMON TCG PACK SIMULATOR — DAY 4 v1.02 CHANGE 01 REPORT
+Date: March 11, 2026
+Change: Pack Scoring System Overhaul
+================================================================================
+
+PROBLEM
+-------
+The original scoring system produced only 10 distinct score values out of a
+theoretical 0–100 range. Commons and uncommons always scored the same, so
+only the reverse and rare slots affected the result. Three of seven tier
+labels (Bulk Pack, Amazing Pack, GOD PACK) were mathematically unreachable.
+The system was correct but too deterministic to feel meaningful.
+
+SOLUTION
+--------
+Replaced slot-based scoring with per-card scoring. Each card is scored
+individually by rarity and finish. Small random variance added to commons
+and uncommons. Hard 100 cap removed so strong packs can exceed it.
+
+NEW SCORING VALUES
+------------------
+  Secret Rare finish     70
+  VMAX (Ultra Rare)      40
+  V (Ultra Rare)         25
+  Holo Rare              12
+  Standard Rare           8
+  Reverse Rare            6
+  Reverse Uncommon        4
+  Reverse Common          3
+  Standard Uncommon     1–2  (±1 random variance)
+  Standard Common       0–1  (±1 random variance)
+
+NEW TIER THRESHOLDS (all reachable)
+------------------------------------
+  😔 Bulk Pack        0–20
+  😐 Standard Pack   21–40
+  😊 Good Pack       41–60
+  😃 Great Pack      61–80
+  🤩 Amazing Pack    81–100
+  🔥 Fire Pack      101–120
+  ⭐ GOD PACK        121+
+
+TYPICAL SCORE RANGES
+---------------------
+  Bulk / Junk pack           ~11–19
+  Holo Rare pack             ~19–23
+  V pack                     ~35–45
+  VMAX pack                  ~52–62
+  Secret Rare pack           ~83–97
+
+FILES CHANGED
+-------------
+  src/utils/packSimulator.ts
+    Replaced calculatePackScore() with per-card scoreCard() helper.
+    Removed baseline +10 and hard 100 cap.
+    Added ±1 variance on commons and uncommons.
+
+  src/components/PackResults.tsx
+    Updated getScoreColor() and getScoreTier() to use new 7-tier thresholds.
+
+================================================================================
+END OF CHANGE 01 REPORT
+================================================================================
+
