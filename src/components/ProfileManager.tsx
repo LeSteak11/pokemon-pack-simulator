@@ -77,13 +77,14 @@ export default function ProfileManager({
           Profile
         </h2>
         {activeProfile && (
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-2">
             <button
               onClick={() => setShowInfo(true)}
-              className="text-[#B0B0B0] hover:text-purple-400 transition-colors"
+              className="flex items-center gap-1 px-2 py-0.5 rounded border border-[#4A4A4A] bg-[#1E1E1E] text-[#B0B0B0] hover:text-purple-400 hover:border-purple-600 transition-colors text-xs"
               title="View profile stats"
             >
-              <Info size={14} />
+              <Info size={12} />
+              Stats
             </button>
             <span className="px-2.5 py-1 bg-purple-900/40 text-purple-300 rounded-md text-xs font-bold">
               {activeProfile.name}

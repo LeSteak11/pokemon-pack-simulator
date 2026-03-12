@@ -183,7 +183,14 @@ export default function App() {
             />
 
             <CollectionTable
+              allCards={setManager.activeSet?.cards}
               collection={setManager.activeProfile?.collection}
+              activeProfileName={setManager.activeProfile?.name || null}
+              packsOpened={
+                setManager.activeProfile && setManager.activeSet
+                  ? (setManager.activeProfile.packsBySet?.[setManager.activeSet.filename] ?? 0)
+                  : 0
+              }
               uniqueCount={collectionStats.unique}
               totalCount={collectionStats.total}
             />
