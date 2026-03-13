@@ -1,0 +1,183 @@
+# Pokemon Pack Simulator — PM Onboarding Report
+**Date:** March 12, 2026
+**Version:** v1.02 → entering v1.03 development
+**Prepared by:** Development Team
+
+---
+
+## 1. What Is This Project?
+
+The **Pokemon Pack Simulator** is a desktop app that lets users virtually open Pokemon Trading Card Game (TCG) packs. You select a set, click "Open Pack," and the app gives you a randomized 10-card pack pulled from that set's real card list using simulated rarity odds. You can track your collection in inventory profiles, see how many packs you've opened, and monitor your progress toward completing a set.
+
+The app runs as a native Windows desktop program (no browser, no internet required) built with React/TypeScript for the UI and Rust (Tauri) for the native shell. All data is stored locally on the user's machine. There is no server, no database, and no online component.
+
+---
+
+## 2. Tech Stack (Plain Language)
+
+| Layer | Technology | What It Does |
+|---|---|---|
+| UI | React 19 + TypeScript | The visual interface |
+| Styling | Tailwind CSS | Design/colors |
+| Build Tool | Vite 6 | Compiles and bundles the app |
+| Desktop Shell | Tauri v2 (Rust) | Wraps the web app into a .exe |
+| Storage | localStorage | Saves profiles/inventory locally |
+| Card Data | Static JSON files | Stores each set's card list |
+| Installer | NSIS (.exe) | Installs the app like a real program |
+
+The installed app is approximately 5–10 MB. There is no backend server.
+
+---
+
+## 3. Available Sets (v1.02)
+
+Four sets are currently supported, stored as JSON files in `data/sets/`:
+
+| Set | Code | Total Cards in JSON | Base Set Size |
+|---|---|---|---|
+| Base Set | BS1 | ~99 cards | 102 |
+| Jungle | JU | 64 cards | 64 |
+| Fossil | FO | 62 cards | 62 |
+| Evolving Skies | EVS | 237 cards | 203 |
+
+The app reads a `sets-manifest.json` file to populate the set dropdown. Any new set added without a manifest entry will not appear in the app.
+
+---
+
+## 4. Pack Structure — How It Works
+
+Every pack generates **10 cards** from a fixed slot layout defined in `DEFAULT_PACK_CONFIG`:
+
+| Slot | Count | What It Pulls From |
+|---|---|---|
+| Commons | 5 | Common card pool |
+| Uncommons | 3 | Uncommon card pool |
+| Reverse Holo | 1 | 60% Common / 30% Uncommon / 10% Rare or Holo Rare |
+| Rare Slot | 1 | See odds table below |
+
+### Rare Slot Odds (applied to all sets):
+
+| Pull Type | Odds |
+|---|---|
+| Secret Rare / Rainbow Rare / Special Full Art | 1% |
+| VMAX | 10% |
+| V | 18% |
+| Holo Rare | 21% |
+| Standard Rare (non-holo) | 50% |
+
+If a roll lands on a type that doesn't exist in a set (e.g., VMAX in Base Set), the code falls back down the chain to the next available type. V and Secret Rare rolls also cascade down to Standard Rare when higher pools are empty.
+
+### Duplicate Prevention
+
+The simulator tracks which card numbers have already been placed in the current pack and excludes them from subsequent draws. No card number will appear twice in the same pack.
+
+---
+
+## 5. Card Data Pipeline
+
+1. Each set is stored as a **JSON file** (e.g., `evolving-skies.json`) containing every card with its number, name, rarity, category (Pokemon/Trainer/Energy), and variant (V, VMAX, or null).
+2. On app load, the JSON is fetched and converted into internal card objects.
+3. Cards are sorted into **rarity pools** (commons, uncommons, rares, holoRares, V, VMAX, secretRares) used by the pack generator.
+4. The rarity label in JSON ("Rare Holo", "Rainbow Rare", "Ultra Rare", etc.) is translated to an internal type. The `variant` field takes priority — if a card has `"variant": "V"`, it becomes a V card regardless of the rarity string.
+
+---
+
+## 6. Simulator Logic Findings — Detailed Audit
+
+### 6a. CAN ALL CARDS IN A SET BE PULLED? ✅ With Exceptions
+
+**Evolving Skies:** Yes, all 237 cards can theoretically be pulled.
+- Commons/Uncommons: Pulled in the common/uncommon slots or reverse holo slot.
+- Regular V cards (#7–165 range, "Holo Rare" + V variant in JSON): Correctly mapped to V type → pulled in the rare slot at the 18% V rate.
+- Full Art V cards (#166–198, "Ultra Rare" + V variant): Also correctly mapped to V type → pulled in the rare slot.
+- Trainer Full Art cards (#199–203, "Ultra Rare" + no variant): Correctly mapped to Secret Rare tier → pulled at 1% in rare slot.
+- Rainbow Rares / Special Full Arts (#204–225): Mapped to their respective high-rarity types → pulled at 1% in rare slot.
+- Gold Secret Rares (#226–237, "Rare Secret"): Mapped to Secret Rare → pulled at 1% in rare slot.
+
+**Base Set:** **3 energy cards are missing from the JSON data.** The JSON contains energy cards #097 (Fighting), #099 (Grass), and #101 (Psychic) but is missing #098 (Fire Energy), #100 (Lightning Energy), and #102 (Water Energy). These three cards cannot be pulled. The declared `baseSetSize` of 102 is also misleading since only ~99 cards are present.
+
+### 6b. ARE CARDS PULLING FROM THE RIGHT SLOT? ✅ Mostly Yes
+
+Card-to-slot routing is logically correct:
+- Commons only appear in common slots or the reverse holo slot (as a reverse).
+- V and VMAX cards **never** appear in the reverse holo slot (they are excluded from the reverse-eligible pool). ✅
+- Holo Rares correctly only appear in the rare slot (as a Holo) or the reverse slot (as a Reverse Holo version). ✅
+- Secret Rares only appear in the rare slot. ✅
+
+One nuance: in Evolving Skies, the **regular numbered V cards** (e.g., #007 Leafeon V) and the **Full Art V cards** (#166 Leafeon V alternate art) both land in the same `vs` pool. This means both versions compete equally for the 18% V slot. In the physical game, Full Art Vs have a lower individual pull rate than their base-numbered counterparts. The sim doesn't replicate this distinction, but both cards are pullable and the overall V percentage is maintained.
+
+### 6c. ARE THE ODDS CORRECT? ⚠️ Major Issue for Base Set / Jungle / Fossil
+
+**For Evolving Skies:** The odds are reasonable approximations of real Sword & Shield era pull rates. Real EVS pull rates are not officially published, but 1% Secret, ~10% VMAX, ~18% V, ~21% Holo, ~50% Rare is a well-accepted community estimate.
+
+**For Base Set, Jungle, and Fossil: The odds are wrong.**
+
+All four sets share the same `DEFAULT_PACK_CONFIG`, which was designed for the modern Sword & Shield era. The original WotC-era sets (Base Set through Fossil, 1998–2001) had a fundamentally different pack structure:
+
+| Characteristic | WotC Era (Base/Jungle/Fossil) | S&S Era (EVS) — *What the sim uses* |
+|---|---|---|
+| Rare slot: Holo odds | ~50% | **21%** ← too low |
+| Rare slot: Non-holo odds | ~50% | **79% effectively** ← too high |
+| Reverse Holo Slot | **Does not exist** | ✅ always present ← wrong |
+| V / VMAX pulls | Does not exist | Falls back correctly to Rare |
+| Pack size | 11 cards | 10 cards |
+
+**Practical impact:** When opening a Base Set pack, you should get a Holo Rare (Charizard, Blastoise, etc.) about 50% of the time. The current sim gives you a Holo only 21% of the time. Additionally, every Base Set/Jungle/Fossil pack incorrectly contains a physical Reverse Holo card — a mechanic that didn't exist in those sets.
+
+---
+
+## 7. Additional Known Issues
+
+### 7a. Simulation Script Diverges From App Logic
+The file `simulate-1000-packs.mjs` is a standalone test script that does NOT match the main app's rarity mapping. In the script, all Holo Rares are lumped into the generic "Rare" pool with no Holo distinction. The script also has no `holoRares` pool. CSV outputs from this script should not be used to validate actual simulator behavior.
+
+### 7b. Pack Score Tiers Don't Apply Equally Across Sets
+The scoring system (Bulk → GOD PACK) was designed around Sword & Shield rarities. A Base Set pack, which has no V, VMAX, or Secret Rare pulls, can never realistically exceed a "Good Pack" score. The highest possible score for a Base Set pack is roughly 12 (one Holo Rare) + a few points for commons/uncommons ≈ 20–25 pts, which only reaches "Standard Pack" or borderline "Good Pack." This is functional but may feel deflating for users opening vintage sets.
+
+### 7c. No Per-Set Pack Configuration in JSON Files
+The JSON set format does not include a `packConfig` field. While the internal `ActiveSet` data structure supports a custom pack config, there is currently no way to define different odds or slot layouts per set at the data level. Adding WotC-era-correct odds for Base Set/Jungle/Fossil will require either a code-level per-set config map or a JSON schema extension.
+
+---
+
+## 8. Features Currently Working
+
+- Set selection from a dropdown (reads from manifest)
+- Pack opening with accurate card randomization
+- Rarity-based card pool separation and slot routing
+- Duplicate-free packs within a single opening
+- Reverse Holo finish assignment (validates cards are eligible)
+- Pack scoring with 7 tiers
+- Collection inventory with profile support (create, switch, reset, delete)
+- Pack counter per set per profile
+- Set Checklist view (shows all cards, marks collected ones with count)
+- Tauri native desktop app (NSIS Windows installer, ~5–10 MB)
+
+---
+
+## 9. Features Planned (Not Yet Built)
+
+From the project's active to-do list:
+
+- **Card images** — integrate TCGDex GitHub API for card art
+- **Complete set browser** — UI to view every card in a set before opening
+- **Recent packs viewer** — see the last N packs opened
+- **Money spent tracker** — estimated cost based on pack price per era
+- **Generation labels** — label sets by Gen I, Gen VIII, etc.
+- **Inventory management improvements** — ability to delete accidental pack entries
+
+---
+
+## 10. Summary — What Needs Fixing Before v1.03 Ships
+
+| Priority | Issue | Impact |
+|---|---|---|
+| 🔴 High | Base Set JSON missing 3 energy cards (#098, #100, #102) | Those cards cannot be pulled |
+| 🔴 High | Base Set / Jungle / Fossil use wrong pack config (EVS era odds, wrong holo %) | Historically inaccurate pull rates |
+| 🔴 High | Base Set / Jungle / Fossil incorrectly include a Reverse Holo slot | Reverse Holos didn't exist in WotC era |
+| 🟡 Medium | Full Art Vs (EVS #166–203) pool with regular Vs — no odds distinction | Minor accuracy; all V% is correct in aggregate |
+| 🟡 Medium | Simulation test script (`simulate-1000-packs.mjs`) uses different logic than app | Test output doesn't reflect real app behavior |
+| 🟢 Low | Score tiers feel weak/capped on vintage sets | Cosmetic/UX issue |
+
+---
+
+*End of Report — v1.03 Pre-Dev Analysis*
