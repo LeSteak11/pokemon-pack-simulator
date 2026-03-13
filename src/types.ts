@@ -1,4 +1,4 @@
-export type Rarity = 'Common' | 'Uncommon' | 'Rare' | 'V' | 'VMAX' | 'Secret Rare' | 'Rainbow Rare' | 'Special Full Art';
+export type Rarity = 'Common' | 'Uncommon' | 'Rare' | 'Holo Rare' | 'V' | 'VMAX' | 'Secret Rare' | 'Rainbow Rare' | 'Special Full Art';
 export type FinishType = 'Standard' | 'Reverse Holo' | 'Holo' | 'Ultra Rare' | 'Secret Rare';
 
 export interface Card {
@@ -23,7 +23,8 @@ export interface InventoryProfile {
 export interface RarityPools {
   commons: Card[];
   uncommons: Card[];
-  rares: Card[];
+  rares: Card[];       // Non-holo Rares only
+  holoRares: Card[];   // Holo Rare cards only
   vs: Card[];
   vmaxs: Card[];
   secretRares: Card[];

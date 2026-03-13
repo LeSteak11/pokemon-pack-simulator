@@ -34,7 +34,8 @@ export function buildRarityPools(cards: Card[]): RarityPools {
   return {
     commons: cards.filter(c => c.rarity === 'Common'),
     uncommons: cards.filter(c => c.rarity === 'Uncommon'),
-    rares: cards.filter(c => c.rarity === 'Rare'),
+    rares: cards.filter(c => c.rarity === 'Rare'),         // Non-holo only
+    holoRares: cards.filter(c => c.rarity === 'Holo Rare'), // Holo Rare only
     vs: cards.filter(c => c.rarity === 'V'),
     vmaxs: cards.filter(c => c.rarity === 'VMAX'),
     secretRares: cards.filter(c =>
@@ -55,7 +56,11 @@ function getValidFinishes(card: Card): FinishType[] {
       return ['Standard', 'Reverse Holo'];
     
     case 'Rare':
-      // Rare cards can be Standard, Reverse Holo, or Holo
+      // Non-holo Rares: Standard or Reverse Holo only (no holo print exists)
+      return ['Standard', 'Reverse Holo'];
+    
+    case 'Holo Rare':
+      // Holo Rares can be Standard, Reverse Holo, or Holo
       return ['Standard', 'Reverse Holo', 'Holo'];
     
     case 'V':
@@ -106,8 +111,8 @@ function determineFinish(card: Card, slotType: 'standard' | 'reverse' | 'rare'):
   } else if (slotType === 'rare') {
     if (card.rarity === 'Secret Rare' || card.rarity === 'Rainbow Rare' || card.rarity === 'Special Full Art') preferredFinish = 'Secret Rare';
     else if (card.rarity === 'VMAX' || card.rarity === 'V') preferredFinish = 'Ultra Rare';
-    else if (card.rarity === 'Rare') preferredFinish = 'Holo';
-    else preferredFinish = 'Standard';
+    else if (card.rarity === 'Holo Rare') preferredFinish = 'Holo';
+    else preferredFinish = 'Standard'; // 'Rare' (non-holo) stays Standard even in the rare slot
   } else {
     preferredFinish = 'Standard';
   }
@@ -127,10 +132,10 @@ export function simulatePack(pools: RarityPools, config: PackConfig = DEFAULT_PA
   };
   
   // Fallback to any available cards if pools are empty
-  const allCards = [...pools.commons, ...pools.uncommons, ...pools.rares, ...pools.vs, ...pools.vmaxs, ...pools.secretRares];
+  const allCards = [...pools.commons, ...pools.uncommons, ...pools.rares, ...pools.holoRares, ...pools.vs, ...pools.vmaxs, ...pools.secretRares];
   
   // Reverse slot can only pull from common/uncommon/rare pools (never ultra-rares)
-  const reverseEligibleCards = [...pools.commons, ...pools.uncommons, ...pools.rares];
+  const reverseEligibleCards = [...pools.commons, ...pools.uncommons, ...pools.rares, ...pools.holoRares];
   
   // Commons (configurable count)
   for (let i = 0; i < config.slots.commons; i++) {
@@ -160,8 +165,10 @@ export function simulatePack(pools: RarityPools, config: PackConfig = DEFAULT_PA
       revCard = getRandomExcluding(pools.commons);
     } else if (revRand < config.reverseSlotOdds.common + config.reverseSlotOdds.uncommon && pools.uncommons.length > 0) {
       revCard = getRandomExcluding(pools.uncommons);
-    } else if (pools.rares.length > 0) {
-      revCard = getRandomExcluding(pools.rares);
+    } else {
+      // Rare tier reverse: draw from non-holo rares and holo rares combined
+      const revRarePool = [...pools.rares, ...pools.holoRares];
+      revCard = revRarePool.length > 0 ? getRandomExcluding(revRarePool) : null;
     }
     if (!revCard) revCard = getRandomExcluding(reverseEligibleCards);
     if (revCard) {
@@ -192,11 +199,13 @@ export function simulatePack(pools: RarityPools, config: PackConfig = DEFAULT_PA
       if (pools.vs.length > 0) { rareCard = getRandomExcluding(pools.vs); }
       else if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
     } else if (rand < config.rareSlotOdds.secretRare + config.rareSlotOdds.vmax + config.rareSlotOdds.v + config.rareSlotOdds.holo) {
-      // Holo Rare
-      if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
+      // Holo Rare — must come from holoRares pool specifically
+      if (pools.holoRares.length > 0) { rareCard = getRandomExcluding(pools.holoRares); }
+      else if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); } // fallback if no holo rares in set
     } else {
-      // Standard Rare
+      // Standard (non-holo) Rare — must come from non-holo rares pool
       if (pools.rares.length > 0) { rareCard = getRandomExcluding(pools.rares); }
+      else if (pools.holoRares.length > 0) { rareCard = getRandomExcluding(pools.holoRares); } // fallback if set has no non-holo rares
     }
     
     // Fallbacks
@@ -233,6 +242,7 @@ function scoreCard(card: Card): number {
     case 'Holo':
       return 12;
     case 'Reverse Holo':
+      if (card.rarity === 'Holo Rare') return 8;
       if (card.rarity === 'Rare') return 6;
       if (card.rarity === 'Uncommon') return 4;
       return 3; // Common reverse

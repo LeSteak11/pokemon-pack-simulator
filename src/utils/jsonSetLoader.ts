@@ -30,9 +30,11 @@ function mapJSONRarityToRarity(jsonRarity: string, variant: string | null): Rari
       return 'Uncommon';
 
     case 'Rare':
+      return 'Rare';
+
     case 'Holo Rare':
     case 'Rare Holo':
-      return 'Rare';
+      return 'Holo Rare';
 
     case 'Ultra Rare':
       // Trainer Full Arts (variant: null) — Secret Rare tier
